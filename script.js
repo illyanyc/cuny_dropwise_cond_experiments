@@ -3,7 +3,7 @@ var unique;
 var dict  = {};
 var counter = 0;
 var loadingol = 0;
-var kepid = "Kep;"
+var kepid = "Kep;";
 
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/player_api";
@@ -127,10 +127,10 @@ function loadImage() {
                 var iframeMarkup =
 
                     '<iframe width="300" height="160" src='+ '"' +
-                    URL + '"' + 'frameborder="0" allow="encrypted-media" allowfullscreen></iframe>'
+                    URL + '"' + 'frameborder="0" allow="encrypted-media" allowfullscreen></iframe>';
 
-                string = string + '<div class="sample">+
-                     iframeMarkup + '<textarea rows="3" cols="25">' +info  +'</textarea>'
+                string = string + '<div class="sample">'
+                     +iframeMarkup + '<textarea rows="3" cols="25">' +info  +'</textarea>'
                     +'</div>';
 
 
