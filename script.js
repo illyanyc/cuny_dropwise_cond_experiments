@@ -171,6 +171,10 @@ $(document).ready(function() {
                 populateDict();
                 loadImage();
                 loadImage();
+                loadImage();
+                loadImage();
+                loadImage();
+                loadImage();
 
             });
                 }
