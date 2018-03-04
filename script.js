@@ -125,23 +125,11 @@ function loadImage() {
 
                 var iframeMarkup =
 
-                    '<iframe width="240" height="160" src='+ '"' +
+                    '<iframe width="300" height="160" src='+ '"' +
                     URL + '"' + 'frameborder="0" allow="encrypted-media" allowfullscreen></iframe>'
 
-
-                    // '<object width="300" height="160"> ' +
-                    // '<param name='+vid +' value= "http://www.youtube.com/embed/'+
-                    // id +
-                    // '?html5=1&amp;rel=0&amp;hl=en_US&amp;version=3" ' +
-                    // '<param name="allowFullScreen"/>' +
-                    //
-                    // '<embed width="300" height="160" src="http://www.youtube.com/embed/' +
-                    // id +
-                    // '?html5=1&amp;rel=0&amp;hl=en_US&amp;version=3" class="youtube-player" type="text/html" allowfullscreen/> ' +
-                    // '</object>';
-                    //
                     string = string + '<div class="sample">'+
-                     iframeMarkup + '<textarea rows="3" cols="30">' +info  +'</textarea>'
+                     iframeMarkup + '<textarea rows="3" cols="25">' +info  +'</textarea>'
                     +'</div>';
 
 

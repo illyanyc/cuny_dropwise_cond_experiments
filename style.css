@@ -14,7 +14,7 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 body {
-  background-color: #F6F6F6;
+  background-color: lightskyblue;
 }
 body, h1, p {
 	font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -39,12 +39,13 @@ img {
 }
 
 .title{
-	background-color: #000000;
-	color: #ffff99;
+	background-color: darkblue;
+	color: white;
 	text-align: center;
 	max-width: 600px;
 	padding-right: 15px;
 	padding-left: 15px;
+	font-size: 14;
 
 
 
@@ -58,7 +59,7 @@ img {
 }
 
 .sample{
-	background: steelblue;
+	background: darkblue;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -69,7 +70,7 @@ img {
 }
 
 .flex-container{
-	background: yellowgreen;
+	background: cornflowerblue;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
