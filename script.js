@@ -129,8 +129,8 @@ function loadImage() {
                     '<iframe width="300" height="160" src='+ '"' +
                     URL + '"' + 'frameborder="0" allow="encrypted-media" allowfullscreen></iframe>'
 
-                string = string + '<div class="sample">+<div>'+vid+'-'+trial+'</div>'+
-                     iframeMarkup + '<textarea rows="3" cols="25">' +info  +'</textarea>'
+                string = string + '<div class="sample">+<div class="title-minor">'+vid+'-'+trial+'</div>'+
+                     iframeMarkup + '<textarea rows="3" cols="30">' +info  +'</textarea>'
                     +'</div>';
 
 
