@@ -169,6 +169,9 @@ $(document).ready(function() {
             dataType: "text",
             success: function(data) {Setdata(data, function() {
                 populateDict();
+                loadImage();
+                loadImage();
+
             });
                 }
         });
