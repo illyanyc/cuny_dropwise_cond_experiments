@@ -14,6 +14,7 @@ $(window).on("load", function() {
 
     loadImage();
     loadImage();
+    loadImage();
 
 });
 
