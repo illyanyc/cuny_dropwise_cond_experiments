@@ -169,6 +169,7 @@ $(document).ready(function() {
             });
                 }
         });
+
     });
 
     $("#back2Top").click(function(event) {
