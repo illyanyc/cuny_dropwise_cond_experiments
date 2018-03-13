@@ -39,12 +39,11 @@ function YouTubeGetID(url){
     return ID;
 }
 
-
 Array.prototype.unique = function() {
     return this.filter(function (value, index, self) {
         return self.indexOf(value) === index;
     });
-}
+};
 
 function ListOfSamples(array){
     var list = array;
@@ -74,33 +73,28 @@ function csvToArray (csv) {
     });
 
 
-};
+}
 
-function populateDict(){
+function populateDict() {
     var listOfsamples = ListOfSamples(videos);
     var data = videos;
-    var c = 0
-    for (i = 0; i < listOfsamples.length; i++){
+    var c = 0;
+    for (i = 0; i < listOfsamples.length; i++) {
         var arr = [];
         var name = listOfsamples[i];
-        for (j = 0; j < data.length; j++){
+        for (j = 0; j < data.length; j++) {
             var experimentType = data[j][0];
-            if (name === experimentType ){
+            if (name === experimentType) {
 
                 arr.push(data[j]);
-
             }
         }
-        dict[c]=arr;
+        dict[c] = arr;
         c = c + 1;
-
-
 
     }
     console.log(dict);
 }
-
-
 
 function loadImage() {
 
@@ -139,10 +133,7 @@ function loadImage() {
                         $(kepid).fadeIn(300);
                         loadingol = 0;
                      }, 300);
-
-
             }
-
             counter = counter + 1;
         $( "#gallery" ).append('<span class="title">'+ samplename + '</span>'+'<p></p>' +'<div class="flex-container">' + string +'</span>');
         console.log("Pass")
@@ -158,7 +149,6 @@ $(window).scroll(function() {
         $('#back2Top').fadeOut();
     }
 });
-
 
 $(document).ready(function() {
 
