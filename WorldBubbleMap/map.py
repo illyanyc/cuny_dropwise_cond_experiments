@@ -147,7 +147,7 @@ data
 data = data.sort_values(by=('value'), ascending=False)
 
 # Gerenrate colour gradient with n = number of items in the list
-colorgradient = gradient("#E74C3C", "#27AE60", len(name))
+colorgradient = gradient("#3498DB", "#E74C3C", len(name))
 
 
 # Make an empty map
@@ -161,7 +161,7 @@ for i in range(0, len(data)):
         location=[data.iloc[i]['lon'], data.iloc[i]['lat']],
         popup=(data.iloc[i]['name']),
         #radius=data.iloc[i]['value'] * 100000,
-        radius= 2.0 * 100000,
+        radius= 2.0 * 1000,
         color=colorgradient["hex"][counter],
         fill=True,
         fill_color=colorgradient["hex"][counter]
@@ -201,8 +201,10 @@ for i in range(0, len(data)):
         location=[data.iloc[i]['lon'], data.iloc[i]['lat']],
         popup=(data.iloc[i]['name']),
         #radius=data.iloc[i]['value'] * 100000,
-        radius= data.iloc[i]['value'] * 100000,
-        color= "#B03A2E",
+        radius= (data.iloc[i]['value'])*
+                ((((-data.iloc[i]['lat'])**2)-(0.0021852*(data.iloc[i]['lat']))+1))
+                 * 100000,
+        color= "#1F618D",
         fill=True,
         fill_color=colors[counter]
     ).add_to(m)
