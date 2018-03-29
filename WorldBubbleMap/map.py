@@ -184,3 +184,5 @@ max_lat = 56
 
 # Save it as html
 m.save('mymap.html')
+
+#<div><img src="http://www.condensationexperiments.com/WorldBubbleMap/legend.jpg" alt="Legend"></div>
