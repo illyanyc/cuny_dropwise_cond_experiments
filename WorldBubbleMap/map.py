@@ -98,7 +98,7 @@ def plot_color_gradients(gradient, value):
     value = sorted(value)
     ax.set_xlabel('Particle Size (microns)',color='black', fontsize=14)
 
-    for i in gradient:
+    for i in reversed(gradient):
         rect = matplotlib.patches.Rectangle((x, y), h, w, color=i)
         ax.add_patch(rect)
         x = x + w
