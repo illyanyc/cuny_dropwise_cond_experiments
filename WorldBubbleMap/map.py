@@ -171,9 +171,6 @@ for i in range(0, len(data)):
 # create Legend
 plot_color_gradients(colorgradient["hex"], value)
 
-# read in png file to numpy array
-data = imread('legend.png')
-
 min_lon = 120
 max_lon = 170
 min_lat = 50
@@ -188,3 +185,32 @@ m.save('mymap.html')
 
 #<div><img src="http://www.condensationexperiments.com/WorldBubbleMap/legend.png" alt="Legend"></div>
 # Change height to 90%
+
+
+
+
+
+# Try another type of plot
+counter = 0
+for i in range(0, len(data)):
+    colors = colorgradient["hex"]
+    folium.Circle(
+        location=[data.iloc[i]['lon'], data.iloc[i]['lat']],
+        popup=(data.iloc[i]['name']),
+        #radius=data.iloc[i]['value'] * 100000,
+        radius= data.iloc[i]['value'] * 100000,
+        color= "#B03A2E",
+        fill=True,
+        fill_color=colors[counter]
+    ).add_to(m)
+    counter += 1
+
+# create Legend
+plot_color_gradients(colorgradient["hex"], value)
+
+# Overlay the image
+#m.add_child(plugins.ImageOverlay(data, opacity=0.8, bounds =[[min_lat, min_lon], [max_lat, max_lon]]))
+
+
+# Save it as html
+m.save('mymap2.html')
