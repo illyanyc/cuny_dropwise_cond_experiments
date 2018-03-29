@@ -147,7 +147,7 @@ data
 data = data.sort_values(by=('value'), ascending=False)
 
 # Gerenrate colour gradient with n = number of items in the list
-colorgradient = gradient("#B03A2E", "#FDEDEC", len(name))
+colorgradient = gradient("#E74C3C", "#27AE60", len(name))
 
 
 # Make an empty map
@@ -164,7 +164,7 @@ for i in range(0, len(data)):
         radius= 2.0 * 100000,
         color=colorgradient["hex"][counter],
         fill=True,
-        fill_color=colors[counter]
+        fill_color=colorgradient["hex"][counter]
     ).add_to(m)
     counter += 1
 
