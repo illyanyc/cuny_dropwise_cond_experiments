@@ -147,7 +147,7 @@ data
 data = data.sort_values(by=('value'), ascending=False)
 
 # Gerenrate colour gradient with n = number of items in the list
-colorgradient = gradient("#B03A2E", "#F5B7B1", len(name))
+colorgradient = gradient("#B03A2E", "#FDEDEC", len(name))
 
 
 # Make an empty map
