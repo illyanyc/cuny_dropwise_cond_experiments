@@ -125,7 +125,6 @@ def plot_color_gradients(gradient, value):
     plt.gcf().subplots_adjust(bottom=0.5)
     plt.savefig('legend.png')
 
-
 # Import data from CSV
 csvdata = pd.read_csv("data.csv", header=0)
 name = list(csvdata.Name)
@@ -148,7 +147,8 @@ data
 data = data.sort_values(by=('value'), ascending=False)
 
 # Gerenrate colour gradient with n = number of items in the list
-colorgradient = gradient("#148F77", "#E8F8F5", len(name))
+colorgradient = gradient("#B03A2E", "#F5B7B1", len(name))
+
 
 # Make an empty map
 m = folium.Map(location=[20, 0], tiles='cartodbpositron', zoom_start=2)
@@ -160,7 +160,8 @@ for i in range(0, len(data)):
     folium.Circle(
         location=[data.iloc[i]['lon'], data.iloc[i]['lat']],
         popup=(data.iloc[i]['name']),
-        radius=data.iloc[i]['value'] * 100000,
+        #radius=data.iloc[i]['value'] * 100000,
+        radius= 2.0 * 100000,
         color=colorgradient["hex"][counter],
         fill=True,
         fill_color=colors[counter]
