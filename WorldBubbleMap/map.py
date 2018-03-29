@@ -190,7 +190,10 @@ m.save('mymap.html')
 
 
 
-# Try another type of plot
+# Try another type of plot BETA
+
+m = folium.Map(location=[20, 0], tiles='cartodbpositron', zoom_start=2)
+
 counter = 0
 for i in range(0, len(data)):
     colors = colorgradient["hex"]
