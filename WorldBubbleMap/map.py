@@ -161,7 +161,9 @@ for i in range(0, len(data)):
         location=[data.iloc[i]['lon'], data.iloc[i]['lat']],
         popup=(data.iloc[i]['name']),
         #radius=data.iloc[i]['value'] * 100000,
-        radius= 2.0 * 70000,
+        radius= (2)*
+                ((-(0.0000992*(abs(data.iloc[i]['lon']**2))))-(0.0021852*(abs(data.iloc[i]['lon'])))+1)
+                 * 100000,
         color=colorgradient["hex"][counter],
         fill=True,
         fill_color=colorgradient["hex"][counter]
