@@ -186,3 +186,4 @@ max_lat = 56
 m.save('mymap.html')
 
 #<div><img src="http://www.condensationexperiments.com/WorldBubbleMap/legend.png" alt="Legend"></div>
+# Change height to 90%
