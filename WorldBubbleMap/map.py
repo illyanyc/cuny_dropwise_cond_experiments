@@ -202,7 +202,7 @@ for i in range(0, len(data)):
         popup=(data.iloc[i]['name']),
         #radius=data.iloc[i]['value'] * 100000,
         radius= (data.iloc[i]['value'])*
-                ((((-data.iloc[i]['lat'])**2)-(0.0021852*(data.iloc[i]['lat']))+1))
+                ((-(0.0000992*(abs(data.iloc[i]['lat']**2))))-(0.0021852*(abs(data.iloc[i]['lat'])))+1)
                  * 100000,
         color= "#1F618D",
         fill=True,
