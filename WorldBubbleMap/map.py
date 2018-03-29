@@ -148,7 +148,7 @@ data
 data = data.sort_values(by=('value'), ascending=False)
 
 # Gerenrate colour gradient with n = number of items in the list
-colorgradient = gradient("#FF0000", "#0000FF", len(name))
+colorgradient = gradient("#148F77", "#E8F8F5", len(name))
 
 # Make an empty map
 m = folium.Map(location=[20, 0], tiles='Mapbox Bright', zoom_start=2)
