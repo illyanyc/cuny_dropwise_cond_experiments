@@ -190,8 +190,6 @@ m.save('mymap.html')
 
 
 
-
-
 # Try another type of plot BETA
 
 m = folium.Map(location=[20, 0], tiles='cartodbpositron', zoom_start=2)
