@@ -29,7 +29,9 @@ def combineListValues(names, values, method):
     return_list = []
     counter = 0
     for i in names:
-        newname = str(i)+str("<br>")+str("Diameter: ")+str(values[counter])+str(" microns")+str("<br>")+str("Method: ")+str(method[counter])
+        newname = str(i)+str("<br>")+str("Diameter: ")+str(values[counter])+str(" um") \
+                  +str("<br>")+str("Method: ")+str(method[counter])
+        print newname
         return_list.append(newname)
         counter += 1
 
