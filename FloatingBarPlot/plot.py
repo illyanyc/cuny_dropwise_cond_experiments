@@ -86,7 +86,7 @@ def plot_rect(data):
 
     # plot median for all of the data
     plt.axvline(x=median, color = '#ff9999', ls='dotted')
-    ax.text(median + 3, len(data)-2, ("Median: " + str(int(np.round(median, 0))) + " um"),
+    ax.text(median + 3, len(data)-2, ("Literature Search Median: " + str(int(np.round(median, 0))) + " um"),
             #+ " +/- " + str(np.round(stdev,0)),
             fontsize=11, color = '#ff4d4d')
 
@@ -94,7 +94,7 @@ def plot_rect(data):
     plt.axvline(x=stadard_median, color='#00e6ac', ls='dotted')
     ax.text(stadard_median + 3, len(data) - 4, ("Standard Dust Median: " + str(int(np.round(stadard_median, 0))) + " um"),
             # + " +/- " + str(np.round(stdev,0)),
-            fontsize=11, color='#004d39')
+            fontsize=11, color='#00e6ac')
 
     ax.plot((low_min,low_max),(0,0))
     ax.plot(lx, ly, marker='s', color = '#737373', linewidth = 0)

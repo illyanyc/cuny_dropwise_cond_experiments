@@ -55,9 +55,9 @@ Name,Latitude,Longitude,low,mid,high
 "17 - Jazan, Saudi Arabia",16.8893586,42.5705674,0,10,0
 "19 - Vellore, India",12.9202,79.1333,1,2,3
 59 - Malaysia,4.210484,101.975766,30,37.5,45
-53 - Unknown Location,0,0,1,250.5,500
-54 - Unknown Location,2,2,0,3,0
-67 - Unknown Location,4,4,3,3.5,4
+53 - Unknown Location,41,-57,1,250.5,500
+54 - Unknown Location,41,-50,0,3,0
+67 - Unknown Location,41,-43,3,3.5,4
 41 - Indonesia,-0.789275,113.921327,4,6,8
 30 - Brazil,-14.235004,-51.92528,40,45,50
 "62 - Minas Gerais, Brazil",-18.512178,-44.5550308,0,35.3,0
@@ -66,5 +66,5 @@ Name,Latitude,Longitude,low,mid,high
 61 - Australia,-23.274398,133.775136,0,15,0
 "34 - Kalkbult, South Africa",-30.4678242,24.0853165,0,47,0
 43 - Chile,-35.675147,-71.542969,0,50,0
-32 - Worldwide (unspecified),6,6,15,37.5,60
-"48 - Unspecified ""several locations around the world""",7,7,15,37.5,60
+32 - Worldwide (unspecified),41,-36,15,37.5,60
+"48 - Unspecified ""several locations around the world""",41,-29,15,37.5,60
