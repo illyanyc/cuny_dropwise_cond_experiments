@@ -130,7 +130,7 @@ csvdata = pd.read_csv("data.csv", header=0)
 name = list(csvdata.Name)
 lon = list(csvdata.Latitude)
 lat = list(csvdata.Longitude)
-value= list(csvdata.low)
+value= list(csvdata.mid)
 value_log = ParseValueLog(value,10,1)
 name_to_plot = combineListValues(name, value)
 
