@@ -25,11 +25,11 @@ def ParseValueLog(list,base,multiplier):
         return_list.append(float(value+1))
     return return_list
 
-def combineListValues(names, values):
+def combineListValues(names, values, method):
     return_list = []
     counter = 0
     for i in names:
-        newname = str(i)+str("<br>")+str(values[counter])+str(" microns")
+        newname = str(i)+str("<br>")+str("Diameter: ")+str(values[counter])+str(" microns")+str("<br>")+str("Method: ")+str(method[counter])
         return_list.append(newname)
         counter += 1
 
@@ -131,8 +131,9 @@ name = list(csvdata.Name)
 lon = list(csvdata.Latitude)
 lat = list(csvdata.Longitude)
 value= list(csvdata.mid)
+method= list(csvdata.Method)
 value_log = ParseValueLog(value,10,1)
-name_to_plot = combineListValues(name, value)
+name_to_plot = combineListValues(name, value, method)
 
 # Make a data frame with dots to show on the map
 data = pd.DataFrame({
