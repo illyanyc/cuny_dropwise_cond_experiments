@@ -298,6 +298,20 @@ colorgradient = prepGradientByDecate(data["valueraw"], listOfColors_toPass)
 # Make an empty map
 m = folium.Map(location=[20, 0], tiles='cartodbpositron', zoom_start=2)
 
+# Enclose all of the Un-localized data into a circle
+#region
+folium.Circle(
+        location=[-39, -13],
+        popup=("No specific location reported in literature:"),
+        #radius=data.iloc[i]['value'] * 100000,
+        radius= (2)*
+                ((-(0.0000992*(abs(-39))))-(0.0021852*(abs(-13)))+1)
+                 * 850000,
+        color="#000000",
+        fill=True,
+        fill_color="#ffffff"
+    ).add_to(m)
+#endregion
 # add data points to map one by one
 counter = 0
 for i in range(0, len(data)):

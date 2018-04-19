@@ -15,7 +15,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_8e9d46c51fc04cd4a668d033ccaf5a7c {
+            <style> #map_a472ed22329c471ea9b61d2583206a2a {
                 position : relative;
                 width : 100.0%;
                 height: 85.0%;
@@ -27,7 +27,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_8e9d46c51fc04cd4a668d033ccaf5a7c" ></div>
+            <div class="folium-map" id="map_a472ed22329c471ea9b61d2583206a2a" ></div>
         <div><img src="http://www.condensationexperiments.com/WorldBubbleMap/legend.png" alt="Legend"></div>
 </body>
 <script>    
@@ -37,8 +37,8 @@
                 var bounds = null;
             
 
-            var map_8e9d46c51fc04cd4a668d033ccaf5a7c = L.map(
-                                  'map_8e9d46c51fc04cd4a668d033ccaf5a7c',
+            var map_a472ed22329c471ea9b61d2583206a2a = L.map(
+                                  'map_a472ed22329c471ea9b61d2583206a2a',
                                   {center: [20,0],
                                   zoom: 2,
                                   maxBounds: bounds,
@@ -49,7 +49,7 @@
             
         
     
-            var tile_layer_d5018d6597c544cabe299299e39bb901 = L.tileLayer(
+            var tile_layer_597aeacba6034fe3a6b2cf1818460ead = L.tileLayer(
                 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
                 {
   "attribution": null, 
@@ -59,11 +59,45 @@
   "noWrap": false, 
   "subdomains": "abc"
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
         
     
 
-            var circle_70543f111246458f9b7258db7e1dd748 = L.circle(
+            var circle_cb36da0a1fa143beadca89e7d46e7186 = L.circle(
+                [-39,-13],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#000000", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#ffffff", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 1645130.12, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
+            
+    
+            var popup_80ef7260a6ec41e684e9285da84ac123 = L.popup({maxWidth: '300'});
+
+            
+                var html_7282bf89d5fc49ed93c24631b9f8c14d = $('<div id="html_7282bf89d5fc49ed93c24631b9f8c14d" style="width: 100.0%; height: 100.0%;">No specific location reported in literature:</div>')[0];
+                popup_80ef7260a6ec41e684e9285da84ac123.setContent(html_7282bf89d5fc49ed93c24631b9f8c14d);
+            
+
+            circle_cb36da0a1fa143beadca89e7d46e7186.bindPopup(popup_80ef7260a6ec41e684e9285da84ac123);
+
+            
+        
+    
+
+            var circle_5c2a56a29c89492aa3f32c6235f2ee9e = L.circle(
                 [36.5199402,-105.8700901],
                 {
   "bubblingMouseEvents": true, 
@@ -81,23 +115,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_038efc86f4794a24898ee511766948eb = L.popup({maxWidth: '300'});
+            var popup_c78a21e4e3e9415d90e9159b479bd267 = L.popup({maxWidth: '300'});
 
             
-                var html_ccaeda2642224e928aad45e361a68459 = $('<div id="html_ccaeda2642224e928aad45e361a68459" style="width: 100.0%; height: 100.0%;">3 - New Mexico, USA<br>Diameter: 0.65 um<br>Method: Commercial Particle Sizer - optical technique</div>')[0];
-                popup_038efc86f4794a24898ee511766948eb.setContent(html_ccaeda2642224e928aad45e361a68459);
+                var html_044653d5c69c47e3820357f33067eb0b = $('<div id="html_044653d5c69c47e3820357f33067eb0b" style="width: 100.0%; height: 100.0%;">3 - New Mexico, USA<br>Diameter: 0.65 um<br>Method: Commercial Particle Sizer - optical technique</div>')[0];
+                popup_c78a21e4e3e9415d90e9159b479bd267.setContent(html_044653d5c69c47e3820357f33067eb0b);
             
 
-            circle_70543f111246458f9b7258db7e1dd748.bindPopup(popup_038efc86f4794a24898ee511766948eb);
+            circle_5c2a56a29c89492aa3f32c6235f2ee9e.bindPopup(popup_c78a21e4e3e9415d90e9159b479bd267);
 
             
         
     
 
-            var circle_95474fe42c574927b1fa43345d7679f0 = L.circle(
+            var circle_8566bade29a84baba0792600c5e08b3a = L.circle(
                 [23.885942,45.079162],
                 {
   "bubblingMouseEvents": true, 
@@ -115,23 +149,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_610388e1357b44a6b5fd025aeb6e5a42 = L.popup({maxWidth: '300'});
+            var popup_968deaec7d744991b6c1b58349a2aced = L.popup({maxWidth: '300'});
 
             
-                var html_291f3cd7acd24eefa2adf2e6cb74bae0 = $('<div id="html_291f3cd7acd24eefa2adf2e6cb74bae0" style="width: 100.0%; height: 100.0%;">31 - Saudi Arabia<br>Diameter: 0.8 um<br>Method: Microtrac S3500 Particle Size Analyzer</div>')[0];
-                popup_610388e1357b44a6b5fd025aeb6e5a42.setContent(html_291f3cd7acd24eefa2adf2e6cb74bae0);
+                var html_753dd0efd53f45b09600d92c5c3cbcd0 = $('<div id="html_753dd0efd53f45b09600d92c5c3cbcd0" style="width: 100.0%; height: 100.0%;">31 - Saudi Arabia<br>Diameter: 0.8 um<br>Method: Microtrac S3500 Particle Size Analyzer</div>')[0];
+                popup_968deaec7d744991b6c1b58349a2aced.setContent(html_753dd0efd53f45b09600d92c5c3cbcd0);
             
 
-            circle_95474fe42c574927b1fa43345d7679f0.bindPopup(popup_610388e1357b44a6b5fd025aeb6e5a42);
+            circle_8566bade29a84baba0792600c5e08b3a.bindPopup(popup_968deaec7d744991b6c1b58349a2aced);
 
             
         
     
 
-            var circle_3d54ffcf72504751851ea8afcaa23c1f = L.circle(
+            var circle_cd17d0480b0f437095d185147c7c1698 = L.circle(
                 [33.3128057,44.3614875],
                 {
   "bubblingMouseEvents": true, 
@@ -149,23 +183,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_f5f8eba7502645ad9846a764f27abd85 = L.popup({maxWidth: '300'});
+            var popup_de816dec23dc47b5893fe9746392b732 = L.popup({maxWidth: '300'});
 
             
-                var html_69c77d1328624f648a3b794e07af6a04 = $('<div id="html_69c77d1328624f648a3b794e07af6a04" style="width: 100.0%; height: 100.0%;">16 - Baghdad, Iraq<br>Diameter: 1.15 um<br>Method: Laser optical photometer</div>')[0];
-                popup_f5f8eba7502645ad9846a764f27abd85.setContent(html_69c77d1328624f648a3b794e07af6a04);
+                var html_2a4b51ce322e40d1ab6590538c1ec33c = $('<div id="html_2a4b51ce322e40d1ab6590538c1ec33c" style="width: 100.0%; height: 100.0%;">16 - Baghdad, Iraq<br>Diameter: 1.15 um<br>Method: Laser optical photometer</div>')[0];
+                popup_de816dec23dc47b5893fe9746392b732.setContent(html_2a4b51ce322e40d1ab6590538c1ec33c);
             
 
-            circle_3d54ffcf72504751851ea8afcaa23c1f.bindPopup(popup_f5f8eba7502645ad9846a764f27abd85);
+            circle_cd17d0480b0f437095d185147c7c1698.bindPopup(popup_de816dec23dc47b5893fe9746392b732);
 
             
         
     
 
-            var circle_989f62d0aa68451e9757440abf64f041 = L.circle(
+            var circle_2768b5c8d8c64004bf244a86843aa9c3 = L.circle(
                 [28.2361248,50.0393017],
                 {
   "bubblingMouseEvents": true, 
@@ -183,23 +217,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_13abdce42c6c454f80fa4580a34353ac = L.popup({maxWidth: '300'});
+            var popup_1b5938584a6b432a82bdf306241527b1 = L.popup({maxWidth: '300'});
 
             
-                var html_5f5bb1dd03434f628c8981db507ccc78 = $('<div id="html_5f5bb1dd03434f628c8981db507ccc78" style="width: 100.0%; height: 100.0%;">65 - Dharan, Saudi Arabia<br>Diameter: 1.2 um<br>Method: SEM</div>')[0];
-                popup_13abdce42c6c454f80fa4580a34353ac.setContent(html_5f5bb1dd03434f628c8981db507ccc78);
+                var html_76adab1de012456b9ac3020d761355c1 = $('<div id="html_76adab1de012456b9ac3020d761355c1" style="width: 100.0%; height: 100.0%;">65 - Dharan, Saudi Arabia<br>Diameter: 1.2 um<br>Method: SEM</div>')[0];
+                popup_1b5938584a6b432a82bdf306241527b1.setContent(html_76adab1de012456b9ac3020d761355c1);
             
 
-            circle_989f62d0aa68451e9757440abf64f041.bindPopup(popup_13abdce42c6c454f80fa4580a34353ac);
+            circle_2768b5c8d8c64004bf244a86843aa9c3.bindPopup(popup_1b5938584a6b432a82bdf306241527b1);
 
             
         
     
 
-            var circle_fe3ba2c0fca24cfe813cc51f76609581 = L.circle(
+            var circle_8eea1440cde448a7af146a8760cbcdea = L.circle(
                 [26.3926665,49.9777136],
                 {
   "bubblingMouseEvents": true, 
@@ -217,23 +251,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_55ec77ff99194b3c926bf817e0daa595 = L.popup({maxWidth: '300'});
+            var popup_93eecb2b6b2248058690b441925274eb = L.popup({maxWidth: '300'});
 
             
-                var html_d4af38e3e42848c79ad262526521d766 = $('<div id="html_d4af38e3e42848c79ad262526521d766" style="width: 100.0%; height: 100.0%;">64 - Dammam, Saudi Arabia<br>Diameter: 1.2 um<br>Method: SEM / EDS used for elemental composition</div>')[0];
-                popup_55ec77ff99194b3c926bf817e0daa595.setContent(html_d4af38e3e42848c79ad262526521d766);
+                var html_260d6a1af619463d833b0bab7513d241 = $('<div id="html_260d6a1af619463d833b0bab7513d241" style="width: 100.0%; height: 100.0%;">64 - Dammam, Saudi Arabia<br>Diameter: 1.2 um<br>Method: SEM / EDS used for elemental composition</div>')[0];
+                popup_93eecb2b6b2248058690b441925274eb.setContent(html_260d6a1af619463d833b0bab7513d241);
             
 
-            circle_fe3ba2c0fca24cfe813cc51f76609581.bindPopup(popup_55ec77ff99194b3c926bf817e0daa595);
+            circle_8eea1440cde448a7af146a8760cbcdea.bindPopup(popup_93eecb2b6b2248058690b441925274eb);
 
             
         
     
 
-            var circle_9ff6b2cfeef74ba0bdfac67b33d8b693 = L.circle(
+            var circle_ee216e1202384d5088f95504131291a6 = L.circle(
                 [26.2361248,50.0393017],
                 {
   "bubblingMouseEvents": true, 
@@ -251,23 +285,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_5169b61f480d40579c6e2ead0c64574e = L.popup({maxWidth: '300'});
+            var popup_f92b00858d3c453785c3331c6c95c49e = L.popup({maxWidth: '300'});
 
             
-                var html_6e3af6f0f001435ba85844a5a657491b = $('<div id="html_6e3af6f0f001435ba85844a5a657491b" style="width: 100.0%; height: 100.0%;">49 - Dharan, Saudi Arabia<br>Diameter: 1.2 um<br>Method: SEM / XRD used for elemental analysis</div>')[0];
-                popup_5169b61f480d40579c6e2ead0c64574e.setContent(html_6e3af6f0f001435ba85844a5a657491b);
+                var html_6e966454bfee4e058928645251419351 = $('<div id="html_6e966454bfee4e058928645251419351" style="width: 100.0%; height: 100.0%;">49 - Dharan, Saudi Arabia<br>Diameter: 1.2 um<br>Method: SEM / XRD used for elemental analysis</div>')[0];
+                popup_f92b00858d3c453785c3331c6c95c49e.setContent(html_6e966454bfee4e058928645251419351);
             
 
-            circle_9ff6b2cfeef74ba0bdfac67b33d8b693.bindPopup(popup_5169b61f480d40579c6e2ead0c64574e);
+            circle_ee216e1202384d5088f95504131291a6.bindPopup(popup_f92b00858d3c453785c3331c6c95c49e);
 
             
         
     
 
-            var circle_fe3240bf3997457c8c045ea96fb8abab = L.circle(
+            var circle_41ff9ef109fb4e80b624c8e77e033aa2 = L.circle(
                 [25.885942,45.079162],
                 {
   "bubblingMouseEvents": true, 
@@ -285,23 +319,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_a8b0649d3df44f38be06b193db72b2f8 = L.popup({maxWidth: '300'});
+            var popup_6767ce2a660942228dfeb02b7e068162 = L.popup({maxWidth: '300'});
 
             
-                var html_acb0e00aeee84b7aafd2b58cb2e8b061 = $('<div id="html_acb0e00aeee84b7aafd2b58cb2e8b061" style="width: 100.0%; height: 100.0%;">35 - Saudi Arabia<br>Diameter: 1.2 um<br>Method: SEM (EDS used to determine elemental composition)</div>')[0];
-                popup_a8b0649d3df44f38be06b193db72b2f8.setContent(html_acb0e00aeee84b7aafd2b58cb2e8b061);
+                var html_6a01ce4e217c42118ec99f34f9e4f884 = $('<div id="html_6a01ce4e217c42118ec99f34f9e4f884" style="width: 100.0%; height: 100.0%;">35 - Saudi Arabia<br>Diameter: 1.2 um<br>Method: SEM (EDS used to determine elemental composition)</div>')[0];
+                popup_6767ce2a660942228dfeb02b7e068162.setContent(html_6a01ce4e217c42118ec99f34f9e4f884);
             
 
-            circle_fe3240bf3997457c8c045ea96fb8abab.bindPopup(popup_a8b0649d3df44f38be06b193db72b2f8);
+            circle_41ff9ef109fb4e80b624c8e77e033aa2.bindPopup(popup_6767ce2a660942228dfeb02b7e068162);
 
             
         
     
 
-            var circle_5986e448e6b843e6b471b85d28dc8387 = L.circle(
+            var circle_62198a2163d74ceab09f128345adf631 = L.circle(
                 [29.2972247,-110.3308814],
                 {
   "bubblingMouseEvents": true, 
@@ -319,23 +353,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_dc3cad9dfe28473a839d95c23ac86701 = L.popup({maxWidth: '300'});
+            var popup_bf82b1dac09e4f6fbfa77cb8e8cca481 = L.popup({maxWidth: '300'});
 
             
-                var html_ebe0b4f09f004895934386ca912a58c5 = $('<div id="html_ebe0b4f09f004895934386ca912a58c5" style="width: 100.0%; height: 100.0%;">22 - Sonora, Mexico<br>Diameter: 1.297542308 um<br>Method: LS Particle Size Analyzer brand Coulter model Fraunhofer LS 100Q</div>')[0];
-                popup_dc3cad9dfe28473a839d95c23ac86701.setContent(html_ebe0b4f09f004895934386ca912a58c5);
+                var html_487c586f41f9498d8d1427c0fa20ef63 = $('<div id="html_487c586f41f9498d8d1427c0fa20ef63" style="width: 100.0%; height: 100.0%;">22 - Sonora, Mexico<br>Diameter: 1.297542308 um<br>Method: LS Particle Size Analyzer brand Coulter model Fraunhofer LS 100Q</div>')[0];
+                popup_bf82b1dac09e4f6fbfa77cb8e8cca481.setContent(html_487c586f41f9498d8d1427c0fa20ef63);
             
 
-            circle_5986e448e6b843e6b471b85d28dc8387.bindPopup(popup_dc3cad9dfe28473a839d95c23ac86701);
+            circle_62198a2163d74ceab09f128345adf631.bindPopup(popup_bf82b1dac09e4f6fbfa77cb8e8cca481);
 
             
         
     
 
-            var circle_7d91c986096540e0bd48986488437954 = L.circle(
+            var circle_a77b040b0f5c4355abf05047b0950e95 = L.circle(
                 [38.487193,106.230908],
                 {
   "bubblingMouseEvents": true, 
@@ -353,23 +387,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_83b4169d5d35427f81d80c9ce01cde08 = L.popup({maxWidth: '300'});
+            var popup_e45edd45f5b3486ab6490fd62af4c680 = L.popup({maxWidth: '300'});
 
             
-                var html_3f06344851444736a1db234064456327 = $('<div id="html_3f06344851444736a1db234064456327" style="width: 100.0%; height: 100.0%;">6 - Yinchuan, China<br>Diameter: 1.7 um<br>Method: No information given</div>')[0];
-                popup_83b4169d5d35427f81d80c9ce01cde08.setContent(html_3f06344851444736a1db234064456327);
+                var html_7e41ea81049d42649c8be3ec6f4d9ea1 = $('<div id="html_7e41ea81049d42649c8be3ec6f4d9ea1" style="width: 100.0%; height: 100.0%;">6 - Yinchuan, China<br>Diameter: 1.7 um<br>Method: No information given</div>')[0];
+                popup_e45edd45f5b3486ab6490fd62af4c680.setContent(html_7e41ea81049d42649c8be3ec6f4d9ea1);
             
 
-            circle_7d91c986096540e0bd48986488437954.bindPopup(popup_83b4169d5d35427f81d80c9ce01cde08);
+            circle_a77b040b0f5c4355abf05047b0950e95.bindPopup(popup_e45edd45f5b3486ab6490fd62af4c680);
 
             
         
     
 
-            var circle_11b438286ec3491b9c9b8ec914c7f945 = L.circle(
+            var circle_80bbf9ede8cf4fa19de87b1930c8253a = L.circle(
                 [12.9202,79.1333],
                 {
   "bubblingMouseEvents": true, 
@@ -387,23 +421,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_3320259e15c1476c965d605a8bd97882 = L.popup({maxWidth: '300'});
+            var popup_4b186e588158468c9a5f923cb1131f92 = L.popup({maxWidth: '300'});
 
             
-                var html_335acdfa7ccb4579a0ad2912a0aa3b56 = $('<div id="html_335acdfa7ccb4579a0ad2912a0aa3b56" style="width: 100.0%; height: 100.0%;">19 - Vellore, India<br>Diameter: 2.0 um<br>Method: Microscope</div>')[0];
-                popup_3320259e15c1476c965d605a8bd97882.setContent(html_335acdfa7ccb4579a0ad2912a0aa3b56);
+                var html_4886a5a34c534b66a2070483d6f97985 = $('<div id="html_4886a5a34c534b66a2070483d6f97985" style="width: 100.0%; height: 100.0%;">19 - Vellore, India<br>Diameter: 2.0 um<br>Method: Microscope</div>')[0];
+                popup_4b186e588158468c9a5f923cb1131f92.setContent(html_4886a5a34c534b66a2070483d6f97985);
             
 
-            circle_11b438286ec3491b9c9b8ec914c7f945.bindPopup(popup_3320259e15c1476c965d605a8bd97882);
+            circle_80bbf9ede8cf4fa19de87b1930c8253a.bindPopup(popup_4b186e588158468c9a5f923cb1131f92);
 
             
         
     
 
-            var circle_16597a6f0f6142aeb7ac3639e162b97c = L.circle(
+            var circle_f85b09edff394090974531e4da9768c1 = L.circle(
                 [28.0870967,30.7618397],
                 {
   "bubblingMouseEvents": true, 
@@ -421,23 +455,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_fb826f69640d412fbee39b92db5e6007 = L.popup({maxWidth: '300'});
+            var popup_ddb36b9fb3024883bf645afa68c8a193 = L.popup({maxWidth: '300'});
 
             
-                var html_3efc735a181c489eb156339e12b09473 = $('<div id="html_3efc735a181c489eb156339e12b09473" style="width: 100.0%; height: 100.0%;">51 - Minia, Egypt<br>Diameter: 2.0 um<br>Method: No information given</div>')[0];
-                popup_fb826f69640d412fbee39b92db5e6007.setContent(html_3efc735a181c489eb156339e12b09473);
+                var html_33b122cc0fde40cba2de91f8b2650131 = $('<div id="html_33b122cc0fde40cba2de91f8b2650131" style="width: 100.0%; height: 100.0%;">51 - Minia, Egypt<br>Diameter: 2.0 um<br>Method: No information given</div>')[0];
+                popup_ddb36b9fb3024883bf645afa68c8a193.setContent(html_33b122cc0fde40cba2de91f8b2650131);
             
 
-            circle_16597a6f0f6142aeb7ac3639e162b97c.bindPopup(popup_fb826f69640d412fbee39b92db5e6007);
+            circle_f85b09edff394090974531e4da9768c1.bindPopup(popup_ddb36b9fb3024883bf645afa68c8a193);
 
             
         
     
 
-            var circle_b8da11be104c47e9a24708db1b6cd613 = L.circle(
+            var circle_a8547a813f004869a73f84eab4bd711a = L.circle(
                 [34.5199402,-105.8700901],
                 {
   "bubblingMouseEvents": true, 
@@ -455,23 +489,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_f4a0708c9cbb416a9226181cf02b0171 = L.popup({maxWidth: '300'});
+            var popup_e1deab969d024c8eb71c17b452ce561d = L.popup({maxWidth: '300'});
 
             
-                var html_b539eea487ce411185f182f6dff6c254 = $('<div id="html_b539eea487ce411185f182f6dff6c254" style="width: 100.0%; height: 100.0%;">1 - New Mexico, USA<br>Diameter: 2.0 um<br>Method: SEM</div>')[0];
-                popup_f4a0708c9cbb416a9226181cf02b0171.setContent(html_b539eea487ce411185f182f6dff6c254);
+                var html_3ccc0ba3d9f84f7ebec78acfdd9e5e5a = $('<div id="html_3ccc0ba3d9f84f7ebec78acfdd9e5e5a" style="width: 100.0%; height: 100.0%;">1 - New Mexico, USA<br>Diameter: 2.0 um<br>Method: SEM</div>')[0];
+                popup_e1deab969d024c8eb71c17b452ce561d.setContent(html_3ccc0ba3d9f84f7ebec78acfdd9e5e5a);
             
 
-            circle_b8da11be104c47e9a24708db1b6cd613.bindPopup(popup_f4a0708c9cbb416a9226181cf02b0171);
+            circle_a8547a813f004869a73f84eab4bd711a.bindPopup(popup_e1deab969d024c8eb71c17b452ce561d);
 
             
         
     
 
-            var circle_600878b937bd42a9a790a29058e3f563 = L.circle(
+            var circle_70c9df4bb30e45a9a33dde55b7b784c2 = L.circle(
                 [25.354826,51.183884],
                 {
   "bubblingMouseEvents": true, 
@@ -489,23 +523,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_3c75275aca974d799a2d9323bd34f159 = L.popup({maxWidth: '300'});
+            var popup_b0d545137a1f49259ae58c0dc52d64d0 = L.popup({maxWidth: '300'});
 
             
-                var html_1782f11b7210425882ee5206884615bc = $('<div id="html_1782f11b7210425882ee5206884615bc" style="width: 100.0%; height: 100.0%;">24 - Qatar<br>Diameter: 2.0 um<br>Method: AFM</div>')[0];
-                popup_3c75275aca974d799a2d9323bd34f159.setContent(html_1782f11b7210425882ee5206884615bc);
+                var html_3d98d36f3a4a4518a817734e5691496a = $('<div id="html_3d98d36f3a4a4518a817734e5691496a" style="width: 100.0%; height: 100.0%;">24 - Qatar<br>Diameter: 2.0 um<br>Method: AFM</div>')[0];
+                popup_b0d545137a1f49259ae58c0dc52d64d0.setContent(html_3d98d36f3a4a4518a817734e5691496a);
             
 
-            circle_600878b937bd42a9a790a29058e3f563.bindPopup(popup_3c75275aca974d799a2d9323bd34f159);
+            circle_70c9df4bb30e45a9a33dde55b7b784c2.bindPopup(popup_b0d545137a1f49259ae58c0dc52d64d0);
 
             
         
     
 
-            var circle_a03ed3791c7d4f308778d848362fdf87 = L.circle(
+            var circle_56348f29b5e54037b719552394972b2e = L.circle(
                 [26.354826,53.183884],
                 {
   "bubblingMouseEvents": true, 
@@ -523,23 +557,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_7e8bcb22c8c4466395bac25ea9c9cd5a = L.popup({maxWidth: '300'});
+            var popup_0bf8cee17cce43589c09b7f390fa961f = L.popup({maxWidth: '300'});
 
             
-                var html_58eeaad03e3243debb5f012847d34906 = $('<div id="html_58eeaad03e3243debb5f012847d34906" style="width: 100.0%; height: 100.0%;">46 - Qatar<br>Diameter: 2.3 um<br>Method: SEM</div>')[0];
-                popup_7e8bcb22c8c4466395bac25ea9c9cd5a.setContent(html_58eeaad03e3243debb5f012847d34906);
+                var html_e2636b14518847f99dc75b99c770da3f = $('<div id="html_e2636b14518847f99dc75b99c770da3f" style="width: 100.0%; height: 100.0%;">46 - Qatar<br>Diameter: 2.3 um<br>Method: SEM</div>')[0];
+                popup_0bf8cee17cce43589c09b7f390fa961f.setContent(html_e2636b14518847f99dc75b99c770da3f);
             
 
-            circle_a03ed3791c7d4f308778d848362fdf87.bindPopup(popup_7e8bcb22c8c4466395bac25ea9c9cd5a);
+            circle_56348f29b5e54037b719552394972b2e.bindPopup(popup_0bf8cee17cce43589c09b7f390fa961f);
 
             
         
     
 
-            var circle_c636e4a0ad9242f2988ffa7464c076b6 = L.circle(
+            var circle_bd8e40f7d53842608cdb9436d0c2d3b0 = L.circle(
                 [34.8640316,-116.888098],
                 {
   "bubblingMouseEvents": true, 
@@ -557,23 +591,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_f3c887967db64e4fa6b530af1cd6e442 = L.popup({maxWidth: '300'});
+            var popup_40973d2926e641319894c5cc9a0e1f05 = L.popup({maxWidth: '300'});
 
             
-                var html_eacdd4f464b649d1804b9dd2e6fd90ee = $('<div id="html_eacdd4f464b649d1804b9dd2e6fd90ee" style="width: 100.0%; height: 100.0%;">2 - Daggett, California, USA<br>Diameter: 3.0 um<br>Method: SEM</div>')[0];
-                popup_f3c887967db64e4fa6b530af1cd6e442.setContent(html_eacdd4f464b649d1804b9dd2e6fd90ee);
+                var html_3373f82ac91e41a79bfd64e68dbda1e4 = $('<div id="html_3373f82ac91e41a79bfd64e68dbda1e4" style="width: 100.0%; height: 100.0%;">2 - Daggett, California, USA<br>Diameter: 3.0 um<br>Method: SEM</div>')[0];
+                popup_40973d2926e641319894c5cc9a0e1f05.setContent(html_3373f82ac91e41a79bfd64e68dbda1e4);
             
 
-            circle_c636e4a0ad9242f2988ffa7464c076b6.bindPopup(popup_f3c887967db64e4fa6b530af1cd6e442);
+            circle_bd8e40f7d53842608cdb9436d0c2d3b0.bindPopup(popup_40973d2926e641319894c5cc9a0e1f05);
 
             
         
     
 
-            var circle_838984d3f4be45dca2118ccd017eb705 = L.circle(
+            var circle_7e5a833aa30a4b5b9d66add8513d05da = L.circle(
                 [-40.0,-20.0],
                 {
   "bubblingMouseEvents": true, 
@@ -591,23 +625,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_8ca6c35ea9a3477dbd603a57fe3968a4 = L.popup({maxWidth: '300'});
+            var popup_56e12558b4f34dc6bb9d4a13d2872024 = L.popup({maxWidth: '300'});
 
             
-                var html_138810991bf74a6c8f47f56ef01dbc9f = $('<div id="html_138810991bf74a6c8f47f56ef01dbc9f" style="width: 100.0%; height: 100.0%;">54 - Unknown Location<br>Diameter: 3.0 um<br>Method: No information given</div>')[0];
-                popup_8ca6c35ea9a3477dbd603a57fe3968a4.setContent(html_138810991bf74a6c8f47f56ef01dbc9f);
+                var html_fea712716d8a48e68c1c79feef59279f = $('<div id="html_fea712716d8a48e68c1c79feef59279f" style="width: 100.0%; height: 100.0%;">54 - Unknown Location<br>Diameter: 3.0 um<br>Method: No information given</div>')[0];
+                popup_56e12558b4f34dc6bb9d4a13d2872024.setContent(html_fea712716d8a48e68c1c79feef59279f);
             
 
-            circle_838984d3f4be45dca2118ccd017eb705.bindPopup(popup_8ca6c35ea9a3477dbd603a57fe3968a4);
+            circle_7e5a833aa30a4b5b9d66add8513d05da.bindPopup(popup_56e12558b4f34dc6bb9d4a13d2872024);
 
             
         
     
 
-            var circle_9fa9111b5be24d528ceb2074e4e21990 = L.circle(
+            var circle_2d2e2f405d6a4062ac7cbd112ffe2c11 = L.circle(
                 [35.5199402,-103.8700901],
                 {
   "bubblingMouseEvents": true, 
@@ -625,23 +659,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_93b3ff3766a741ddae5e1b8dd25db14f = L.popup({maxWidth: '300'});
+            var popup_ceef5275f9c742148a11b2b028fcc947 = L.popup({maxWidth: '300'});
 
             
-                var html_182812cd28c9409b9dfb36a01e81d2b8 = $('<div id="html_182812cd28c9409b9dfb36a01e81d2b8" style="width: 100.0%; height: 100.0%;">4 - New Mexico, USA<br>Diameter: 3.0 um<br>Method: SEM</div>')[0];
-                popup_93b3ff3766a741ddae5e1b8dd25db14f.setContent(html_182812cd28c9409b9dfb36a01e81d2b8);
+                var html_85b4600821104a42a809d3dcf6a2b5d3 = $('<div id="html_85b4600821104a42a809d3dcf6a2b5d3" style="width: 100.0%; height: 100.0%;">4 - New Mexico, USA<br>Diameter: 3.0 um<br>Method: SEM</div>')[0];
+                popup_ceef5275f9c742148a11b2b028fcc947.setContent(html_85b4600821104a42a809d3dcf6a2b5d3);
             
 
-            circle_9fa9111b5be24d528ceb2074e4e21990.bindPopup(popup_93b3ff3766a741ddae5e1b8dd25db14f);
+            circle_2d2e2f405d6a4062ac7cbd112ffe2c11.bindPopup(popup_ceef5275f9c742148a11b2b028fcc947);
 
             
         
     
 
-            var circle_4cb827ac09034b808c4dbd9b9d5ccd24 = L.circle(
+            var circle_1657a61a8c774d25a183d00646b4f60b = L.circle(
                 [-40.0,-13.0],
                 {
   "bubblingMouseEvents": true, 
@@ -659,23 +693,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_273382aabd954237a1c4b023bbe953dd = L.popup({maxWidth: '300'});
+            var popup_c4928107c3a040169baf8303041ac020 = L.popup({maxWidth: '300'});
 
             
-                var html_4e20278e323641c48ffb3a6c1b471702 = $('<div id="html_4e20278e323641c48ffb3a6c1b471702" style="width: 100.0%; height: 100.0%;">67 - Unknown Location<br>Diameter: 3.5 um<br>Method: SEM</div>')[0];
-                popup_273382aabd954237a1c4b023bbe953dd.setContent(html_4e20278e323641c48ffb3a6c1b471702);
+                var html_9c5df6410fc8498cb8cc490b841509fa = $('<div id="html_9c5df6410fc8498cb8cc490b841509fa" style="width: 100.0%; height: 100.0%;">67 - Unknown Location<br>Diameter: 3.5 um<br>Method: SEM</div>')[0];
+                popup_c4928107c3a040169baf8303041ac020.setContent(html_9c5df6410fc8498cb8cc490b841509fa);
             
 
-            circle_4cb827ac09034b808c4dbd9b9d5ccd24.bindPopup(popup_273382aabd954237a1c4b023bbe953dd);
+            circle_1657a61a8c774d25a183d00646b4f60b.bindPopup(popup_c4928107c3a040169baf8303041ac020);
 
             
         
     
 
-            var circle_8c16b51dd3d94a90b7cfd560fae449bc = L.circle(
+            var circle_8b52268698924aa1b35d9209971d21c1 = L.circle(
                 [31.2972247,-110.3308814],
                 {
   "bubblingMouseEvents": true, 
@@ -693,23 +727,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_16fad7c1b1714e198ee18eb954ce2153 = L.popup({maxWidth: '300'});
+            var popup_eb491b379d704943a928ed56e422aeea = L.popup({maxWidth: '300'});
 
             
-                var html_946659df08394058a47235e16dcec468 = $('<div id="html_946659df08394058a47235e16dcec468" style="width: 100.0%; height: 100.0%;">40 - Sonora, Mexico<br>Diameter: 5.0 um<br>Method: LS Particle Size Analyzer brand Coulter model Fraunhofer LS 100Q</div>')[0];
-                popup_16fad7c1b1714e198ee18eb954ce2153.setContent(html_946659df08394058a47235e16dcec468);
+                var html_a25fa6b746f7469cb899e949cb2615d3 = $('<div id="html_a25fa6b746f7469cb899e949cb2615d3" style="width: 100.0%; height: 100.0%;">40 - Sonora, Mexico<br>Diameter: 5.0 um<br>Method: LS Particle Size Analyzer brand Coulter model Fraunhofer LS 100Q</div>')[0];
+                popup_eb491b379d704943a928ed56e422aeea.setContent(html_a25fa6b746f7469cb899e949cb2615d3);
             
 
-            circle_8c16b51dd3d94a90b7cfd560fae449bc.bindPopup(popup_16fad7c1b1714e198ee18eb954ce2153);
+            circle_8b52268698924aa1b35d9209971d21c1.bindPopup(popup_eb491b379d704943a928ed56e422aeea);
 
             
         
     
 
-            var circle_ca0cac2a5cd949b0bc2669b9a638c8e5 = L.circle(
+            var circle_9c2d1611ff82487388724475324f6efa = L.circle(
                 [-0.789275,113.921327],
                 {
   "bubblingMouseEvents": true, 
@@ -727,23 +761,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_7941f42f19f84cde9aefc341d6dc1bb7 = L.popup({maxWidth: '300'});
+            var popup_b74391d8f6034d369c6b8958478ba054 = L.popup({maxWidth: '300'});
 
             
-                var html_5728ee63e7f34c00b7352a31c0237e07 = $('<div id="html_5728ee63e7f34c00b7352a31c0237e07" style="width: 100.0%; height: 100.0%;">41 - Indonesia<br>Diameter: 6.0 um<br>Method: SEM</div>')[0];
-                popup_7941f42f19f84cde9aefc341d6dc1bb7.setContent(html_5728ee63e7f34c00b7352a31c0237e07);
+                var html_bd4f65b3438349cc8e7ec4d4372269a9 = $('<div id="html_bd4f65b3438349cc8e7ec4d4372269a9" style="width: 100.0%; height: 100.0%;">41 - Indonesia<br>Diameter: 6.0 um<br>Method: SEM</div>')[0];
+                popup_b74391d8f6034d369c6b8958478ba054.setContent(html_bd4f65b3438349cc8e7ec4d4372269a9);
             
 
-            circle_ca0cac2a5cd949b0bc2669b9a638c8e5.bindPopup(popup_7941f42f19f84cde9aefc341d6dc1bb7);
+            circle_9c2d1611ff82487388724475324f6efa.bindPopup(popup_b74391d8f6034d369c6b8958478ba054);
 
             
         
     
 
-            var circle_f15792367cbb4a8db705d16b507876be = L.circle(
+            var circle_9b7eceb6d18e432b9627dbac86b4ad04 = L.circle(
                 [-25.274398,133.775136],
                 {
   "bubblingMouseEvents": true, 
@@ -761,23 +795,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_82c3a9d1529a4bf9b0ddcdfd0b77f488 = L.popup({maxWidth: '300'});
+            var popup_6dc4d62249cb44718dc8a5e343b4eaba = L.popup({maxWidth: '300'});
 
             
-                var html_de69bdff43124b9da8b1392e4ed21850 = $('<div id="html_de69bdff43124b9da8b1392e4ed21850" style="width: 100.0%; height: 100.0%;">38 - Australia<br>Diameter: 6.0 um<br>Method: SEM</div>')[0];
-                popup_82c3a9d1529a4bf9b0ddcdfd0b77f488.setContent(html_de69bdff43124b9da8b1392e4ed21850);
+                var html_720ab57c837a434b8773b5c1b2d6b627 = $('<div id="html_720ab57c837a434b8773b5c1b2d6b627" style="width: 100.0%; height: 100.0%;">38 - Australia<br>Diameter: 6.0 um<br>Method: SEM</div>')[0];
+                popup_6dc4d62249cb44718dc8a5e343b4eaba.setContent(html_720ab57c837a434b8773b5c1b2d6b627);
             
 
-            circle_f15792367cbb4a8db705d16b507876be.bindPopup(popup_82c3a9d1529a4bf9b0ddcdfd0b77f488);
+            circle_9b7eceb6d18e432b9627dbac86b4ad04.bindPopup(popup_6dc4d62249cb44718dc8a5e343b4eaba);
 
             
         
     
 
-            var circle_7fea7eb7bcfa4e73b40401c39554f58d = L.circle(
+            var circle_116f12a4af784620b9a2efff072a1b67 = L.circle(
                 [31.31166,47.481766],
                 {
   "bubblingMouseEvents": true, 
@@ -795,23 +829,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_3865d9a255384df9881103436edd0d82 = L.popup({maxWidth: '300'});
+            var popup_62450b4db6bb40e991844402660ba1c0 = L.popup({maxWidth: '300'});
 
             
-                var html_e8da1ca6c4c94929a0cf5cb48a8fe19f = $('<div id="html_e8da1ca6c4c94929a0cf5cb48a8fe19f" style="width: 100.0%; height: 100.0%;">52 - Kuwait<br>Diameter: 6.4 um<br>Method: No information given</div>')[0];
-                popup_3865d9a255384df9881103436edd0d82.setContent(html_e8da1ca6c4c94929a0cf5cb48a8fe19f);
+                var html_e5acef412fbc4a79a98267bdb42791c8 = $('<div id="html_e5acef412fbc4a79a98267bdb42791c8" style="width: 100.0%; height: 100.0%;">52 - Kuwait<br>Diameter: 6.4 um<br>Method: No information given</div>')[0];
+                popup_62450b4db6bb40e991844402660ba1c0.setContent(html_e5acef412fbc4a79a98267bdb42791c8);
             
 
-            circle_7fea7eb7bcfa4e73b40401c39554f58d.bindPopup(popup_3865d9a255384df9881103436edd0d82);
+            circle_116f12a4af784620b9a2efff072a1b67.bindPopup(popup_62450b4db6bb40e991844402660ba1c0);
 
             
         
     
 
-            var circle_d8c37926eb624c9caadf726db05e3fdc = L.circle(
+            var circle_8373d8094a4f4190b3c3718b89babb7e = L.circle(
                 [29.31166,47.481766],
                 {
   "bubblingMouseEvents": true, 
@@ -829,23 +863,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_ca30da8e3e264916a1d3e09523a1b1c3 = L.popup({maxWidth: '300'});
+            var popup_c106db54a80b4782be0d5d4c6c1fa80e = L.popup({maxWidth: '300'});
 
             
-                var html_164e0d77e21b4f13b47fcbaafe942c3f = $('<div id="html_164e0d77e21b4f13b47fcbaafe942c3f" style="width: 100.0%; height: 100.0%;">20 - Kuwait<br>Diameter: 6.4 um<br>Method: No information given</div>')[0];
-                popup_ca30da8e3e264916a1d3e09523a1b1c3.setContent(html_164e0d77e21b4f13b47fcbaafe942c3f);
+                var html_c011d1baa0834f4b9b67386ffb16b80c = $('<div id="html_c011d1baa0834f4b9b67386ffb16b80c" style="width: 100.0%; height: 100.0%;">20 - Kuwait<br>Diameter: 6.4 um<br>Method: No information given</div>')[0];
+                popup_c106db54a80b4782be0d5d4c6c1fa80e.setContent(html_c011d1baa0834f4b9b67386ffb16b80c);
             
 
-            circle_d8c37926eb624c9caadf726db05e3fdc.bindPopup(popup_ca30da8e3e264916a1d3e09523a1b1c3);
+            circle_8373d8094a4f4190b3c3718b89babb7e.bindPopup(popup_c106db54a80b4782be0d5d4c6c1fa80e);
 
             
         
     
 
-            var circle_54df06a2bc0842f995bc14a1918dd6de = L.circle(
+            var circle_3bd693945e374acb8775fe788110e471 = L.circle(
                 [27.2854473,51.5310398],
                 {
   "bubblingMouseEvents": true, 
@@ -863,23 +897,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_d27f67f502db4ac480beebdef6368b9c = L.popup({maxWidth: '300'});
+            var popup_8ac75e6b43804ea4bad8e028805d9bda = L.popup({maxWidth: '300'});
 
             
-                var html_2769fc2035d44514be28cc4bae5c4234 = $('<div id="html_2769fc2035d44514be28cc4bae5c4234" style="width: 100.0%; height: 100.0%;">47 - Doha, Qatar<br>Diameter: 8.0 um<br>Method: Measured by Morphologi G3</div>')[0];
-                popup_d27f67f502db4ac480beebdef6368b9c.setContent(html_2769fc2035d44514be28cc4bae5c4234);
+                var html_a516775b6d944a28a7a03cbd90b654fa = $('<div id="html_a516775b6d944a28a7a03cbd90b654fa" style="width: 100.0%; height: 100.0%;">47 - Doha, Qatar<br>Diameter: 8.0 um<br>Method: Measured by Morphologi G3</div>')[0];
+                popup_8ac75e6b43804ea4bad8e028805d9bda.setContent(html_a516775b6d944a28a7a03cbd90b654fa);
             
 
-            circle_54df06a2bc0842f995bc14a1918dd6de.bindPopup(popup_d27f67f502db4ac480beebdef6368b9c);
+            circle_3bd693945e374acb8775fe788110e471.bindPopup(popup_8ac75e6b43804ea4bad8e028805d9bda);
 
             
         
     
 
-            var circle_2b16a2f322b54dd7b4708b9a9f6fbeb0 = L.circle(
+            var circle_87954ca576cc454ea93d8fff6c877a77 = L.circle(
                 [16.8893586,42.5705674],
                 {
   "bubblingMouseEvents": true, 
@@ -897,23 +931,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_4e48591be933444cb5abf38f501dadac = L.popup({maxWidth: '300'});
+            var popup_82af2221253940d69bae87ade61e218d = L.popup({maxWidth: '300'});
 
             
-                var html_a157eac87cc04bbe96da07545349a08f = $('<div id="html_a157eac87cc04bbe96da07545349a08f" style="width: 100.0%; height: 100.0%;">17 - Jazan, Saudi Arabia<br>Diameter: 10.0 um<br>Method: Olympus CX21I microscope and the Image J analyzer so_ware</div>')[0];
-                popup_4e48591be933444cb5abf38f501dadac.setContent(html_a157eac87cc04bbe96da07545349a08f);
+                var html_7417342834a64ea985a8ffb988e65b7c = $('<div id="html_7417342834a64ea985a8ffb988e65b7c" style="width: 100.0%; height: 100.0%;">17 - Jazan, Saudi Arabia<br>Diameter: 10.0 um<br>Method: Olympus CX21I microscope and the Image J analyzer so_ware</div>')[0];
+                popup_82af2221253940d69bae87ade61e218d.setContent(html_7417342834a64ea985a8ffb988e65b7c);
             
 
-            circle_2b16a2f322b54dd7b4708b9a9f6fbeb0.bindPopup(popup_4e48591be933444cb5abf38f501dadac);
+            circle_87954ca576cc454ea93d8fff6c877a77.bindPopup(popup_82af2221253940d69bae87ade61e218d);
 
             
         
     
 
-            var circle_fe61df4125cb4c1cbfbd42270a3ba834 = L.circle(
+            var circle_a55913b16ac7424fb60df28229a9b2b6 = L.circle(
                 [59.9749998,11.0475038],
                 {
   "bubblingMouseEvents": true, 
@@ -931,23 +965,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_d250ae3c6c7b4653b194a2a41ce84866 = L.popup({maxWidth: '300'});
+            var popup_0507f91124244865b7d88acbd9689015 = L.popup({maxWidth: '300'});
 
             
-                var html_b8d97dd3fac941e993bde221b5d2ae7b = $('<div id="html_b8d97dd3fac941e993bde221b5d2ae7b" style="width: 100.0%; height: 100.0%;">60 - Kjeller, Norway<br>Diameter: 10.0 um<br>Method: SEM</div>')[0];
-                popup_d250ae3c6c7b4653b194a2a41ce84866.setContent(html_b8d97dd3fac941e993bde221b5d2ae7b);
+                var html_42fe2c76ffc84dacbeec2b34b511900b = $('<div id="html_42fe2c76ffc84dacbeec2b34b511900b" style="width: 100.0%; height: 100.0%;">60 - Kjeller, Norway<br>Diameter: 10.0 um<br>Method: SEM</div>')[0];
+                popup_0507f91124244865b7d88acbd9689015.setContent(html_42fe2c76ffc84dacbeec2b34b511900b);
             
 
-            circle_fe61df4125cb4c1cbfbd42270a3ba834.bindPopup(popup_d250ae3c6c7b4653b194a2a41ce84866);
+            circle_a55913b16ac7424fb60df28229a9b2b6.bindPopup(popup_0507f91124244865b7d88acbd9689015);
 
             
         
     
 
-            var circle_24af230e55bf4398b1b40739c36c0941 = L.circle(
+            var circle_48402a140d124eb689f3e90575275661 = L.circle(
                 [31.873611,36.793098],
                 {
   "bubblingMouseEvents": true, 
@@ -965,23 +999,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_14e1aed1f04c4ff4afcae3ca1892b3f5 = L.popup({maxWidth: '300'});
+            var popup_9f7405eba5d847fc95e9bdbfc915cd6a = L.popup({maxWidth: '300'});
 
             
-                var html_3676fe95a4984a349764a2d8f1574f8f = $('<div id="html_3676fe95a4984a349764a2d8f1574f8f" style="width: 100.0%; height: 100.0%;">68 - Sede Boqer, Israel<br>Diameter: 12.0 um<br>Method: No information given</div>')[0];
-                popup_14e1aed1f04c4ff4afcae3ca1892b3f5.setContent(html_3676fe95a4984a349764a2d8f1574f8f);
+                var html_6f1261c7f5bd49c2b33bb9e3f400c041 = $('<div id="html_6f1261c7f5bd49c2b33bb9e3f400c041" style="width: 100.0%; height: 100.0%;">68 - Sede Boqer, Israel<br>Diameter: 12.0 um<br>Method: No information given</div>')[0];
+                popup_9f7405eba5d847fc95e9bdbfc915cd6a.setContent(html_6f1261c7f5bd49c2b33bb9e3f400c041);
             
 
-            circle_24af230e55bf4398b1b40739c36c0941.bindPopup(popup_14e1aed1f04c4ff4afcae3ca1892b3f5);
+            circle_48402a140d124eb689f3e90575275661.bindPopup(popup_9f7405eba5d847fc95e9bdbfc915cd6a);
 
             
         
     
 
-            var circle_65c25b73c9b94a33a6eb3f73feffffd6 = L.circle(
+            var circle_dc670cbe9afa47b2ad0f84bddcccb4a3 = L.circle(
                 [-23.274398,133.775136],
                 {
   "bubblingMouseEvents": true, 
@@ -999,23 +1033,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_02ce25a7c6fb4799bd9bdb2c82842717 = L.popup({maxWidth: '300'});
+            var popup_a2460a91634b4dc39ec20952daa04c31 = L.popup({maxWidth: '300'});
 
             
-                var html_74d9e930f0c24e0fbef8d6cc9ea5cbdc = $('<div id="html_74d9e930f0c24e0fbef8d6cc9ea5cbdc" style="width: 100.0%; height: 100.0%;">61 - Australia<br>Diameter: 15.0 um<br>Method: SEM / Image J</div>')[0];
-                popup_02ce25a7c6fb4799bd9bdb2c82842717.setContent(html_74d9e930f0c24e0fbef8d6cc9ea5cbdc);
+                var html_2409e71cccbb4f3b9f92c4b0289236d9 = $('<div id="html_2409e71cccbb4f3b9f92c4b0289236d9" style="width: 100.0%; height: 100.0%;">61 - Australia<br>Diameter: 15.0 um<br>Method: SEM / Image J</div>')[0];
+                popup_a2460a91634b4dc39ec20952daa04c31.setContent(html_2409e71cccbb4f3b9f92c4b0289236d9);
             
 
-            circle_65c25b73c9b94a33a6eb3f73feffffd6.bindPopup(popup_02ce25a7c6fb4799bd9bdb2c82842717);
+            circle_dc670cbe9afa47b2ad0f84bddcccb4a3.bindPopup(popup_a2460a91634b4dc39ec20952daa04c31);
 
             
         
     
 
-            var circle_16ee3400801a4ab3b1178b644bc85771 = L.circle(
+            var circle_da95152d9d6340b7958f131bcd6a13c5 = L.circle(
                 [-20.9175738,142.7027956],
                 {
   "bubblingMouseEvents": true, 
@@ -1033,23 +1067,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_5a86dc34846342acb3f687a8b83ceaf9 = L.popup({maxWidth: '300'});
+            var popup_b9e11b0ec7134610940735b9fb79b9c4 = L.popup({maxWidth: '300'});
 
             
-                var html_adf2f5989ae04dc0ae32fd01f35f38f4 = $('<div id="html_adf2f5989ae04dc0ae32fd01f35f38f4" style="width: 100.0%; height: 100.0%;">58 - Queensland, Australia<br>Diameter: 15.0 um<br>Method: SEM</div>')[0];
-                popup_5a86dc34846342acb3f687a8b83ceaf9.setContent(html_adf2f5989ae04dc0ae32fd01f35f38f4);
+                var html_9b21443e413a476e92d774fa5865237c = $('<div id="html_9b21443e413a476e92d774fa5865237c" style="width: 100.0%; height: 100.0%;">58 - Queensland, Australia<br>Diameter: 15.0 um<br>Method: SEM</div>')[0];
+                popup_b9e11b0ec7134610940735b9fb79b9c4.setContent(html_9b21443e413a476e92d774fa5865237c);
             
 
-            circle_16ee3400801a4ab3b1178b644bc85771.bindPopup(popup_5a86dc34846342acb3f687a8b83ceaf9);
+            circle_da95152d9d6340b7958f131bcd6a13c5.bindPopup(popup_b9e11b0ec7134610940735b9fb79b9c4);
 
             
         
     
 
-            var circle_a820a5cba1f74a239fa0c0a6c0624653 = L.circle(
+            var circle_955a62b7d5624a77bc862280ca862283 = L.circle(
                 [20.593684,78.96288],
                 {
   "bubblingMouseEvents": true, 
@@ -1067,23 +1101,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_c1b265f897824fb5a04fc51431ef500b = L.popup({maxWidth: '300'});
+            var popup_d612c86f2c0c4509b32d2bdecf4c08a1 = L.popup({maxWidth: '300'});
 
             
-                var html_d328a18cbecf41229a9307f09acd6096 = $('<div id="html_d328a18cbecf41229a9307f09acd6096" style="width: 100.0%; height: 100.0%;">33 - India<br>Diameter: 15.0 um<br>Method: Laser Diffraction Particle Size Analyzer (Cilas Model 1190)</div>')[0];
-                popup_c1b265f897824fb5a04fc51431ef500b.setContent(html_d328a18cbecf41229a9307f09acd6096);
+                var html_b1d656868402449394aa0a7b3c325922 = $('<div id="html_b1d656868402449394aa0a7b3c325922" style="width: 100.0%; height: 100.0%;">33 - India<br>Diameter: 15.0 um<br>Method: Laser Diffraction Particle Size Analyzer (Cilas Model 1190)</div>')[0];
+                popup_d612c86f2c0c4509b32d2bdecf4c08a1.setContent(html_b1d656868402449394aa0a7b3c325922);
             
 
-            circle_a820a5cba1f74a239fa0c0a6c0624653.bindPopup(popup_c1b265f897824fb5a04fc51431ef500b);
+            circle_955a62b7d5624a77bc862280ca862283.bindPopup(popup_d612c86f2c0c4509b32d2bdecf4c08a1);
 
             
         
     
 
-            var circle_3e0f0636e15e42c3ac42eba94b72833b = L.circle(
+            var circle_db667e17c83e4d2da6eb4b28c6123fab = L.circle(
                 [26.820553,30.802498],
                 {
   "bubblingMouseEvents": true, 
@@ -1101,23 +1135,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_a6f877765757465ab061c5afb403d585 = L.popup({maxWidth: '300'});
+            var popup_bec25f5eed7242f78afde6b4388ba581 = L.popup({maxWidth: '300'});
 
             
-                var html_6731acf82a354c93ac5531392153d4ab = $('<div id="html_6731acf82a354c93ac5531392153d4ab" style="width: 100.0%; height: 100.0%;">45 - Egypt<br>Diameter: 16.5 um<br>Method: SEM</div>')[0];
-                popup_a6f877765757465ab061c5afb403d585.setContent(html_6731acf82a354c93ac5531392153d4ab);
+                var html_8865d2b372134ad89917c5b65a2d3bc8 = $('<div id="html_8865d2b372134ad89917c5b65a2d3bc8" style="width: 100.0%; height: 100.0%;">45 - Egypt<br>Diameter: 16.5 um<br>Method: SEM</div>')[0];
+                popup_bec25f5eed7242f78afde6b4388ba581.setContent(html_8865d2b372134ad89917c5b65a2d3bc8);
             
 
-            circle_3e0f0636e15e42c3ac42eba94b72833b.bindPopup(popup_a6f877765757465ab061c5afb403d585);
+            circle_db667e17c83e4d2da6eb4b28c6123fab.bindPopup(popup_bec25f5eed7242f78afde6b4388ba581);
 
             
         
     
 
-            var circle_62116a84ba4840018d6daf61f4f56d8a = L.circle(
+            var circle_7a98a551ea4b42f8a52de4e934e73094 = L.circle(
                 [19.4326077,-99.133208],
                 {
   "bubblingMouseEvents": true, 
@@ -1135,23 +1169,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_07aa503870fc404aa9e354a951634d64 = L.popup({maxWidth: '300'});
+            var popup_03a9eadc413a4aa39010bffd31624ef5 = L.popup({maxWidth: '300'});
 
             
-                var html_1239972a100b473e8610b17f06523dc9 = $('<div id="html_1239972a100b473e8610b17f06523dc9" style="width: 100.0%; height: 100.0%;">14 - Mexico City<br>Diameter: 17.02 um<br>Method: Beckmann Laser Diffractometer</div>')[0];
-                popup_07aa503870fc404aa9e354a951634d64.setContent(html_1239972a100b473e8610b17f06523dc9);
+                var html_4de9fc181a78466dacf06204c9f87b5b = $('<div id="html_4de9fc181a78466dacf06204c9f87b5b" style="width: 100.0%; height: 100.0%;">14 - Mexico City<br>Diameter: 17.02 um<br>Method: Beckmann Laser Diffractometer</div>')[0];
+                popup_03a9eadc413a4aa39010bffd31624ef5.setContent(html_4de9fc181a78466dacf06204c9f87b5b);
             
 
-            circle_62116a84ba4840018d6daf61f4f56d8a.bindPopup(popup_07aa503870fc404aa9e354a951634d64);
+            circle_7a98a551ea4b42f8a52de4e934e73094.bindPopup(popup_03a9eadc413a4aa39010bffd31624ef5);
 
             
         
     
 
-            var circle_c8c864d686b145eea07401c073396d7e = L.circle(
+            var circle_7f2b723d614341f590eeb3b70b8a751f = L.circle(
                 [28.033886,1.659626],
                 {
   "bubblingMouseEvents": true, 
@@ -1169,23 +1203,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_d1356ca8817f4c1c9ee18363801629c1 = L.popup({maxWidth: '300'});
+            var popup_4fb0ab6b737544bda422cc32e1639890 = L.popup({maxWidth: '300'});
 
             
-                var html_8b563d7a42a94e728436e0fc1f5c2c63 = $('<div id="html_8b563d7a42a94e728436e0fc1f5c2c63" style="width: 100.0%; height: 100.0%;">12 - Algeria<br>Diameter: 17.5 um<br>Method: No information given</div>')[0];
-                popup_d1356ca8817f4c1c9ee18363801629c1.setContent(html_8b563d7a42a94e728436e0fc1f5c2c63);
+                var html_709597e0ab384365a52a23c1b693ab81 = $('<div id="html_709597e0ab384365a52a23c1b693ab81" style="width: 100.0%; height: 100.0%;">12 - Algeria<br>Diameter: 17.5 um<br>Method: No information given</div>')[0];
+                popup_4fb0ab6b737544bda422cc32e1639890.setContent(html_709597e0ab384365a52a23c1b693ab81);
             
 
-            circle_c8c864d686b145eea07401c073396d7e.bindPopup(popup_d1356ca8817f4c1c9ee18363801629c1);
+            circle_7f2b723d614341f590eeb3b70b8a751f.bindPopup(popup_4fb0ab6b737544bda422cc32e1639890);
 
             
         
     
 
-            var circle_4c4a8750cce547719fab446b1394d095 = L.circle(
+            var circle_9045b65e19cc4525ba5574fa6949bd4f = L.circle(
                 [32.873611,34.793098],
                 {
   "bubblingMouseEvents": true, 
@@ -1203,23 +1237,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_ee08177059834b5b816e54946c86bafc = L.popup({maxWidth: '300'});
+            var popup_76d78c92050444bdbc24695303e1ca7d = L.popup({maxWidth: '300'});
 
             
-                var html_2a6fa36879c14728a56c9ecf7ce299ba = $('<div id="html_2a6fa36879c14728a56c9ecf7ce299ba" style="width: 100.0%; height: 100.0%;">21 - Sede Boqer, Israel<br>Diameter: 17.5 um<br>Method: MonoZoom- Video Microscope System</div>')[0];
-                popup_ee08177059834b5b816e54946c86bafc.setContent(html_2a6fa36879c14728a56c9ecf7ce299ba);
+                var html_396e6941bb8e4260988fcc212f6703fc = $('<div id="html_396e6941bb8e4260988fcc212f6703fc" style="width: 100.0%; height: 100.0%;">21 - Sede Boqer, Israel<br>Diameter: 17.5 um<br>Method: MonoZoom- Video Microscope System</div>')[0];
+                popup_76d78c92050444bdbc24695303e1ca7d.setContent(html_396e6941bb8e4260988fcc212f6703fc);
             
 
-            circle_4c4a8750cce547719fab446b1394d095.bindPopup(popup_ee08177059834b5b816e54946c86bafc);
+            circle_9045b65e19cc4525ba5574fa6949bd4f.bindPopup(popup_76d78c92050444bdbc24695303e1ca7d);
 
             
         
     
 
-            var circle_02435f42d91949f687a60c4b187595d7 = L.circle(
+            var circle_f8e3dd202e784715a3275305a4813086 = L.circle(
                 [27.354826,51.183884],
                 {
   "bubblingMouseEvents": true, 
@@ -1237,23 +1271,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_d68dbef82b304f8994421f0279276c82 = L.popup({maxWidth: '300'});
+            var popup_d6a6ebb6094d48f1963f8768df124395 = L.popup({maxWidth: '300'});
 
             
-                var html_ab200c37a26743c59712db98c40ce95d = $('<div id="html_ab200c37a26743c59712db98c40ce95d" style="width: 100.0%; height: 100.0%;">25 - Qatar<br>Diameter: 18.0 um<br>Method: LS13-321MW laser diffraction particle size analyzer - Beckman Coulter Inc</div>')[0];
-                popup_d68dbef82b304f8994421f0279276c82.setContent(html_ab200c37a26743c59712db98c40ce95d);
+                var html_2d568ef3a77c4da9b1bd89aa38a71b53 = $('<div id="html_2d568ef3a77c4da9b1bd89aa38a71b53" style="width: 100.0%; height: 100.0%;">25 - Qatar<br>Diameter: 18.0 um<br>Method: LS13-321MW laser diffraction particle size analyzer - Beckman Coulter Inc</div>')[0];
+                popup_d6a6ebb6094d48f1963f8768df124395.setContent(html_2d568ef3a77c4da9b1bd89aa38a71b53);
             
 
-            circle_02435f42d91949f687a60c4b187595d7.bindPopup(popup_d68dbef82b304f8994421f0279276c82);
+            circle_f8e3dd202e784715a3275305a4813086.bindPopup(popup_d6a6ebb6094d48f1963f8768df124395);
 
             
         
     
 
-            var circle_b2aeeb56d2f54e99998f49e2a0405348 = L.circle(
+            var circle_7138c16b3501428ba1453c93b58a2ece = L.circle(
                 [51.919438,19.145136],
                 {
   "bubblingMouseEvents": true, 
@@ -1271,23 +1305,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_6736102067f143a0897a480b8e4c89a8 = L.popup({maxWidth: '300'});
+            var popup_174f6acb63ad414db71020a7133d2097 = L.popup({maxWidth: '300'});
 
             
-                var html_fe56b7747a4b413b9d77ca606422caf4 = $('<div id="html_fe56b7747a4b413b9d77ca606422caf4" style="width: 100.0%; height: 100.0%;">42 - Poland<br>Diameter: 20.0 um<br>Method: Laser Particle Analyzer</div>')[0];
-                popup_6736102067f143a0897a480b8e4c89a8.setContent(html_fe56b7747a4b413b9d77ca606422caf4);
+                var html_beb482fa1f2944e2b300395c34d6f188 = $('<div id="html_beb482fa1f2944e2b300395c34d6f188" style="width: 100.0%; height: 100.0%;">42 - Poland<br>Diameter: 20.0 um<br>Method: Laser Particle Analyzer</div>')[0];
+                popup_174f6acb63ad414db71020a7133d2097.setContent(html_beb482fa1f2944e2b300395c34d6f188);
             
 
-            circle_b2aeeb56d2f54e99998f49e2a0405348.bindPopup(popup_6736102067f143a0897a480b8e4c89a8);
+            circle_7138c16b3501428ba1453c93b58a2ece.bindPopup(popup_174f6acb63ad414db71020a7133d2097);
 
             
         
     
 
-            var circle_0fbc8847008b4dec83d1e89dff99af21 = L.circle(
+            var circle_6fd169c1bc634ec9a0eb8cea89460932 = L.circle(
                 [30.873611,34.793098],
                 {
   "bubblingMouseEvents": true, 
@@ -1305,23 +1339,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_bc416282a71d469cba51f91bb4c0716c = L.popup({maxWidth: '300'});
+            var popup_c119510f337840e1b142a12b4fc37d89 = L.popup({maxWidth: '300'});
 
             
-                var html_9682d9a45d694acd9c299bf9bc3540f4 = $('<div id="html_9682d9a45d694acd9c299bf9bc3540f4" style="width: 100.0%; height: 100.0%;">5 - Sede Boqer, Israel<br>Diameter: 20.0 um<br>Method: No information given</div>')[0];
-                popup_bc416282a71d469cba51f91bb4c0716c.setContent(html_9682d9a45d694acd9c299bf9bc3540f4);
+                var html_c0c4e27030b5429c8afdde8b217f84fb = $('<div id="html_c0c4e27030b5429c8afdde8b217f84fb" style="width: 100.0%; height: 100.0%;">5 - Sede Boqer, Israel<br>Diameter: 20.0 um<br>Method: No information given</div>')[0];
+                popup_c119510f337840e1b142a12b4fc37d89.setContent(html_c0c4e27030b5429c8afdde8b217f84fb);
             
 
-            circle_0fbc8847008b4dec83d1e89dff99af21.bindPopup(popup_bc416282a71d469cba51f91bb4c0716c);
+            circle_6fd169c1bc634ec9a0eb8cea89460932.bindPopup(popup_c119510f337840e1b142a12b4fc37d89);
 
             
         
     
 
-            var circle_c7e673a2f69e496fa0cd0ee2bc21ea82 = L.circle(
+            var circle_ff7b071bdccf4db190222ac64e3385d6 = L.circle(
                 [38.331959,-8.0018669],
                 {
   "bubblingMouseEvents": true, 
@@ -1339,23 +1373,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_01a29b8f1eee4f6aa6a62438db65adb1 = L.popup({maxWidth: '300'});
+            var popup_a31b894a222e4898888aec34e7a971a2 = L.popup({maxWidth: '300'});
 
             
-                var html_0e2461061233414b99c0fbb6a07438dd = $('<div id="html_0e2461061233414b99c0fbb6a07438dd" style="width: 100.0%; height: 100.0%;">66 - Alentajo, Portugal<br>Diameter: 20.0 um<br>Method: SEM / Image J</div>')[0];
-                popup_01a29b8f1eee4f6aa6a62438db65adb1.setContent(html_0e2461061233414b99c0fbb6a07438dd);
+                var html_795fe79acc2b437cab6e835b0097320b = $('<div id="html_795fe79acc2b437cab6e835b0097320b" style="width: 100.0%; height: 100.0%;">66 - Alentajo, Portugal<br>Diameter: 20.0 um<br>Method: SEM / Image J</div>')[0];
+                popup_a31b894a222e4898888aec34e7a971a2.setContent(html_795fe79acc2b437cab6e835b0097320b);
             
 
-            circle_c7e673a2f69e496fa0cd0ee2bc21ea82.bindPopup(popup_01a29b8f1eee4f6aa6a62438db65adb1);
+            circle_ff7b071bdccf4db190222ac64e3385d6.bindPopup(popup_a31b894a222e4898888aec34e7a971a2);
 
             
         
     
 
-            var circle_5627a5b5a0d74fab9b5554cc187a807d = L.circle(
+            var circle_daa83efe90cd4bb19a561768aa8d11f9 = L.circle(
                 [26.2854473,53.5310398],
                 {
   "bubblingMouseEvents": true, 
@@ -1373,23 +1407,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_0b245b94c3654f76bcc106ce0b7ee9e3 = L.popup({maxWidth: '300'});
+            var popup_04cd4be7517e47a0874ddda8887b1b3a = L.popup({maxWidth: '300'});
 
             
-                var html_4c02958ae46a46f7b59e30a1e3bb49a4 = $('<div id="html_4c02958ae46a46f7b59e30a1e3bb49a4" style="width: 100.0%; height: 100.0%;">63 - Doha, Qatar<br>Diameter: 20.0 um<br>Method: Light microscopy</div>')[0];
-                popup_0b245b94c3654f76bcc106ce0b7ee9e3.setContent(html_4c02958ae46a46f7b59e30a1e3bb49a4);
+                var html_72ecfe602d254d83adf94c77586960f8 = $('<div id="html_72ecfe602d254d83adf94c77586960f8" style="width: 100.0%; height: 100.0%;">63 - Doha, Qatar<br>Diameter: 20.0 um<br>Method: Light microscopy</div>')[0];
+                popup_04cd4be7517e47a0874ddda8887b1b3a.setContent(html_72ecfe602d254d83adf94c77586960f8);
             
 
-            circle_5627a5b5a0d74fab9b5554cc187a807d.bindPopup(popup_0b245b94c3654f76bcc106ce0b7ee9e3);
+            circle_daa83efe90cd4bb19a561768aa8d11f9.bindPopup(popup_04cd4be7517e47a0874ddda8887b1b3a);
 
             
         
     
 
-            var circle_e6220442553c435885013d1e075f6895 = L.circle(
+            var circle_f5af1b0856ea41869f82e43ec2824667 = L.circle(
                 [35.3128057,44.3614875],
                 {
   "bubblingMouseEvents": true, 
@@ -1407,23 +1441,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_f5365dc2335142b3b6561a2f2c9a01ab = L.popup({maxWidth: '300'});
+            var popup_8a215e596e734c65b5df6d1481f7b8ea = L.popup({maxWidth: '300'});
 
             
-                var html_342e64703d2a4c00902f38cae55296da = $('<div id="html_342e64703d2a4c00902f38cae55296da" style="width: 100.0%; height: 100.0%;">23 - Baghdad, Iraq<br>Diameter: 25.178 um<br>Method: SALD-2101 particle size measurement device</div>')[0];
-                popup_f5365dc2335142b3b6561a2f2c9a01ab.setContent(html_342e64703d2a4c00902f38cae55296da);
+                var html_ae6dcf18bf65401da1e0792b4699e200 = $('<div id="html_ae6dcf18bf65401da1e0792b4699e200" style="width: 100.0%; height: 100.0%;">23 - Baghdad, Iraq<br>Diameter: 25.178 um<br>Method: SALD-2101 particle size measurement device</div>')[0];
+                popup_8a215e596e734c65b5df6d1481f7b8ea.setContent(html_ae6dcf18bf65401da1e0792b4699e200);
             
 
-            circle_e6220442553c435885013d1e075f6895.bindPopup(popup_f5365dc2335142b3b6561a2f2c9a01ab);
+            circle_f5af1b0856ea41869f82e43ec2824667.bindPopup(popup_8a215e596e734c65b5df6d1481f7b8ea);
 
             
         
     
 
-            var circle_1a92ebc7939c4d02acace1c1d0529e5b = L.circle(
+            var circle_9ad345229ac046939fb39a77ddf822b8 = L.circle(
                 [17.570692,-3.996166],
                 {
   "bubblingMouseEvents": true, 
@@ -1441,23 +1475,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_1603bd66fae8468a93b3e408d816b3d9 = L.popup({maxWidth: '300'});
+            var popup_b16c6007b2dc47989a73e1a7e55fba71 = L.popup({maxWidth: '300'});
 
             
-                var html_42a66160f70b4c6891de9c7722a4b4aa = $('<div id="html_42a66160f70b4c6891de9c7722a4b4aa" style="width: 100.0%; height: 100.0%;">11 - Mali, West Africa<br>Diameter: 30.0 um<br>Method: No information given</div>')[0];
-                popup_1603bd66fae8468a93b3e408d816b3d9.setContent(html_42a66160f70b4c6891de9c7722a4b4aa);
+                var html_39f1e3dd70d44adf9111873f4c5c6cfd = $('<div id="html_39f1e3dd70d44adf9111873f4c5c6cfd" style="width: 100.0%; height: 100.0%;">11 - Mali, West Africa<br>Diameter: 30.0 um<br>Method: No information given</div>')[0];
+                popup_b16c6007b2dc47989a73e1a7e55fba71.setContent(html_39f1e3dd70d44adf9111873f4c5c6cfd);
             
 
-            circle_1a92ebc7939c4d02acace1c1d0529e5b.bindPopup(popup_1603bd66fae8468a93b3e408d816b3d9);
+            circle_9ad345229ac046939fb39a77ddf822b8.bindPopup(popup_b16c6007b2dc47989a73e1a7e55fba71);
 
             
         
     
 
-            var circle_52eb4e5650404cf9b5ad22cf3f09585a = L.circle(
+            var circle_7ded5d59b0d9447baad96a44db309fab = L.circle(
                 [34.341574,108.93977],
                 {
   "bubblingMouseEvents": true, 
@@ -1475,23 +1509,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_74da861520f74a87b99e6ceeb252d61a = L.popup({maxWidth: '300'});
+            var popup_1c5e6eed8077491d88d60fbd84b8fde9 = L.popup({maxWidth: '300'});
 
             
-                var html_a0ab8ef262cd4fa19a07f4075ce1d86a = $('<div id="html_a0ab8ef262cd4fa19a07f4075ce1d86a" style="width: 100.0%; height: 100.0%;">15 - Xian, China<br>Diameter: 30.1345 um<br>Method: Winner2000ZDE laser particle size analyzer</div>')[0];
-                popup_74da861520f74a87b99e6ceeb252d61a.setContent(html_a0ab8ef262cd4fa19a07f4075ce1d86a);
+                var html_2d289ba602c9497395a613edb1345b4b = $('<div id="html_2d289ba602c9497395a613edb1345b4b" style="width: 100.0%; height: 100.0%;">15 - Xian, China<br>Diameter: 30.1345 um<br>Method: Winner2000ZDE laser particle size analyzer</div>')[0];
+                popup_1c5e6eed8077491d88d60fbd84b8fde9.setContent(html_2d289ba602c9497395a613edb1345b4b);
             
 
-            circle_52eb4e5650404cf9b5ad22cf3f09585a.bindPopup(popup_74da861520f74a87b99e6ceeb252d61a);
+            circle_7ded5d59b0d9447baad96a44db309fab.bindPopup(popup_1c5e6eed8077491d88d60fbd84b8fde9);
 
             
         
     
 
-            var circle_0c314d926c9a4f7696e78fe35f102cd7 = L.circle(
+            var circle_ee553fd563b4402bb0d87779d1725650 = L.circle(
                 [25.2854473,51.5310398],
                 {
   "bubblingMouseEvents": true, 
@@ -1509,23 +1543,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_17b0d1bcaa0f4f069983e763ce473ddf = L.popup({maxWidth: '300'});
+            var popup_4691997c699b4869b4ec2ee8d6420439 = L.popup({maxWidth: '300'});
 
             
-                var html_5d1c1159faa844d8bf4f01d03f023ea1 = $('<div id="html_5d1c1159faa844d8bf4f01d03f023ea1" style="width: 100.0%; height: 100.0%;">13 - Doha, Qatar<br>Diameter: 32.0 um<br>Method: Laser diffraction particle size analyzer</div>')[0];
-                popup_17b0d1bcaa0f4f069983e763ce473ddf.setContent(html_5d1c1159faa844d8bf4f01d03f023ea1);
+                var html_00d3d2edcbdf4e51a9dd38a0ec65ef05 = $('<div id="html_00d3d2edcbdf4e51a9dd38a0ec65ef05" style="width: 100.0%; height: 100.0%;">13 - Doha, Qatar<br>Diameter: 32.0 um<br>Method: Laser diffraction particle size analyzer</div>')[0];
+                popup_4691997c699b4869b4ec2ee8d6420439.setContent(html_00d3d2edcbdf4e51a9dd38a0ec65ef05);
             
 
-            circle_0c314d926c9a4f7696e78fe35f102cd7.bindPopup(popup_17b0d1bcaa0f4f069983e763ce473ddf);
+            circle_ee553fd563b4402bb0d87779d1725650.bindPopup(popup_4691997c699b4869b4ec2ee8d6420439);
 
             
         
     
 
-            var circle_33523076d5704a4084fd26ac9e4b3718 = L.circle(
+            var circle_d244031ef9c84864b6336b95eda373c2 = L.circle(
                 [30.7140861,34.8757476],
                 {
   "bubblingMouseEvents": true, 
@@ -1543,23 +1577,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_365f32e672ea414abc3d5f5e5b1860b1 = L.popup({maxWidth: '300'});
+            var popup_1e28de8deb3440cf877b22d54b03fd4e = L.popup({maxWidth: '300'});
 
             
-                var html_e38dad5f4b7047ea9004da428993afcf = $('<div id="html_e38dad5f4b7047ea9004da428993afcf" style="width: 100.0%; height: 100.0%;">7 - Negev Desert, Israel<br>Diameter: 32.5 um<br>Method: No information given</div>')[0];
-                popup_365f32e672ea414abc3d5f5e5b1860b1.setContent(html_e38dad5f4b7047ea9004da428993afcf);
+                var html_899ff73575104152a9b85425d5919db0 = $('<div id="html_899ff73575104152a9b85425d5919db0" style="width: 100.0%; height: 100.0%;">7 - Negev Desert, Israel<br>Diameter: 32.5 um<br>Method: No information given</div>')[0];
+                popup_1e28de8deb3440cf877b22d54b03fd4e.setContent(html_899ff73575104152a9b85425d5919db0);
             
 
-            circle_33523076d5704a4084fd26ac9e4b3718.bindPopup(popup_365f32e672ea414abc3d5f5e5b1860b1);
+            circle_d244031ef9c84864b6336b95eda373c2.bindPopup(popup_1e28de8deb3440cf877b22d54b03fd4e);
 
             
         
     
 
-            var circle_8e57de6b2c0f4d1eb811f699462da889 = L.circle(
+            var circle_6f0520afafb84d68bef72f9ede6975d5 = L.circle(
                 [23.4735329,55.975413],
                 {
   "bubblingMouseEvents": true, 
@@ -1577,23 +1611,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_76ac8430d8324385bfb359fc38eb6436 = L.popup({maxWidth: '300'});
+            var popup_3563eac28d0c41099d497a7bbaa97e12 = L.popup({maxWidth: '300'});
 
             
-                var html_5079e6c00d2c402eb03b4b5371253403 = $('<div id="html_5079e6c00d2c402eb03b4b5371253403" style="width: 100.0%; height: 100.0%;">27 - Oman<br>Diameter: 32.5 um<br>Method: Sieve</div>')[0];
-                popup_76ac8430d8324385bfb359fc38eb6436.setContent(html_5079e6c00d2c402eb03b4b5371253403);
+                var html_322e73f76f6e499b9a465a6b7cad11d7 = $('<div id="html_322e73f76f6e499b9a465a6b7cad11d7" style="width: 100.0%; height: 100.0%;">27 - Oman<br>Diameter: 32.5 um<br>Method: Sieve</div>')[0];
+                popup_3563eac28d0c41099d497a7bbaa97e12.setContent(html_322e73f76f6e499b9a465a6b7cad11d7);
             
 
-            circle_8e57de6b2c0f4d1eb811f699462da889.bindPopup(popup_76ac8430d8324385bfb359fc38eb6436);
+            circle_6f0520afafb84d68bef72f9ede6975d5.bindPopup(popup_3563eac28d0c41099d497a7bbaa97e12);
 
             
         
     
 
-            var circle_72d5b5339024430bbf0489a5d73123bf = L.circle(
+            var circle_10ee6168e7c44cb9b35920044bd9622d = L.circle(
                 [22.4735329,57.975413],
                 {
   "bubblingMouseEvents": true, 
@@ -1611,23 +1645,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_ff7f76b4b322484aae1822b5b5889262 = L.popup({maxWidth: '300'});
+            var popup_e7a12c755387425ba3de4d263fafeb6f = L.popup({maxWidth: '300'});
 
             
-                var html_49baa94bc427470f8430850d3170c570 = $('<div id="html_49baa94bc427470f8430850d3170c570" style="width: 100.0%; height: 100.0%;">55 - Oman<br>Diameter: 32.5 um<br>Method: No information given</div>')[0];
-                popup_ff7f76b4b322484aae1822b5b5889262.setContent(html_49baa94bc427470f8430850d3170c570);
+                var html_6547a27690144e5caea688f25a4d4fd1 = $('<div id="html_6547a27690144e5caea688f25a4d4fd1" style="width: 100.0%; height: 100.0%;">55 - Oman<br>Diameter: 32.5 um<br>Method: No information given</div>')[0];
+                popup_e7a12c755387425ba3de4d263fafeb6f.setContent(html_6547a27690144e5caea688f25a4d4fd1);
             
 
-            circle_72d5b5339024430bbf0489a5d73123bf.bindPopup(popup_ff7f76b4b322484aae1822b5b5889262);
+            circle_10ee6168e7c44cb9b35920044bd9622d.bindPopup(popup_e7a12c755387425ba3de4d263fafeb6f);
 
             
         
     
 
-            var circle_e1186512681c4c91b5b4ef40d613b0ef = L.circle(
+            var circle_360779b8f9274ff5bfc22d9c2e613b67 = L.circle(
                 [-18.512178,-44.5550308],
                 {
   "bubblingMouseEvents": true, 
@@ -1645,23 +1679,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_c395fad06eb24dc2b32e5e998c08f0ee = L.popup({maxWidth: '300'});
+            var popup_d6c4114a0ae64612b95b04ffb56dfad0 = L.popup({maxWidth: '300'});
 
             
-                var html_3a4ec80abc454370b6e1387e9f5ff289 = $('<div id="html_3a4ec80abc454370b6e1387e9f5ff289" style="width: 100.0%; height: 100.0%;">62 - Minas Gerais, Brazil<br>Diameter: 35.3 um<br>Method: SEM / EDS used for elements</div>')[0];
-                popup_c395fad06eb24dc2b32e5e998c08f0ee.setContent(html_3a4ec80abc454370b6e1387e9f5ff289);
+                var html_7a707d8b0f4f4bf9b1ce1e4767fd382a = $('<div id="html_7a707d8b0f4f4bf9b1ce1e4767fd382a" style="width: 100.0%; height: 100.0%;">62 - Minas Gerais, Brazil<br>Diameter: 35.3 um<br>Method: SEM / EDS used for elements</div>')[0];
+                popup_d6c4114a0ae64612b95b04ffb56dfad0.setContent(html_7a707d8b0f4f4bf9b1ce1e4767fd382a);
             
 
-            circle_e1186512681c4c91b5b4ef40d613b0ef.bindPopup(popup_c395fad06eb24dc2b32e5e998c08f0ee);
+            circle_360779b8f9274ff5bfc22d9c2e613b67.bindPopup(popup_d6c4114a0ae64612b95b04ffb56dfad0);
 
             
         
     
 
-            var circle_19198d1da28e42a3b566608f99256de3 = L.circle(
+            var circle_21b5499e89364b77aa20b1660fccceaf = L.circle(
                 [-40.0,1.0],
                 {
   "bubblingMouseEvents": true, 
@@ -1679,23 +1713,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_1fa99a1b16f44b42ba75707cdb9c72b0 = L.popup({maxWidth: '300'});
+            var popup_a5b1ef4b003147a3af9a98f6d1fd945d = L.popup({maxWidth: '300'});
 
             
-                var html_9a504ae024da426ea4e9481399fe19b7 = $('<div id="html_9a504ae024da426ea4e9481399fe19b7" style="width: 100.0%; height: 100.0%;">48 - Unspecified "several locations around the world"<br>Diameter: 37.5 um<br>Method: SEM / SEM-EDS used for composition</div>')[0];
-                popup_1fa99a1b16f44b42ba75707cdb9c72b0.setContent(html_9a504ae024da426ea4e9481399fe19b7);
+                var html_38c32a4c1f4148fd81c9140e597acb06 = $('<div id="html_38c32a4c1f4148fd81c9140e597acb06" style="width: 100.0%; height: 100.0%;">48 - Unspecified "several locations around the world"<br>Diameter: 37.5 um<br>Method: SEM / SEM-EDS used for composition</div>')[0];
+                popup_a5b1ef4b003147a3af9a98f6d1fd945d.setContent(html_38c32a4c1f4148fd81c9140e597acb06);
             
 
-            circle_19198d1da28e42a3b566608f99256de3.bindPopup(popup_1fa99a1b16f44b42ba75707cdb9c72b0);
+            circle_21b5499e89364b77aa20b1660fccceaf.bindPopup(popup_a5b1ef4b003147a3af9a98f6d1fd945d);
 
             
         
     
 
-            var circle_556f4e6ca8d940daac01a951119bef0f = L.circle(
+            var circle_6cb4d21a4819441a86bd29e11a712ee1 = L.circle(
                 [-40.0,-6.0],
                 {
   "bubblingMouseEvents": true, 
@@ -1713,23 +1747,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_ce383a9a2fa84a0c9baca943ff2fecda = L.popup({maxWidth: '300'});
+            var popup_3bf680fc55994b528b3b433517f2593a = L.popup({maxWidth: '300'});
 
             
-                var html_2a78ea4aee9f419fa4fc63df327ba841 = $('<div id="html_2a78ea4aee9f419fa4fc63df327ba841" style="width: 100.0%; height: 100.0%;">32 - Worldwide (unspecified)<br>Diameter: 37.5 um<br>Method: SEM</div>')[0];
-                popup_ce383a9a2fa84a0c9baca943ff2fecda.setContent(html_2a78ea4aee9f419fa4fc63df327ba841);
+                var html_c4d233a982af487396b515d56c702f83 = $('<div id="html_c4d233a982af487396b515d56c702f83" style="width: 100.0%; height: 100.0%;">32 - Worldwide (unspecified)<br>Diameter: 37.5 um<br>Method: SEM</div>')[0];
+                popup_3bf680fc55994b528b3b433517f2593a.setContent(html_c4d233a982af487396b515d56c702f83);
             
 
-            circle_556f4e6ca8d940daac01a951119bef0f.bindPopup(popup_ce383a9a2fa84a0c9baca943ff2fecda);
+            circle_6cb4d21a4819441a86bd29e11a712ee1.bindPopup(popup_3bf680fc55994b528b3b433517f2593a);
 
             
         
     
 
-            var circle_3aa15731b71d49368a6d4aa8247f3936 = L.circle(
+            var circle_4bfc2c8f46e54e39a01efdeefdf4a2b8 = L.circle(
                 [4.210484,101.975766],
                 {
   "bubblingMouseEvents": true, 
@@ -1747,23 +1781,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_a1f0d9cdab5f43a9b767e3db15c6b352 = L.popup({maxWidth: '300'});
+            var popup_451985697209452c8857876adcdde82e = L.popup({maxWidth: '300'});
 
             
-                var html_eb62ff27458c44bbb2ffa51e59d4774d = $('<div id="html_eb62ff27458c44bbb2ffa51e59d4774d" style="width: 100.0%; height: 100.0%;">59 - Malaysia<br>Diameter: 37.5 um<br>Method: SEM</div>')[0];
-                popup_a1f0d9cdab5f43a9b767e3db15c6b352.setContent(html_eb62ff27458c44bbb2ffa51e59d4774d);
+                var html_063c492e98da41e680b1ece649cf5750 = $('<div id="html_063c492e98da41e680b1ece649cf5750" style="width: 100.0%; height: 100.0%;">59 - Malaysia<br>Diameter: 37.5 um<br>Method: SEM</div>')[0];
+                popup_451985697209452c8857876adcdde82e.setContent(html_063c492e98da41e680b1ece649cf5750);
             
 
-            circle_3aa15731b71d49368a6d4aa8247f3936.bindPopup(popup_a1f0d9cdab5f43a9b767e3db15c6b352);
+            circle_4bfc2c8f46e54e39a01efdeefdf4a2b8.bindPopup(popup_451985697209452c8857876adcdde82e);
 
             
         
     
 
-            var circle_f448da6ac3904a25a58d3595aeea44ee = L.circle(
+            var circle_24b120d85fba468fbfca92febc81033d = L.circle(
                 [-14.235004,-51.92528],
                 {
   "bubblingMouseEvents": true, 
@@ -1781,23 +1815,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_7bd0fe71c28f49f09f43e70bb192b09e = L.popup({maxWidth: '300'});
+            var popup_189e84a634b54b16b7e87c2ec0dcca6d = L.popup({maxWidth: '300'});
 
             
-                var html_3205717439244d5dbca53063e2f95461 = $('<div id="html_3205717439244d5dbca53063e2f95461" style="width: 100.0%; height: 100.0%;">30 - Brazil<br>Diameter: 45.0 um<br>Method: SEM</div>')[0];
-                popup_7bd0fe71c28f49f09f43e70bb192b09e.setContent(html_3205717439244d5dbca53063e2f95461);
+                var html_32a18b1e9e0e413eb7fa8088f9a22647 = $('<div id="html_32a18b1e9e0e413eb7fa8088f9a22647" style="width: 100.0%; height: 100.0%;">30 - Brazil<br>Diameter: 45.0 um<br>Method: SEM</div>')[0];
+                popup_189e84a634b54b16b7e87c2ec0dcca6d.setContent(html_32a18b1e9e0e413eb7fa8088f9a22647);
             
 
-            circle_f448da6ac3904a25a58d3595aeea44ee.bindPopup(popup_7bd0fe71c28f49f09f43e70bb192b09e);
+            circle_24b120d85fba468fbfca92febc81033d.bindPopup(popup_189e84a634b54b16b7e87c2ec0dcca6d);
 
             
         
     
 
-            var circle_003f3a6cc2ba481f8dde4bead2ddb1d1 = L.circle(
+            var circle_be4b9971da1d40afacfac8ad7d5e590f = L.circle(
                 [-30.4678242,24.0853165],
                 {
   "bubblingMouseEvents": true, 
@@ -1815,23 +1849,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_ff670f331e4a4352a3dff231a06b086b = L.popup({maxWidth: '300'});
+            var popup_35d807567f1045268d38118cff3d45e4 = L.popup({maxWidth: '300'});
 
             
-                var html_23730353f59c4067a9d5d97dae740844 = $('<div id="html_23730353f59c4067a9d5d97dae740844" style="width: 100.0%; height: 100.0%;">34 - Kalkbult, South Africa<br>Diameter: 47.0 um<br>Method: SEM</div>')[0];
-                popup_ff670f331e4a4352a3dff231a06b086b.setContent(html_23730353f59c4067a9d5d97dae740844);
+                var html_9a899c02b9994607a98dd74c41e13722 = $('<div id="html_9a899c02b9994607a98dd74c41e13722" style="width: 100.0%; height: 100.0%;">34 - Kalkbult, South Africa<br>Diameter: 47.0 um<br>Method: SEM</div>')[0];
+                popup_35d807567f1045268d38118cff3d45e4.setContent(html_9a899c02b9994607a98dd74c41e13722);
             
 
-            circle_003f3a6cc2ba481f8dde4bead2ddb1d1.bindPopup(popup_ff670f331e4a4352a3dff231a06b086b);
+            circle_be4b9971da1d40afacfac8ad7d5e590f.bindPopup(popup_35d807567f1045268d38118cff3d45e4);
 
             
         
     
 
-            var circle_348bba37a9f842b79b1df6192df9e51e = L.circle(
+            var circle_a8ff0039510c4ec99651c5a511135888 = L.circle(
                 [-35.675147,-71.542969],
                 {
   "bubblingMouseEvents": true, 
@@ -1849,23 +1883,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_0c6da6b0faa7492fae8afea3fa1d4bf7 = L.popup({maxWidth: '300'});
+            var popup_ea5525bd1ca24ad29e5aa7504325e708 = L.popup({maxWidth: '300'});
 
             
-                var html_f1550d9c6e3a47f5ad320adae12e572d = $('<div id="html_f1550d9c6e3a47f5ad320adae12e572d" style="width: 100.0%; height: 100.0%;">43 - Chile<br>Diameter: 50.0 um<br>Method: Sieve</div>')[0];
-                popup_0c6da6b0faa7492fae8afea3fa1d4bf7.setContent(html_f1550d9c6e3a47f5ad320adae12e572d);
+                var html_67e4dcdc0b16402db999a759a817c800 = $('<div id="html_67e4dcdc0b16402db999a759a817c800" style="width: 100.0%; height: 100.0%;">43 - Chile<br>Diameter: 50.0 um<br>Method: Sieve</div>')[0];
+                popup_ea5525bd1ca24ad29e5aa7504325e708.setContent(html_67e4dcdc0b16402db999a759a817c800);
             
 
-            circle_348bba37a9f842b79b1df6192df9e51e.bindPopup(popup_0c6da6b0faa7492fae8afea3fa1d4bf7);
+            circle_a8ff0039510c4ec99651c5a511135888.bindPopup(popup_ea5525bd1ca24ad29e5aa7504325e708);
 
             
         
     
 
-            var circle_851891b6556046b9b85cae9875a7db74 = L.circle(
+            var circle_b8d70e93bdc24aa0895b79b778cabe24 = L.circle(
                 [20.593684,78.96288],
                 {
   "bubblingMouseEvents": true, 
@@ -1883,23 +1917,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_e17da5078fb44ade931eacff86b92c89 = L.popup({maxWidth: '300'});
+            var popup_1139a8ee4ce4471c99ea1e84769303b8 = L.popup({maxWidth: '300'});
 
             
-                var html_6ab16f71a3774b1b97be6a4d684dda1e = $('<div id="html_6ab16f71a3774b1b97be6a4d684dda1e" style="width: 100.0%; height: 100.0%;">44 - India<br>Diameter: 50.0 um<br>Method: SEM</div>')[0];
-                popup_e17da5078fb44ade931eacff86b92c89.setContent(html_6ab16f71a3774b1b97be6a4d684dda1e);
+                var html_2d2b90152ff94b87afe82f398ea5acfd = $('<div id="html_2d2b90152ff94b87afe82f398ea5acfd" style="width: 100.0%; height: 100.0%;">44 - India<br>Diameter: 50.0 um<br>Method: SEM</div>')[0];
+                popup_1139a8ee4ce4471c99ea1e84769303b8.setContent(html_2d2b90152ff94b87afe82f398ea5acfd);
             
 
-            circle_851891b6556046b9b85cae9875a7db74.bindPopup(popup_e17da5078fb44ade931eacff86b92c89);
+            circle_b8d70e93bdc24aa0895b79b778cabe24.bindPopup(popup_1139a8ee4ce4471c99ea1e84769303b8);
 
             
         
     
 
-            var circle_274c4ae535084f1296ee49efb5d881ab = L.circle(
+            var circle_17919263c8674df5964eb3adc0d5f4ae = L.circle(
                 [36.1709357,-115.2098505],
                 {
   "bubblingMouseEvents": true, 
@@ -1917,23 +1951,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_7aea3c0e61ad4cfb9dbc11d0157a5524 = L.popup({maxWidth: '300'});
+            var popup_8c684a07770049a39f2c1eec143ba6c0 = L.popup({maxWidth: '300'});
 
             
-                var html_81ab09176f1d437fbb9c709fb06b626e = $('<div id="html_81ab09176f1d437fbb9c709fb06b626e" style="width: 100.0%; height: 100.0%;">57 - Southern Nevada<br>Diameter: 53.25 um<br>Method: Confocal microscopy</div>')[0];
-                popup_7aea3c0e61ad4cfb9dbc11d0157a5524.setContent(html_81ab09176f1d437fbb9c709fb06b626e);
+                var html_b03c8a4273d04338849cecda401b9c9f = $('<div id="html_b03c8a4273d04338849cecda401b9c9f" style="width: 100.0%; height: 100.0%;">57 - Southern Nevada<br>Diameter: 53.25 um<br>Method: Confocal microscopy</div>')[0];
+                popup_8c684a07770049a39f2c1eec143ba6c0.setContent(html_b03c8a4273d04338849cecda401b9c9f);
             
 
-            circle_274c4ae535084f1296ee49efb5d881ab.bindPopup(popup_7aea3c0e61ad4cfb9dbc11d0157a5524);
+            circle_17919263c8674df5964eb3adc0d5f4ae.bindPopup(popup_8c684a07770049a39f2c1eec143ba6c0);
 
             
         
     
 
-            var circle_3c152462e7344e76ab3b1489e3d2bf17 = L.circle(
+            var circle_9726aed2fa4f4e86903a9a22f3e55d04 = L.circle(
                 [50.8798438,4.7005176],
                 {
   "bubblingMouseEvents": true, 
@@ -1951,23 +1985,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_9f270c4b2fd54e538341e98a09588d8e = L.popup({maxWidth: '300'});
+            var popup_ee2516c8faa74daf807267ab1d067524 = L.popup({maxWidth: '300'});
 
             
-                var html_dbb34b7f87b141b49c20b391fefa7e7f = $('<div id="html_dbb34b7f87b141b49c20b391fefa7e7f" style="width: 100.0%; height: 100.0%;">50 - Leuven, Belgium<br>Diameter: 60.0 um<br>Method: SEM</div>')[0];
-                popup_9f270c4b2fd54e538341e98a09588d8e.setContent(html_dbb34b7f87b141b49c20b391fefa7e7f);
+                var html_88da0ffec27a4aec9f8037ad41a865ac = $('<div id="html_88da0ffec27a4aec9f8037ad41a865ac" style="width: 100.0%; height: 100.0%;">50 - Leuven, Belgium<br>Diameter: 60.0 um<br>Method: SEM</div>')[0];
+                popup_ee2516c8faa74daf807267ab1d067524.setContent(html_88da0ffec27a4aec9f8037ad41a865ac);
             
 
-            circle_3c152462e7344e76ab3b1489e3d2bf17.bindPopup(popup_9f270c4b2fd54e538341e98a09588d8e);
+            circle_9726aed2fa4f4e86903a9a22f3e55d04.bindPopup(popup_ee2516c8faa74daf807267ab1d067524);
 
             
         
     
 
-            var circle_1b3e9f95a1bf48eb93f52707db97def2 = L.circle(
+            var circle_037d24190aa64e55af65998e8920b9e9 = L.circle(
                 [50.503887,4.469936],
                 {
   "bubblingMouseEvents": true, 
@@ -1985,23 +2019,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_61602db9239a4f03b59a8cf7b2f3b2b8 = L.popup({maxWidth: '300'});
+            var popup_f9aa0d818b474461b0b18897647a58ec = L.popup({maxWidth: '300'});
 
             
-                var html_dcfe6cb14cc94663842312f22784040e = $('<div id="html_dcfe6cb14cc94663842312f22784040e" style="width: 100.0%; height: 100.0%;">39 - Belgium<br>Diameter: 60.0 um<br>Method: SEM</div>')[0];
-                popup_61602db9239a4f03b59a8cf7b2f3b2b8.setContent(html_dcfe6cb14cc94663842312f22784040e);
+                var html_98f0a059c06f4604bb63ea34740b806e = $('<div id="html_98f0a059c06f4604bb63ea34740b806e" style="width: 100.0%; height: 100.0%;">39 - Belgium<br>Diameter: 60.0 um<br>Method: SEM</div>')[0];
+                popup_f9aa0d818b474461b0b18897647a58ec.setContent(html_98f0a059c06f4604bb63ea34740b806e);
             
 
-            circle_1b3e9f95a1bf48eb93f52707db97def2.bindPopup(popup_61602db9239a4f03b59a8cf7b2f3b2b8);
+            circle_037d24190aa64e55af65998e8920b9e9.bindPopup(popup_f9aa0d818b474461b0b18897647a58ec);
 
             
         
     
 
-            var circle_a9fb98dd81c94d869421731df39f4e07 = L.circle(
+            var circle_8fff309321154b2c92e7a8755df67719 = L.circle(
                 [19.570692,-3.996166],
                 {
   "bubblingMouseEvents": true, 
@@ -2019,23 +2053,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_af283822753944188331313c71a49304 = L.popup({maxWidth: '300'});
+            var popup_b6c8bc71219c4d4f89428c068792b559 = L.popup({maxWidth: '300'});
 
             
-                var html_cc9efd662c3147e5b0b09b20b2ecf371 = $('<div id="html_cc9efd662c3147e5b0b09b20b2ecf371" style="width: 100.0%; height: 100.0%;">56 - Mali, West Africa<br>Diameter: 60.0 um<br>Method: Coulter Multisizer</div>')[0];
-                popup_af283822753944188331313c71a49304.setContent(html_cc9efd662c3147e5b0b09b20b2ecf371);
+                var html_5d685bd143524f95a17e3952253c908f = $('<div id="html_5d685bd143524f95a17e3952253c908f" style="width: 100.0%; height: 100.0%;">56 - Mali, West Africa<br>Diameter: 60.0 um<br>Method: Coulter Multisizer</div>')[0];
+                popup_b6c8bc71219c4d4f89428c068792b559.setContent(html_5d685bd143524f95a17e3952253c908f);
             
 
-            circle_a9fb98dd81c94d869421731df39f4e07.bindPopup(popup_af283822753944188331313c71a49304);
+            circle_8fff309321154b2c92e7a8755df67719.bindPopup(popup_b6c8bc71219c4d4f89428c068792b559);
 
             
         
     
 
-            var circle_91e0e5b0ba554ada83b73bd762e14384 = L.circle(
+            var circle_3acbded084fa461d968ba2bbe2fcff25 = L.circle(
                 [24.7135517,46.6752957],
                 {
   "bubblingMouseEvents": true, 
@@ -2053,23 +2087,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_ee11517d73fd4b9b96615f77a2a03a39 = L.popup({maxWidth: '300'});
+            var popup_b0e2103b23e341ccb7e90cf1cb5cdb00 = L.popup({maxWidth: '300'});
 
             
-                var html_e6b6bfb8a85b4877a0a7571004d9b26b = $('<div id="html_e6b6bfb8a85b4877a0a7571004d9b26b" style="width: 100.0%; height: 100.0%;">28 - Riyadh<br>Diameter: 60.0 um<br>Method: SEM</div>')[0];
-                popup_ee11517d73fd4b9b96615f77a2a03a39.setContent(html_e6b6bfb8a85b4877a0a7571004d9b26b);
+                var html_de7e8b949d19420b913323ad1ba1c3a7 = $('<div id="html_de7e8b949d19420b913323ad1ba1c3a7" style="width: 100.0%; height: 100.0%;">28 - Riyadh<br>Diameter: 60.0 um<br>Method: SEM</div>')[0];
+                popup_b0e2103b23e341ccb7e90cf1cb5cdb00.setContent(html_de7e8b949d19420b913323ad1ba1c3a7);
             
 
-            circle_91e0e5b0ba554ada83b73bd762e14384.bindPopup(popup_ee11517d73fd4b9b96615f77a2a03a39);
+            circle_3acbded084fa461d968ba2bbe2fcff25.bindPopup(popup_b0e2103b23e341ccb7e90cf1cb5cdb00);
 
             
         
     
 
-            var circle_5f3f6e71771444b69491ced681c0ce92 = L.circle(
+            var circle_d9eb5e642e6643028d4527af1f7cbad0 = L.circle(
                 [35.223191,43.679291],
                 {
   "bubblingMouseEvents": true, 
@@ -2087,23 +2121,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_5c0b8746ce134a92b5aff48334c0ad57 = L.popup({maxWidth: '300'});
+            var popup_cbacf2b7fea941129c975adedcde9402 = L.popup({maxWidth: '300'});
 
             
-                var html_21bf01eca1fe45e6a693a307598bafe3 = $('<div id="html_21bf01eca1fe45e6a693a307598bafe3" style="width: 100.0%; height: 100.0%;">29 - Iraq<br>Diameter: 75.0 um<br>Method: SEM</div>')[0];
-                popup_5c0b8746ce134a92b5aff48334c0ad57.setContent(html_21bf01eca1fe45e6a693a307598bafe3);
+                var html_11973922da91466b86773d26c13ad74e = $('<div id="html_11973922da91466b86773d26c13ad74e" style="width: 100.0%; height: 100.0%;">29 - Iraq<br>Diameter: 75.0 um<br>Method: SEM</div>')[0];
+                popup_cbacf2b7fea941129c975adedcde9402.setContent(html_11973922da91466b86773d26c13ad74e);
             
 
-            circle_5f3f6e71771444b69491ced681c0ce92.bindPopup(popup_5c0b8746ce134a92b5aff48334c0ad57);
+            circle_d9eb5e642e6643028d4527af1f7cbad0.bindPopup(popup_cbacf2b7fea941129c975adedcde9402);
 
             
         
     
 
-            var circle_f967d03569ad4d968780f2d1a74d9cbd = L.circle(
+            var circle_2da1dbef33fa4981aa0563143945c28f = L.circle(
                 [35.7596,79.0193],
                 {
   "bubblingMouseEvents": true, 
@@ -2121,23 +2155,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_6091f08356b94709bff0f3a5742d1f93 = L.popup({maxWidth: '300'});
+            var popup_5fa1f22115ee478d8810fe0ac883966c = L.popup({maxWidth: '300'});
 
             
-                var html_65796bd0b2a145d19d331dfb0794920e = $('<div id="html_65796bd0b2a145d19d331dfb0794920e" style="width: 100.0%; height: 100.0%;">69 - North Carolina<br>Diameter: 107.505 um<br>Method: No information given</div>')[0];
-                popup_6091f08356b94709bff0f3a5742d1f93.setContent(html_65796bd0b2a145d19d331dfb0794920e);
+                var html_e82157021feb47278bb656e268b1565e = $('<div id="html_e82157021feb47278bb656e268b1565e" style="width: 100.0%; height: 100.0%;">69 - North Carolina<br>Diameter: 107.505 um<br>Method: No information given</div>')[0];
+                popup_5fa1f22115ee478d8810fe0ac883966c.setContent(html_e82157021feb47278bb656e268b1565e);
             
 
-            circle_f967d03569ad4d968780f2d1a74d9cbd.bindPopup(popup_6091f08356b94709bff0f3a5742d1f93);
+            circle_2da1dbef33fa4981aa0563143945c28f.bindPopup(popup_5fa1f22115ee478d8810fe0ac883966c);
 
             
         
     
 
-            var circle_c02c05a7ee374f3da7e2b32e57ce2844 = L.circle(
+            var circle_c73ad658fe03450fb29a5ff41a5d7026 = L.circle(
                 [21.4735329,55.975413],
                 {
   "bubblingMouseEvents": true, 
@@ -2155,23 +2189,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_512a53fc9bed471e9e2fcb48c3dec3d8 = L.popup({maxWidth: '300'});
+            var popup_65364fa474b54ca3a7278d110196fe6f = L.popup({maxWidth: '300'});
 
             
-                var html_c36811c5b7874a58bf91d52dfd1ab67f = $('<div id="html_c36811c5b7874a58bf91d52dfd1ab67f" style="width: 100.0%; height: 100.0%;">10 - Oman<br>Diameter: 120.0 um<br>Method: No information given</div>')[0];
-                popup_512a53fc9bed471e9e2fcb48c3dec3d8.setContent(html_c36811c5b7874a58bf91d52dfd1ab67f);
+                var html_d98c0b87689e4f30a77aa659e77f2a15 = $('<div id="html_d98c0b87689e4f30a77aa659e77f2a15" style="width: 100.0%; height: 100.0%;">10 - Oman<br>Diameter: 120.0 um<br>Method: No information given</div>')[0];
+                popup_65364fa474b54ca3a7278d110196fe6f.setContent(html_d98c0b87689e4f30a77aa659e77f2a15);
             
 
-            circle_c02c05a7ee374f3da7e2b32e57ce2844.bindPopup(popup_512a53fc9bed471e9e2fcb48c3dec3d8);
+            circle_c73ad658fe03450fb29a5ff41a5d7026.bindPopup(popup_65364fa474b54ca3a7278d110196fe6f);
 
             
         
     
 
-            var circle_b58f89715168486e87773e6589d9a447 = L.circle(
+            var circle_a7a669a116594e86ba564bac3ea9b2e4 = L.circle(
                 [26.3351,17.228331],
                 {
   "bubblingMouseEvents": true, 
@@ -2189,23 +2223,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_3d35cdce880e4852b8581d3658562773 = L.popup({maxWidth: '300'});
+            var popup_195a1097be604ddc927b93a9f11aa2c3 = L.popup({maxWidth: '300'});
 
             
-                var html_c583ddde89d74625a45c52fc24698b3b = $('<div id="html_c583ddde89d74625a45c52fc24698b3b" style="width: 100.0%; height: 100.0%;">8 - Lybia<br>Diameter: 120.0 um<br>Method: No information given</div>')[0];
-                popup_3d35cdce880e4852b8581d3658562773.setContent(html_c583ddde89d74625a45c52fc24698b3b);
+                var html_2ae57477db884c7ea877a886386b2d9a = $('<div id="html_2ae57477db884c7ea877a886386b2d9a" style="width: 100.0%; height: 100.0%;">8 - Lybia<br>Diameter: 120.0 um<br>Method: No information given</div>')[0];
+                popup_195a1097be604ddc927b93a9f11aa2c3.setContent(html_2ae57477db884c7ea877a886386b2d9a);
             
 
-            circle_b58f89715168486e87773e6589d9a447.bindPopup(popup_3d35cdce880e4852b8581d3658562773);
+            circle_a7a669a116594e86ba564bac3ea9b2e4.bindPopup(popup_195a1097be604ddc927b93a9f11aa2c3);
 
             
         
     
 
-            var circle_4083811d836045a2b2288a20b577c90d = L.circle(
+            var circle_662c2f05ba8349f8a63b9e6aeb3a05fd = L.circle(
                 [55.378051,-3.435973],
                 {
   "bubblingMouseEvents": true, 
@@ -2223,23 +2257,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_5883fa9ac3204105a390193422fe0250 = L.popup({maxWidth: '300'});
+            var popup_eb62da3fe1654b4782807000090b9f37 = L.popup({maxWidth: '300'});
 
             
-                var html_ce30a2a4dad3425e973dfb2e403bec71 = $('<div id="html_ce30a2a4dad3425e973dfb2e403bec71" style="width: 100.0%; height: 100.0%;">37 - U.K.<br>Diameter: 153.2 um<br>Method: Malvern Mastersizer 2000</div>')[0];
-                popup_5883fa9ac3204105a390193422fe0250.setContent(html_ce30a2a4dad3425e973dfb2e403bec71);
+                var html_bd72eae36726424dabb70ec3190347d7 = $('<div id="html_bd72eae36726424dabb70ec3190347d7" style="width: 100.0%; height: 100.0%;">37 - U.K.<br>Diameter: 153.2 um<br>Method: Malvern Mastersizer 2000</div>')[0];
+                popup_eb62da3fe1654b4782807000090b9f37.setContent(html_bd72eae36726424dabb70ec3190347d7);
             
 
-            circle_4083811d836045a2b2288a20b577c90d.bindPopup(popup_5883fa9ac3204105a390193422fe0250);
+            circle_662c2f05ba8349f8a63b9e6aeb3a05fd.bindPopup(popup_eb62da3fe1654b4782807000090b9f37);
 
             
         
     
 
-            var circle_1a9d5d67b80048febd12aeae670f2e9d = L.circle(
+            var circle_5956af759cfe47c8b06d9929bea43bf4 = L.circle(
                 [24.885942,47.079162],
                 {
   "bubblingMouseEvents": true, 
@@ -2257,23 +2291,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_e48b5d81b8a249c4ad09fa455563ad4e = L.popup({maxWidth: '300'});
+            var popup_46afb3ca286b4c4b927ee2380857fb05 = L.popup({maxWidth: '300'});
 
             
-                var html_8f5940b6eeb047da877a12c25e29315b = $('<div id="html_8f5940b6eeb047da877a12c25e29315b" style="width: 100.0%; height: 100.0%;">36 - Saudi Arabia<br>Diameter: 200.0 um<br>Method: SEM (EDS used to determine elemental composition)</div>')[0];
-                popup_e48b5d81b8a249c4ad09fa455563ad4e.setContent(html_8f5940b6eeb047da877a12c25e29315b);
+                var html_d929fa7d25a642b6a00445b891be66f4 = $('<div id="html_d929fa7d25a642b6a00445b891be66f4" style="width: 100.0%; height: 100.0%;">36 - Saudi Arabia<br>Diameter: 200.0 um<br>Method: SEM (EDS used to determine elemental composition)</div>')[0];
+                popup_46afb3ca286b4c4b927ee2380857fb05.setContent(html_d929fa7d25a642b6a00445b891be66f4);
             
 
-            circle_1a9d5d67b80048febd12aeae670f2e9d.bindPopup(popup_e48b5d81b8a249c4ad09fa455563ad4e);
+            circle_5956af759cfe47c8b06d9929bea43bf4.bindPopup(popup_46afb3ca286b4c4b927ee2380857fb05);
 
             
         
     
 
-            var circle_bbfda25c394a46e7a6df396e0e4b9233 = L.circle(
+            var circle_f448acb2d0e94dde8ce3601d9cab498f = L.circle(
                 [33.223191,43.679291],
                 {
   "bubblingMouseEvents": true, 
@@ -2291,23 +2325,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_e1779145a56a4f859a28d4f74c4a459f = L.popup({maxWidth: '300'});
+            var popup_62b4879bcbb840a78f18743024dc34ef = L.popup({maxWidth: '300'});
 
             
-                var html_b4af1f1d6eab40f8b463a572a5741ad1 = $('<div id="html_b4af1f1d6eab40f8b463a572a5741ad1" style="width: 100.0%; height: 100.0%;">9 - Iraq<br>Diameter: 240.0 um<br>Method: No information given</div>')[0];
-                popup_e1779145a56a4f859a28d4f74c4a459f.setContent(html_b4af1f1d6eab40f8b463a572a5741ad1);
+                var html_3c83278183e24c1cbf829ecb74fc1141 = $('<div id="html_3c83278183e24c1cbf829ecb74fc1141" style="width: 100.0%; height: 100.0%;">9 - Iraq<br>Diameter: 240.0 um<br>Method: No information given</div>')[0];
+                popup_62b4879bcbb840a78f18743024dc34ef.setContent(html_3c83278183e24c1cbf829ecb74fc1141);
             
 
-            circle_bbfda25c394a46e7a6df396e0e4b9233.bindPopup(popup_e1779145a56a4f859a28d4f74c4a459f);
+            circle_f448acb2d0e94dde8ce3601d9cab498f.bindPopup(popup_62b4879bcbb840a78f18743024dc34ef);
 
             
         
     
 
-            var circle_551993a02fc541ffb145dd7d4cb3f57a = L.circle(
+            var circle_4bf9cff0515b424cb587f10c988e587b = L.circle(
                 [27.3351,19.228331],
                 {
   "bubblingMouseEvents": true, 
@@ -2325,23 +2359,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_b91779c9dff1420a9805bf1366fe8138 = L.popup({maxWidth: '300'});
+            var popup_2b0b05f3e0dd4df38cb67c14b2af3995 = L.popup({maxWidth: '300'});
 
             
-                var html_2bb1412b88b9499088529c3a3d4997a8 = $('<div id="html_2bb1412b88b9499088529c3a3d4997a8" style="width: 100.0%; height: 100.0%;">26 - Libya<br>Diameter: 250.0 um<br>Method: SEM</div>')[0];
-                popup_b91779c9dff1420a9805bf1366fe8138.setContent(html_2bb1412b88b9499088529c3a3d4997a8);
+                var html_5752a5e9148c413aab2343db9332e754 = $('<div id="html_5752a5e9148c413aab2343db9332e754" style="width: 100.0%; height: 100.0%;">26 - Libya<br>Diameter: 250.0 um<br>Method: SEM</div>')[0];
+                popup_2b0b05f3e0dd4df38cb67c14b2af3995.setContent(html_5752a5e9148c413aab2343db9332e754);
             
 
-            circle_551993a02fc541ffb145dd7d4cb3f57a.bindPopup(popup_b91779c9dff1420a9805bf1366fe8138);
+            circle_4bf9cff0515b424cb587f10c988e587b.bindPopup(popup_2b0b05f3e0dd4df38cb67c14b2af3995);
 
             
         
     
 
-            var circle_a8f58b8608ca428fae1b47e7f4bce7fd = L.circle(
+            var circle_740226935bcb4b6ca16fd4cec83ad62d = L.circle(
                 [-40.0,-27.0],
                 {
   "bubblingMouseEvents": true, 
@@ -2359,23 +2393,23 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_3ce13464bf6743ae940065d41f800776 = L.popup({maxWidth: '300'});
+            var popup_12e25526d54a4fddbd9e906027632d62 = L.popup({maxWidth: '300'});
 
             
-                var html_9df215d6af734aeab15b8aec3251962f = $('<div id="html_9df215d6af734aeab15b8aec3251962f" style="width: 100.0%; height: 100.0%;">53 - Unknown Location<br>Diameter: 250.5 um<br>Method: No information given</div>')[0];
-                popup_3ce13464bf6743ae940065d41f800776.setContent(html_9df215d6af734aeab15b8aec3251962f);
+                var html_8050b8846eab47df985b2756d44b8ccf = $('<div id="html_8050b8846eab47df985b2756d44b8ccf" style="width: 100.0%; height: 100.0%;">53 - Unknown Location<br>Diameter: 250.5 um<br>Method: No information given</div>')[0];
+                popup_12e25526d54a4fddbd9e906027632d62.setContent(html_8050b8846eab47df985b2756d44b8ccf);
             
 
-            circle_a8f58b8608ca428fae1b47e7f4bce7fd.bindPopup(popup_3ce13464bf6743ae940065d41f800776);
+            circle_740226935bcb4b6ca16fd4cec83ad62d.bindPopup(popup_12e25526d54a4fddbd9e906027632d62);
 
             
         
     
 
-            var circle_a4d8e4353df0467981e5ca97b11762c0 = L.circle(
+            var circle_363266b2be2a4a118bd799c31c0c054f = L.circle(
                 [28.3351,17.228331],
                 {
   "bubblingMouseEvents": true, 
@@ -2393,17 +2427,17 @@
   "stroke": true, 
   "weight": 3
 }
-                ).addTo(map_8e9d46c51fc04cd4a668d033ccaf5a7c);
+                ).addTo(map_a472ed22329c471ea9b61d2583206a2a);
             
     
-            var popup_96ccf7e4a3bf48ec97621525d7ff55cd = L.popup({maxWidth: '300'});
+            var popup_d6896a7ed2d140d1a82ece22ac1255ce = L.popup({maxWidth: '300'});
 
             
-                var html_a3c7dfaf84834f41b6f8155f8fab2bce = $('<div id="html_a3c7dfaf84834f41b6f8155f8fab2bce" style="width: 100.0%; height: 100.0%;">18 - Libya<br>Diameter: 500.25 um<br>Method: No information given</div>')[0];
-                popup_96ccf7e4a3bf48ec97621525d7ff55cd.setContent(html_a3c7dfaf84834f41b6f8155f8fab2bce);
+                var html_7846456b3dcc454c82dddbcf4ee6e969 = $('<div id="html_7846456b3dcc454c82dddbcf4ee6e969" style="width: 100.0%; height: 100.0%;">18 - Libya<br>Diameter: 500.25 um<br>Method: No information given</div>')[0];
+                popup_d6896a7ed2d140d1a82ece22ac1255ce.setContent(html_7846456b3dcc454c82dddbcf4ee6e969);
             
 
-            circle_a4d8e4353df0467981e5ca97b11762c0.bindPopup(popup_96ccf7e4a3bf48ec97621525d7ff55cd);
+            circle_363266b2be2a4a118bd799c31c0c054f.bindPopup(popup_d6896a7ed2d140d1a82ece22ac1255ce);
 
             
         
