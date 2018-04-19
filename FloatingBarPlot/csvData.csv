@@ -1,69 +1,69 @@
-18 - Libya,1000,0.5,500.25,1000,,,,,,
-53 - Unknown Location,500,1,250.5,500,,,,,,
-9 - Iraq,400,80,240,400,,,,,,
-26 - Libya,250,0,250,250,,,,,,
-36 - Saudi Arabia,200,20,20,20,,200,,,,
-37 - U.K.,153.2,153.2,153.2,153.2,,,,,,
-8 - Lybia,120,120,120,120,,,,,,
-10 - Oman,120,120,120,120,,,,,,
-29 - Iraq,120,30,75,120,,,,,,
-57 - Southern Nevada,100,6.5,53.25,100,,,,,,
-28 - Riyadh,90,30,60,90,,,,,,
-44 - India,80,20,50,80,,,,,,
-"56 - Mali, West Africa",70,0,5,5,20,30,40,50,60,70
-27 - Oman,63,2,32.5,63,,,,,,
-55 - Oman,63,2,32.5,63,,,,,,
-"7 - Negev Desert, Israel",60,5,32.5,60,,,,,,
-32 - Worldwide (unspecified),60,15,37.5,60,,,,,,
-39 - Belgium,60,2,6,10,,60,,,,
-"48 - Unspecified ""several locations around the world""",60,15,37.5,60,,,,,,
-"50 - Leuven, Belgium",60,60,60,60,,,,,,
-"15 - Xian, China",53.954,6.315,30.1345,53.954,,,,,,
-"23 - Baghdad, Iraq",50,0.356,25.178,50,,,,,,
-30 - Brazil,50,40,45,50,,,,,,
-43 - Chile,50,0,50,50,,,,,,
-"34 - Kalkbult, South Africa",47,47,47,47,,,,,,
-59 - Malaysia,45,30,37.5,45,,,,,,
-"11 - Mali, West Africa",40,20,30,40,,,,,,
-"62 - Minas Gerais, Brazil",35.3,28.7,28.7,28.7,,35.3,,,,
-"13 - Doha, Qatar",32,32,32,32,,,,,,
-42 - Poland,30,0,10,10,10,20,30,,,
-45 - Egypt,30,3,16.5,30,,,,,,
-"65 - Dharan, Saudi Arabia",30,0.01,1.2,30,,,,,,
-"5 - Sede Boqer, Israel",20,20,20,20,,,,,,
-"21 - Sede Boqer, Israel",20,15,17.5,20,,,,,,
-"63 - Doha, Qatar",20,20,20,20,,,,,,
-"66 - Alentajo, Portugal",20,20,20,20,,,,,,
-25 - Qatar,18,18,18,18,,,,,,
-12 - Algeria,17.5,12.7,12.7,12.7,,17.5,,,,
-14 - Mexico City,17.02,17.02,17.02,17.02,,,,,,
-33 - India,15,15,15,15,,,,,,
-"58 - Queensland, Australia",15,15,15,15,,,,,,
-61 - Australia,15,15,15,15,,,,,,
-"17 - Jazan, Saudi Arabia",10,10,10,10,,,,,,
-"47 - Doha, Qatar",10,6,8,10,,,,,,
-"60 - Kjeller, Norway",10,0,10,10,,,,,,
-38 - Australia,8,0,4,4,4,6,8,,,
-41 - Indonesia,8,0,4,4,4,6,8,,,
-20 - Kuwait,6.4,6.4,6.4,6.4,,,,,,
-52 - Kuwait,6.4,6.4,6.4,6.4,,,,,,
-"2 - Daggett, California, USA",5,1,3,5,,,,,,
-"4 - New Mexico, USA",5,1,3,5,,,,,,
-"40 - Sonora, Mexico",5,5,5,5,,,,,,
-67 - Unknown Location,4,3,3.5,4,,,,,,
-"19 - Vellore, India",3,1,2,3,,,,,,
-"51 - Minia, Egypt",3,1,2,3,,,,,,
-54 - Unknown Location,3,3,3,3,,,,,,
-46 - Qatar,2.3,2.3,2.3,2.3,,,,,,
-"22 - Sonora, Mexico",2.081393175,0.51369144,1.297542308,2.081393175,,,,,,
-"1 - New Mexico, USA",2,2,2,2,,,,,,
-24 - Qatar,2,2,2,2,,,,,,
-"6 - Yinchuan, China",1.7,1.1,1.1,1.1,,1.7,,,,
-"16 - Baghdad, Iraq",1.2,1.1,1.15,1.2,,,,,,
-35 - Saudi Arabia,1.2,1.2,1.2,1.2,,,,,,
-"49 - Dharan, Saudi Arabia",1.2,1.2,1.2,1.2,,,,,,
-"64 - Dammam, Saudi Arabia",1.2,1.2,1.2,1.2,,,,,,
-"3 - New Mexico, USA",1,0.3,0.65,1,,,,,,
-31 - Saudi Arabia,0.8,0.8,0.8,0.8,,,,,,
-"68 - Sede Boqer, Israel",20,2,7,12,4,12,20,,,
-69 - North Carolina,215,0.01,107.505,215,,,,,,
+"1 - New Mexico, USA",2,2,2,2,,,,,,,SEM,David,Reported Average
+10 - Oman,120,120,120,120,,,,,,,No information given,NA,Reported Average
+"11 - Mali, West Africa",40,20,30,40,,,,,,,No information given,NA,Mean from Reported Range
+12 - Algeria,17.5,12.7,12.7,12.7,,17.5,,,,,No information given,NA,Reported Average
+"13 - Doha, Qatar",32,32,32,32,,,,,,,LPSA,NA,Reported Average
+14 - Mexico City,17.02,17.02,17.02,17.02,,,,,,,Beckmann Laser diffractometer,NA,Reported Average
+"15 - Xian, China",53.954,6.315,30.1345,53.954,,,,,,,LPSA Winner2000ZDE Laser ,NA,Reported Average
+"16 - Baghdad, Iraq",1.2,1.1,1.15,1.2,,,,,,,Laser optical photometer,NA,Mean from Reported Range
+"17 - Jazan, Saudi Arabia",10,10,10,10,,,,,,,Microscopy Olympus CX21I microscope and the Image J analyzer so_ware,NA,Reported Average
+18 - Libya,1000,0.5,500.25,1000,,,,,,,No information given,NA,Mean from Reported Range
+"19 - Vellore, India",3,1,2,3,,,,,,,No information given,NA,Mean from Reported Range
+"2 - Daggett, California, USA",5,1,3,5,,,,,,,SEM,NA,Mean from Reported Range
+20 - Kuwait,6.4,6.4,6.4,6.4,,,,,,,No information given,NA,Reported Average
+"21 - Sede Boqer, Israel",20,15,17.5,20,,,,,,,PSA MonoZoom- Video Microscope System; particle size analysis done using specialty software,NA,Mean from Reported Range
+"22 - Sonora, Mexico",2.081393175,0.51369144,1.297542308,2.081393175,,,,,,,LPSA Coulter model Fraunhofer LS 100Q,NA,Reported Average
+"23 - Baghdad, Iraq",50,0.356,25.178,50,,,,,,,PSA SALD-2101 ,NA,Mean from Reported Range
+24 - Qatar,2,2,2,2,,,,,,,AFM,NA,Reported Average
+25 - Qatar,18,18,18,18,,,,,,,PSA LS13-321MW laser diffraction particle size analyzer (Beckman Coulter Inc),NA,Reported Average
+26 - Libya,250,0,250,250,,,,,,,SEM,NA,Mean from Reported Range
+27 - Oman,63,2,32.5,63,,,,,,,Sieve,NA,Mean from Reported Range
+28 - Riyadh,90,30,60,90,,,,,,,SEM,NA,Mean from Reported Range
+29 - Iraq,120,30,75,120,,,,,,,SEM,NA,Mean from Reported Range
+"3 - New Mexico, USA",1,0.3,0.65,1,,,,,,,PSA,David,Mean from Reported Range
+30 - Brazil,50,40,45,50,,,,,,,SEM,NA,Mean from Reported Range
+31 - Saudi Arabia,0.8,0.8,0.8,0.8,,,,,,,PSA Microtrac S3500,NA,Reported Average
+32 - Worldwide (unspecified),60,15,37.5,60,,,,,,,SEM,NA,Mean from Reported Range
+33 - India,15,15,15,15,,,,,,,"LPSA (Cilas, model 1190)",NA,Reported Average
+"34 - Kalkbult, South Africa",47,47,47,47,,,,,,,SEM,NA,Reported Average
+35 - Saudi Arabia,1.2,1.2,1.2,1.2,,,,,,,SEM (EDS used to determine elemental composition),NA,Reported Average
+36 - Saudi Arabia,200,20,20,20,,200,,,,,SEM (EDS used to determine elemental composition),NA,Reported Average
+37 - U.K.,153.2,153.2,153.2,153.2,,,,,,,Malvern Mastersizer 2000 particle analyser,NA,Reported Average
+38 - Australia,8,0,4,4,4,6,8,,,,SEM,NA,Mean from Reported Distribution
+39 - Belgium,60,2,6,10,,60,,,,,SEM,NA,Mean from Reported Range
+"4 - New Mexico, USA",5,1,3,5,,,,,,,SEM,NA,Mean from Reported Range
+"40 - Sonora, Mexico",5,5,5,5,,,,,,,LPSA brand Coulter model Fraunhofer LS 100Q,NA,Mean from Reported Range
+41 - Indonesia,8,0,4,4,4,6,8,8,12,16,SEM,NA,Mean from Reported Distribution
+42 - Poland,30,0,10,10,10,20,30,,,,PSA,NA,Mean from Reported Distribution
+43 - Chile,50,0,50,50,,,,,,,Sieve,NA,Mean from Reported Range
+44 - India,80,20,50,80,,,,,,,SEM,NA,Mean from Reported Range
+45 - Egypt,30,3,16.5,30,,,,,,,SEM,NA,Mean from Reported Range
+46 - Qatar,2.3,2.3,2.3,2.3,,,,,,,SEM,NA,Reported Average
+"47 - Doha, Qatar",10,6,8,10,,,,,,,Measured by Morphologi G3,NA,Mean from Reported Range
+"48 - Unspecified ""several locations around the world""",60,15,37.5,60,,,,,,,SEM (SEM-EDS used for composition),NA,Mean from Reported Range
+"49 - Dharan, Saudi Arabia",1.2,1.2,1.2,1.2,,,,,,,SEM (XRD used for elemental analysis),NA,Reported Average
+"5 - Sede Boqer, Israel",20,20,20,20,,,,,,,No information given,NA,Reported Average
+"50 - Leuven, Belgium",60,60,60,60,,,,,,,SEM,NA,Reported Average
+"51 - Minia, Egypt",3,1,2,3,,,,,,,No information given,NA,Mean from Reported Range
+52 - Kuwait,6.4,6.4,6.4,6.4,,,,,,,No information given,NA,Reported Average
+53 - Unknown Location,500,1,250.5,500,,,,,,,No information given,NA,Mean from Reported Range
+54 - Unknown Location,3,3,3,3,,,,,,,No information given,NA,Reported Average
+55 - Oman,63,2,32.5,63,,,,,,,No information given,NA,Mean from Reported Range
+"56 - Mali, West Africa",70,0,5,5,20,30,40,50,60,70,Coulter Multisizer,NA,Mean from Reported Range
+57 - Southern Nevada,100,6.5,53.25,100,,,,,,,Microscopy (confocal),NA,Mean from Reported Range
+"58 - Queensland, Australia",15,15,15,15,,,,,,,SEM,NA,Reported Average
+59 - Malaysia,45,30,37.5,45,,,,,,,SEM,NA,Mean from Reported Range
+"6 - Yinchuan, China",1.7,1.1,1.1,1.1,,1.7,,,,,No information given,NA,Reported Average
+"60 - Kjeller, Norway",10,0,10,10,,,,,,,SEM,NA,Mean from Reported Range
+61 - Australia,15,15,15,15,,,,,,,SEM using ImageJ,NA,Reported Average
+"62 - Minas Gerais, Brazil",35.3,28.7,28.7,28.7,,35.3,,,,,SEM (EDS used for elements),NA,Reported Average
+"63 - Doha, Qatar",20,20,20,20,,,,,,,Microscopy (light),NA,Mean from Reported Range
+"64 - Dammam, Saudi Arabia",1.2,1.2,1.2,1.2,,,,,,,SEM (EDS used for elemental composition),NA,Reported Average
+"65 - Dharan, Saudi Arabia",30,0.01,1.2,30,,,,,,,SEM,NA,Mean from Reported Range
+"66 - Alentajo, Portugal",20,20,20,20,,,,,,,SEM (Image J),NA,Reported Average
+67 - Unknown Location,4,3,3.5,4,,,,,,,SEM,NA,Reported Average
+"68 - Sede Boqer, Israel",20,2,7,12,4,12,20,,,,No information given,David,Mean from Reported Range
+69 - North Carolina,215,0.01,107.505,215,,,,,,,No information given,David,Mean from Reported Range
+"7 - Negev Desert, Israel",60,5,32.5,60,,,,,,,No information given,NA,Mean from Reported Range
+8 - Lybia,120,120,120,120,,,,,,,No information given,NA,Reported Average
+9 - Iraq,400,80,240,400,,,,,,,No information given,NA,Mean from Reported Range
