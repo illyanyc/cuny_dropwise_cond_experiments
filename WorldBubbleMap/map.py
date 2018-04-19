@@ -223,6 +223,8 @@ def plot_color_gradients(_gradient, max, min, plotnumber):
 def mergeSubLegends(l):
     fig = plt.figure("Legend")
 
+
+
     img_A = plt.imread(l[0])
     img_B = plt.imread(l[1])
     img_C = plt.imread(l[2])
@@ -231,6 +233,10 @@ def mergeSubLegends(l):
     ax = fig.add_subplot(141)
     plt.imshow(img_A)
     plt.axis('off')
+
+    ax.text(60, -25, "Legend: Particle Size (Diameter) [um]",
+            verticalalignment='top', horizontalalignment='left',
+            color='black', fontsize=9)
 
     ax = fig.add_subplot(142)
     plt.imshow(img_B)
@@ -244,7 +250,9 @@ def mergeSubLegends(l):
     plt.imshow(img_D)
     plt.axis('off')
 
-    plt.subplots_adjust(left=0.01, bottom=None, right=0.99, top=1.8, wspace=-0.22, hspace=0)
+
+
+    plt.subplots_adjust(left=0.01, bottom=None, right=0.99, top=1.75, wspace=-0.225, hspace=0)
     plt.savefig('legend.png', dpi=150, transparent=True)
 
 
