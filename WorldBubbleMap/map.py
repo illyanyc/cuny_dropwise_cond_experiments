@@ -9,8 +9,19 @@ from folium import plugins
 from scipy.ndimage import imread
 import matplotlib.pyplot as plt
 import matplotlib
+import matplotlib.image as mpimg
+import numpy as np
+import cv2
 
 
+
+# Json encoder
+class MyEncoder(JSONEncoder):
+    def default(self, o):
+        return o.__dict__
+
+# Color gradient methods:
+#region
 def parseValueDevide(list,fl):
     return_list = []
     for i in list:
@@ -62,7 +73,8 @@ def color_dict(gradient):
       "r":[RGB[0] for RGB in gradient],
       "g":[RGB[1] for RGB in gradient],
       "b":[RGB[2] for RGB in gradient]}
-
+#endregion
+# Produce gradient from two colors and n number of values in list (to assign each color to a value later)
 def gradient(start_hex, finish_hex, n):
   ''' returns a gradient list of (n) colors between
     two hex colors. start_hex and finish_hex
@@ -85,11 +97,82 @@ def gradient(start_hex, finish_hex, n):
 
   return color_dict(RGB_list)
 
-class MyEncoder(JSONEncoder):
-    def default(self, o):
-        return o.__dict__
+# Break down data by decate, make color gradients and sub-legends for each decate; call the method to make one comprehensive legend
+def prepGradientByDecate(data, listofColors):
 
-def plot_color_gradients(gradient, value):
+    valuesSortedByDecate = {}
+
+    for i in data:
+
+        if float(i) <= 1.0:
+            valuesSortedByDecate.setdefault("lessThan1",[]).append(i)
+
+        if float(i) > 1.0 and float(i) <= 10.0:
+            valuesSortedByDecate.setdefault("lessThan10",[]).append(i)
+
+        if float(i) > 10.0 and float(i) <= 100.0:
+            valuesSortedByDecate.setdefault("lessThan100",[]).append(i)
+
+        if float(i) > 100.0 and float(i) <= 1000.0:
+            valuesSortedByDecate.setdefault("lessThan1000",[]).append(i)
+
+        if float(i) > 1000.0:
+            valuesSortedByDecate.setdefault("over1000",[]).append(i)
+
+    # declate the lists of data sorted by decate
+    lessThan1 = []
+    lessThan10 = []
+    lessThan100 = []
+    lessThan1000 = []
+    over1000 = []
+
+    PNGList = []
+
+    # Attempt to get the RGB range for all values and plot legends
+    try:
+        i = valuesSortedByDecate["lessThan1"]
+        lessThan1 = (gradient(listofColors[0], listofColors[1], len(i)))['hex']
+        l = plot_color_gradients(lessThan1, None, min(i), 1)
+        PNGList.append(l)
+    except: n = None
+    try:
+        i = valuesSortedByDecate["lessThan10"]
+        lessThan10 = (gradient(listofColors[1], listofColors[2], len(i)))['hex']
+        l = plot_color_gradients(lessThan10,  None, min(i), 2)
+        PNGList.append(l)
+    except: n = None
+    try:
+        i = valuesSortedByDecate["lessThan100"]
+        lessThan100 = (gradient(listofColors[2], listofColors[3], len(i)))['hex']
+        l = plot_color_gradients(lessThan100, None, min(i), 3)
+        PNGList.append(l)
+    except: n = None
+    try:
+        i = valuesSortedByDecate["lessThan1000"]
+        lessThan1000 = (gradient(listofColors[3], listofColors[4], len(i)))['hex']
+        l = plot_color_gradients(lessThan1000, max(i), min(i), 4)
+        PNGList.append(l)
+
+    except: n = None
+    try:
+        i = valuesSortedByDecate["over1000"]
+        over1000 = (gradient(listofColors[4], listofColors[5], len(i)))['hex']
+        l = plot_color_gradients(over1000, max(i), min(i), 5)
+        PNGList.append(l)
+
+    except: n = None
+
+
+    # combine all of the lists into one long list
+    colorlist = lessThan1 + lessThan10 + lessThan100 + lessThan1000 + over1000
+
+    #create a comprehensive legend of all sub-legends
+    mergeSubLegends(PNGList)
+
+    return colorlist
+
+# make a legend of a color gradient
+def plot_color_gradients(_gradient, max, min, plotnumber):
     fig = plt.figure(figsize=(5, 1))
     ax = fig.add_subplot(111)
     x = 0
@@ -97,21 +180,28 @@ def plot_color_gradients(gradient, value):
     h = 50
     w = 50
 
-    value = sorted(value)
-    ax.set_xlabel('Particle Size (microns)',color='black', fontsize=14)
+    if len(_gradient) < 20:
+        new_gradient = gradient(_gradient[0], _gradient[len(_gradient)-1], 20 )["hex"]
 
-    for i in reversed(gradient):
-        rect = matplotlib.patches.Rectangle((x, y), h, w, color=i)
-        ax.add_patch(rect)
-        x = x + w
+        for i in new_gradient:
+            rect = matplotlib.patches.Rectangle((x, y), h, w, facecolor=i, edgecolor=None)
+            ax.add_patch(rect)
+            x = x + w
+    else:
+        for i in _gradient:
+            rect = matplotlib.patches.Rectangle((x, y), h, w, facecolor=i, edgecolor=None)
+            ax.add_patch(rect)
+            x = x + w
 
-    ax.text(7, 5, str(value[0]),
-            verticalalignment='bottom', horizontalalignment='left',
-            color='black', fontsize=18)
+    if min is not None:
+        ax.text(7, 5, str("{0:.1f}".format(min)),
+                verticalalignment='bottom', horizontalalignment='left',
+                color='black', fontsize=18)
 
-    ax.text(x-7, 5, str(value[len(value)-1]),
-            verticalalignment='bottom', horizontalalignment='right',
-            color='black', fontsize=18)
+    if max is not None:
+        ax.text(x-7, 5, str("{0:.1f}".format(max)),
+                verticalalignment='bottom', horizontalalignment='right',
+                color='black', fontsize=18)
 
     plt.xlim(0, x)
     plt.ylim(0, 20)
@@ -125,7 +215,38 @@ def plot_color_gradients(gradient, value):
         top='off',  # ticks along the top edge are off
         labelbottom='off')
     plt.gcf().subplots_adjust(bottom=0.5)
-    plt.savefig('legend.png')
+    name = "sub_Legend-"+str(plotnumber)+".png"
+    plt.savefig(name,transparent=True )
+    return name
+
+# Combine all of the sub-Legends into one legend
+def mergeSubLegends(l):
+    fig = plt.figure("Legend")
+
+    img_A = plt.imread(l[0])
+    img_B = plt.imread(l[1])
+    img_C = plt.imread(l[2])
+    img_D = plt.imread(l[3])
+
+    ax = fig.add_subplot(141)
+    plt.imshow(img_A)
+    plt.axis('off')
+
+    ax = fig.add_subplot(142)
+    plt.imshow(img_B)
+    plt.axis('off')
+
+    ax = fig.add_subplot(143)
+    plt.imshow(img_C)
+    plt.axis('off')
+
+    ax = fig.add_subplot(144)
+    plt.imshow(img_D)
+    plt.axis('off')
+
+    plt.subplots_adjust(left=0.01, bottom=None, right=0.99, top=1.0, wspace=-0.22, hspace=0)
+    plt.savefig('legend.png', dpi=300, transparent=True)
+
 
 # Import data from CSV
 csvdata = pd.read_csv("data.csv", header=0)
@@ -137,6 +258,7 @@ method= list(csvdata.Method)
 value_log = ParseValueLog(value,10,1)
 name_to_plot = combineListValues(name, value, method)
 
+
 # Make a data frame with dots to show on the map
 data = pd.DataFrame({
     'lat': lat,
@@ -147,34 +269,43 @@ data = pd.DataFrame({
 })
 data
 
-data = data.sort_values(by=('value'), ascending=False)
+# sort data by value
+data = data.sort_values(by=('value'), ascending=True)
 
 # Gerenrate colour gradient with n = number of items in the list
-colorgradient = gradient("#3498DB", "#E74C3C", len(name))
+# Old gradient formula
+#colorgradient = gradient("#3498DB", "#E74C3C", len(name))
 
+# Create lsit of colors to be used for subgradients
+listOfColors_toPass = ['#0000db',
+                '#00dbd7',
+                '#00db03',
+                '#dbd700',
+                '#db1900',
+                '#db00d0']
+
+# get the color gradient to color the plotted data points
+colorgradient = prepGradientByDecate(data["valueraw"], listOfColors_toPass)
 
 # Make an empty map
 m = folium.Map(location=[20, 0], tiles='cartodbpositron', zoom_start=2)
 
-# I can add marker one by one on the map
+# add data points to map one by one
 counter = 0
 for i in range(0, len(data)):
-    colors = colorgradient["hex"]
+    colors = colorgradient
     folium.Circle(
         location=[data.iloc[i]['lon'], data.iloc[i]['lat']],
         popup=(data.iloc[i]['name']),
         #radius=data.iloc[i]['value'] * 100000,
         radius= (2)*
                 ((-(0.0000992*(abs(data.iloc[i]['lon']**2))))-(0.0021852*(abs(data.iloc[i]['lon'])))+1)
-                 * 100000,
-        color=colorgradient["hex"][counter],
+                 * 50000,
+        color=colorgradient[counter],
         fill=True,
-        fill_color=colorgradient["hex"][counter]
+        fill_color=colorgradient[counter]
     ).add_to(m)
     counter += 1
-
-# create Legend
-plot_color_gradients(colorgradient["hex"], value)
 
 min_lon = 120
 max_lon = 170
@@ -184,41 +315,36 @@ max_lat = 56
 # Overlay the image
 #m.add_child(plugins.ImageOverlay(data, opacity=0.8, bounds =[[min_lat, min_lon], [max_lat, max_lon]]))
 
-
 # Save it as html
 m.save('mymap.html')
 
 #<div><img src="http://www.condensationexperiments.com/WorldBubbleMap/legend.png" alt="Legend"></div>
+#<div><img src="http://www.condensationexperiments.com/WorldBubbleMap/Figure_1.png" alt="Chart"></div>
 # Change height to 90%
 
 
 
+
+
+
 # Try another type of plot BETA
-
 m = folium.Map(location=[20, 0], tiles='cartodbpositron', zoom_start=2)
-
 counter = 0
 for i in range(0, len(data)):
-    colors = colorgradient["hex"]
+    colors = colorgradient
     folium.Circle(
         location=[data.iloc[i]['lon'], data.iloc[i]['lat']],
         popup=(data.iloc[i]['name']),
         #radius=data.iloc[i]['value'] * 100000,
         radius= (data.iloc[i]['value'])*
                 ((-(0.0000992*(abs(data.iloc[i]['lon']**2))))-(0.0021852*(abs(data.iloc[i]['lon'])))+1)
-                 * 100000,
+                 * 1000,
         color= "#1F618D",
         fill=True,
         fill_color=colors[counter]
     ).add_to(m)
     counter += 1
-
-# create Legend
-plot_color_gradients(colorgradient["hex"], value)
-
 # Overlay the image
 #m.add_child(plugins.ImageOverlay(data, opacity=0.8, bounds =[[min_lat, min_lon], [max_lat, max_lon]]))
-
-
 # Save it as html
 m.save('mymap2.html')
