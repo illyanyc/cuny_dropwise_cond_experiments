@@ -244,8 +244,8 @@ def mergeSubLegends(l):
     plt.imshow(img_D)
     plt.axis('off')
 
-    plt.subplots_adjust(left=0.01, bottom=None, right=0.99, top=1.0, wspace=-0.22, hspace=0)
-    plt.savefig('legend.png', dpi=300, transparent=True)
+    plt.subplots_adjust(left=0.01, bottom=None, right=0.99, top=1.8, wspace=-0.22, hspace=0)
+    plt.savefig('legend.png', dpi=150, transparent=True)
 
 
 # Import data from CSV
