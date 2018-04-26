@@ -7,7 +7,7 @@ Name,Latitude,Longitude,low,mid,high,Number,Method
 "6 - Yinchuan, China",38.487193,106.230908,0,1.7,0,6,No information given
 "66 - Alentajo, Portugal",38.331959,-8.0018669,0,20,0,66,SEM / Image J
 57 - Southern Nevada,36.1709357,-115.2098505,6.5,53.25,100,57,Confocal microscopy
-69 - North Carolina,35.7596,79.0193,0.01,107.505,215,69,No information given
+69 - North Carolina,35.7596,-79.0193,0.01,107.505,215,69,No information given
 "2 - Daggett, California, USA",34.8640316,-116.888098,1,3,5,2,SEM
 "1 - New Mexico, USA",34.5199402,-105.8700901,0,2,0,1,SEM
 "3 - New Mexico, USA",36.5199402,-105.8700901,0.3,0.65,1,3,Commercial Particle Sizer - optical technique

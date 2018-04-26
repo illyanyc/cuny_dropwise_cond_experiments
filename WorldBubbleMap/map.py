@@ -334,6 +334,8 @@ max_lon = 170
 min_lat = 50
 max_lat = 56
 
+
+
 # Overlay the image
 #m.add_child(plugins.ImageOverlay(data, opacity=0.8, bounds =[[min_lat, min_lon], [max_lat, max_lon]]))
 
