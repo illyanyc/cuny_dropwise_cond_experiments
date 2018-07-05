@@ -159,10 +159,10 @@ def plot_rect(data):
             fontsize=11, color = '#ff4d4d')
 
     # plot media for the standard test dust
-    plt.axvline(x=stadard_median, color='#00e6ac', ls='dotted')
-    ax.text(stadard_median + 3, len(data) - 4, ("Standard Dust Median: " + str(int(np.round(stadard_median, 0))) + " um"),
-            # + " +/- " + str(np.round(stdev,0)),
-            fontsize=11, color='#00e6ac')
+    # plt.axvline(x=stadard_median, color='#00e6ac', ls='dotted')
+    # ax.text(stadard_median + 3, len(data) - 4, ("Standard Dust Median: " + str(int(np.round(stadard_median, 0))) + " um"),
+    #         # + " +/- " + str(np.round(stdev,0)),
+    #         fontsize=11, color='#00e6ac')
 
     ax.plot((low_min,low_max),(0,0))
 
@@ -187,7 +187,7 @@ def plot_rect(data):
     stadanrdDust_patch = mpatches.Patch(facecolor='#00e6ac',
                                   edgecolor='#00b386', label='Size Range: Standard Test Dust')
     literatureDust_patch = mpatches.Patch(facecolor='#d7d9db', edgecolor='#6d7378', label='Size Range: Literature Search')
-    davidDust_patch = mpatches.Patch(facecolor='#fc954b', edgecolor='#ba6223', label='Size Range: Articles Provided by David Miller')
+    #davidDust_patch = mpatches.Patch(facecolor='#fc954b', edgecolor='#ba6223', label='Size Range: Articles Provided by David Miller')
     meanPoint = mlines.Line2D([], [], marker='v', color='#737373',
                               markersize=5, label='Mean Calculated from Literature Reported Range')
     averagePoint = mlines.Line2D([], [], marker='s', color='#737373',
@@ -197,7 +197,9 @@ def plot_rect(data):
 
     # Plot the legend
     plt.legend(
-        handles=[literatureDust_patch, davidDust_patch, stadanrdDust_patch, averagePoint, meanPoint, medianPoint], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+        handles=[literatureDust_patch,
+                 #davidDust_patch,
+                 stadanrdDust_patch, averagePoint, meanPoint, medianPoint], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 
     # eventually return what we have done
     return ax

@@ -1,4 +1,4 @@
-"1 - New Mexico, USA",2,2,2,2,,,,,,,SEM,David,Reported Average
+"1 - New Mexico, USA",2,2,2,2,,,,,,,SEM,NA,Reported Average
 10 - Oman,120,120,120,120,,,,,,,No information given,NA,Reported Average
 "11 - Mali, West Africa",40,20,30,40,,,,,,,No information given,NA,Mean from Reported Range
 12 - Algeria,17.5,12.7,12.7,12.7,,17.5,,,,,No information given,NA,Reported Average
@@ -20,7 +20,7 @@
 27 - Oman,63,2,32.5,63,,,,,,,Sieve,NA,Mean from Reported Range
 28 - Riyadh,90,30,60,90,,,,,,,SEM,NA,Mean from Reported Range
 29 - Iraq,120,30,75,120,,,,,,,SEM,NA,Mean from Reported Range
-"3 - New Mexico, USA",1,0.3,0.65,1,,,,,,,PSA,David,Mean from Reported Range
+"3 - New Mexico, USA",1,0.3,0.65,1,,,,,,,PSA,NA,Mean from Reported Range
 30 - Brazil,50,40,45,50,,,,,,,SEM,NA,Mean from Reported Range
 31 - Saudi Arabia,0.8,0.8,0.8,0.8,,,,,,,PSA Microtrac S3500,NA,Reported Average
 32 - Worldwide (unspecified),60,15,37.5,60,,,,,,,SEM,NA,Mean from Reported Range
@@ -62,8 +62,8 @@
 "65 - Dharan, Saudi Arabia",30,0.01,1.2,30,,,,,,,SEM,NA,Mean from Reported Range
 "66 - Alentajo, Portugal",20,20,20,20,,,,,,,SEM (Image J),NA,Reported Average
 67 - Unknown Location,4,3,3.5,4,,,,,,,SEM,NA,Reported Average
-"68 - Sede Boqer, Israel",20,2,7,12,4,12,20,,,,No information given,David,Mean from Reported Range
-69 - North Carolina,215,0.01,107.505,215,,,,,,,No information given,David,Mean from Reported Range
+"68 - Sede Boqer, Israel",20,2,7,12,4,12,20,,,,No information given,NA,Mean from Reported Range
+69 - North Carolina,215,0.01,107.505,215,,,,,,,No information given,NA,Mean from Reported Range
 "7 - Negev Desert, Israel",60,5,32.5,60,,,,,,,No information given,NA,Mean from Reported Range
 8 - Lybia,120,120,120,120,,,,,,,No information given,NA,Reported Average
 9 - Iraq,400,80,240,400,,,,,,,No information given,NA,Mean from Reported Range
