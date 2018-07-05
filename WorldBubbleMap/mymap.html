@@ -28,6 +28,22 @@
             margin: 70px;
             flex: 1;
         }
+
+
+        .flex-heading{
+            display: flex;
+            background: whitesmoke;
+        }
+
+        .flex-heading > div{
+
+            padding:5px;
+            margin: 10px;
+            flex: 1;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
     </style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
@@ -44,11 +60,20 @@
         
 </head>
 <body>
-<div><center><h2>Dust Particle Diameter on Solar Panels Around the World</h2></center></div>
-<div><center><h3>Literature Search - Median dust particle diameter of soilants found on solar panels in the field conditions</h3></center></div>
-<div><center><h4>Department of Chemistry, College of Staten Island - City University of New York</h4></center></div>
+
+    <div class="flex-heading">
+        <div style="flex-grow: 1">
+            <center><img src="logo_csi2.png" alt="CSI CUNY Logo"></center>
+        </div>
+        <div style="flex-grow: 6"><center><h2>Dust Particle Diameter on Solar Panels Around the World</h2></center></div>
+        <div style="flex-grow: 1"></div>
+    </div>
+
+    <div><center><h3>Literature Search - Median dust particle diameter of soilants found on solar panels in the field conditions</h3></center></div>
+    <div><center><h4>Department of Chemistry | College of Staten Island | City University of New York</h4></center></div>
+
     <div class="folium-map" id="map_c38ca68539c5424cbb540da90de4e24c" ></div>
-    <img src="http://www.condensationexperiments.com/WorldBubbleMap/legend.png" alt="Legend">
+            <div><img src="http://www.condensationexperiments.com/WorldBubbleMap/legend.png" alt="Legend"></div>
 
     <div class="flex-container">
 
@@ -58,7 +83,8 @@
             The data on soil particle size was gathered from academic articles reporting soil particle parameters on solar photovoltaic cells and concentrators.<br/>
             Geographical locations of dust source are plotted on the map as colored rings.<br/>
             The color of the rings corresponds to mean or median dust particle diameter (µm).<br/>
-            Legend provides visual guide to particle sizes plotted on the map.<br/><br/>
+            Legend provides visual guide to particle sizes plotted on the map.<br/>
+            Please contact me (see below) for the list of articles used in the study<br/><br/>
 
             <b>Clicking on the ring on the map reveals:</b><br/>
             1) Article Number – Location of study<br/>
@@ -89,7 +115,9 @@
 
 
     </div>
-<div><center>Department of Chemistry | College of Staten Island, City University of New York | July 2018</center></div>
+<div><center>Department of Chemistry | College of Staten Island, City University of New York</center></div>
+    <div><center>The Graduate Center of City University of New York</center></div>
+    <div></div>
 
 
 <div></div>
