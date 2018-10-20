@@ -21,7 +21,7 @@ def plot_rect(data):
 
     print b
 
-    fig = plt.figure()
+    fig = plt.figure(dpi=120)
     ax = fig.add_subplot(111)
     plt.title('Soil Particle Size Distribution Around the World')
 
@@ -82,7 +82,9 @@ def plot_rect(data):
             ax.add_patch(
                 patches.Rectangle((Low_min, (pos - delta / 2.0) - 0.18), Low_max - Low_min, delta, facecolor='#00e6ac',
                                   edgecolor='#00b386'))
-            ax.text(Low_max + Low_Average / 4, (pos - delta / 2.0) - 0.18, str(np.round(Low_Average, 1))+" - "+str(label), fontsize=7, color = '#004d39')
+            ax.text(Low_max + Low_Average / 4, (pos - delta / 2.0) - 0.18, str(np.round(Low_Average, 1))
+                    # +" - "+str(label)
+                    , fontsize=7, color = '#004d39')
 
 
             d_lx.append(Low_Average)
@@ -92,56 +94,79 @@ def plot_rect(data):
 
 
         else:
-            Max, Low_min, Low_max, Low_Average, High_min, High_max, High_Average, Top_min, Top_max, Top_Average, Method, David, ValueType = data[label]
+            Max, Low_min, Low_max, Low_Average, High_min, High_max, High_Average, Top_min, Top_max, Top_Average, Method, Source, ValueType = data[label]
 
             Low_Average = np.round(Low_Average, 1)
             High_Average = np.round(High_Average, 1)
             Top_Average = np.round(Top_Average, 1)
 
-            if David == "David":
-                ly.append(pos - delta / 2.0)
-                lx.append(Low_Average)
-                ax.add_patch(patches.Rectangle((Low_min,(pos-delta/2.0)-0.18),Low_max-Low_min,delta,facecolor='#fc954b', edgecolor='#ba6223'))
-                ax.text(Low_max+Low_Average/6,(pos-delta/2.0)-0.18, str(np.round(Low_Average,2)), fontsize=7)
-                david_lx.append(Low_Average)
-                david_ly.append(pos - delta / 2.0)
+            # Differentiate between Literature search, Leo and David
+            # if Source == "David":
+            #     ly.append(pos - delta / 2.0)
+            #     lx.append(Low_Average)
+            #     ax.add_patch(patches.Rectangle((Low_min,(pos-delta/2.0)-0.18),Low_max-Low_min,delta,facecolor='#d7d9db', edgecolor='#6d7378'))
+            #     ax.text(Low_max+Low_Average/6,(pos-delta/2.0)-0.18, str(np.round(Low_Average,2)), fontsize=7)
+            #     david_lx.append(Low_Average)
+            #     david_ly.append(pos - delta / 2.0)
+            #
+            #     if High_Average > 0.0:
+            #
+            #         ax.add_patch(patches.Rectangle((High_min, (pos - delta / 2.0) - 0.18), High_max - High_min, delta, facecolor='#d7d9db', edgecolor='#6d7378'))
+            #         ax.text(High_Average+High_Average*0.5, (pos - delta / 2.0) - 0.18, str(np.round(High_Average, 1)), fontsize=7)
+            #         david_lx.append(High_Average)
+            #         david_ly.append(pos - delta / 2.0)
+            #
+            #     if Top_Average > 0.0:
+            #         ax.add_patch(patches.Rectangle((Top_min, (pos - delta / 2.0) - 0.18), Top_max - Top_min, delta, facecolor='#d7d9db', edgecolor='#6d7378'))
+            #         ax.text(Top_Average + Top_Average*0.5, (pos - delta / 2.0) - 0.18, str(np.round(Top_Average, 1)), fontsize=7)
+            #         david_lx.append(Top_Average)
+            #         david_ly.append(pos - delta / 2.0)
+            #
+            if Source == "Leo":
+                pass
+            #     ly.append(pos - delta / 2.0)
+            #     lx.append(Low_Average)
+            #     ax.add_patch(patches.Rectangle((Low_min,(pos-delta/2.0)-0.18),Low_max-Low_min,delta,facecolor='#E57A63', edgecolor='#ba6223'))
+            #     ax.text(Low_max+Low_Average/6,(pos-delta/2.0)-0.18, str(np.round(Low_Average,2)), fontsize=7)
+            #     david_lx.append(Low_Average)
+            #     david_ly.append(pos - delta / 2.0)
+            #
+            #     if High_Average > 0.0:
+            #
+            #         ax.add_patch(patches.Rectangle((High_min, (pos - delta / 2.0) - 0.18), High_max - High_min, delta, facecolor='#E57A63',edgecolor='#ba6223'))
+            #         ax.text(High_Average+High_Average*0.5, (pos - delta / 2.0) - 0.18, str(np.round(High_Average, 1)), fontsize=7)
+            #         david_lx.append(High_Average)
+            #         david_ly.append(pos - delta / 2.0)
+            #
+            #     if Top_Average > 0.0:
+            #         ax.add_patch(patches.Rectangle((Top_min, (pos - delta / 2.0) - 0.18), Top_max - Top_min, delta, facecolor='#E57A63',edgecolor='#ba6223'))
+            #         ax.text(Top_Average + Top_Average*0.5, (pos - delta / 2.0) - 0.18, str(np.round(Top_Average, 1)), fontsize=7)
+            #         david_lx.append(Top_Average)
+            #         david_ly.append(pos - delta / 2.0)
+            #
+            # else:
+            ly.append(pos - delta / 2.0)
+            lx.append(Low_Average)
+            ax.add_patch(patches.Rectangle((Low_min, (pos - delta / 2.0) - 0.18), Low_max - Low_min, delta,
+                                           facecolor='#d7d9db', edgecolor='#6d7378'))
+            ax.text(Low_max + Low_Average / 6, (pos - delta / 2.0) - 0.18, str(np.round(Low_Average, 2)),
+                    fontsize=7)
+            writePointToList(pos, delta, Low_Average, ValueType)
 
-                if High_Average > 0.0:
-
-                    ax.add_patch(patches.Rectangle((High_min, (pos - delta / 2.0) - 0.18), High_max - High_min, delta, facecolor='#fc954b',edgecolor='#ba6223'))
-                    ax.text(High_Average+High_Average*0.5, (pos - delta / 2.0) - 0.18, str(np.round(High_Average, 1)), fontsize=7)
-                    david_lx.append(High_Average)
-                    david_ly.append(pos - delta / 2.0)
-
-                if Top_Average > 0.0:
-                    ax.add_patch(patches.Rectangle((Top_min, (pos - delta / 2.0) - 0.18), Top_max - Top_min, delta, facecolor='#fc954b',edgecolor='#ba6223'))
-                    ax.text(Top_Average + Top_Average*0.5, (pos - delta / 2.0) - 0.18, str(np.round(Top_Average, 1)), fontsize=7)
-                    david_lx.append(Top_Average)
-                    david_ly.append(pos - delta / 2.0)
-
-            else:
-                ly.append(pos - delta / 2.0)
-                lx.append(Low_Average)
-                ax.add_patch(patches.Rectangle((Low_min, (pos - delta / 2.0) - 0.18), Low_max - Low_min, delta,
+            if High_Average > 0.0:
+                ax.add_patch(patches.Rectangle((High_min, (pos - delta / 2.0) - 0.18), High_max - High_min, delta,
                                                facecolor='#d7d9db', edgecolor='#6d7378'))
-                ax.text(Low_max + Low_Average / 6, (pos - delta / 2.0) - 0.18, str(np.round(Low_Average, 2)),
+                ax.text(High_Average + High_Average * 0.5, (pos - delta / 2.0) - 0.18,
+                        str(np.round(High_Average, 1)), fontsize=7)
+
+                writePointToList(pos, delta, High_Average, ValueType)
+
+            if Top_Average > 0.0:
+                ax.add_patch(patches.Rectangle((Top_min, (pos - delta / 2.0) - 0.18), Top_max - Top_min, delta,
+                                               facecolor='#d7d9db', edgecolor='#6d7378'))
+                ax.text(Top_Average + Top_Average * 0.5, (pos - delta / 2.0) - 0.18, str(np.round(Top_Average, 1)),
                         fontsize=7)
-                writePointToList(pos, delta, Low_Average, ValueType)
-
-                if High_Average > 0.0:
-                    ax.add_patch(patches.Rectangle((High_min, (pos - delta / 2.0) - 0.18), High_max - High_min, delta,
-                                                   facecolor='#d7d9db', edgecolor='#6d7378'))
-                    ax.text(High_Average + High_Average * 0.5, (pos - delta / 2.0) - 0.18,
-                            str(np.round(High_Average, 1)), fontsize=7)
-
-                    writePointToList(pos, delta, High_Average, ValueType)
-
-                if Top_Average > 0.0:
-                    ax.add_patch(patches.Rectangle((Top_min, (pos - delta / 2.0) - 0.18), Top_max - Top_min, delta,
-                                                   facecolor='#d7d9db', edgecolor='#6d7378'))
-                    ax.text(Top_Average + Top_Average * 0.5, (pos - delta / 2.0) - 0.18, str(np.round(Top_Average, 1)),
-                            fontsize=7)
-                    writePointToList(pos, delta, Top_Average, ValueType)
+                writePointToList(pos, delta, Top_Average, ValueType)
 
 
 
@@ -154,9 +179,9 @@ def plot_rect(data):
 
     # plot median for all of the data
     plt.axvline(x=median, color = '#ff9999', ls='dotted')
-    ax.text(median + 3, len(data)-2, ("Literature Search Median: " + str(int(np.round(median, 0))) + " um"),
-            #+ " +/- " + str(np.round(stdev,0)),
-            fontsize=11, color = '#ff4d4d')
+    # ax.text(median + 3, len(data)-2, ("Literature Search Median: " + str(int(np.round(median, 0))) + " um"),
+    #         #+ " +/- " + str(np.round(stdev,0)),
+    #         fontsize=11, color = '#ff4d4d')
 
     # plot media for the standard test dust
     # plt.axvline(x=stadard_median, color='#00e6ac', ls='dotted')
@@ -187,6 +212,7 @@ def plot_rect(data):
     stadanrdDust_patch = mpatches.Patch(facecolor='#00e6ac',
                                   edgecolor='#00b386', label='Size Range: Standard Test Dust')
     literatureDust_patch = mpatches.Patch(facecolor='#d7d9db', edgecolor='#6d7378', label='Size Range: Literature Search')
+    providedDataPoints = mpatches.Patch(facecolor='#E57A63', edgecolor='#ba6223', label='Size Range: Data provided by Leo')
     #davidDust_patch = mpatches.Patch(facecolor='#fc954b', edgecolor='#ba6223', label='Size Range: Articles Provided by David Miller')
     meanPoint = mlines.Line2D([], [], marker='v', color='#737373',
                               markersize=5, label='Mean Calculated from Literature Reported Range')
@@ -195,11 +221,11 @@ def plot_rect(data):
     medianPoint = mlines.Line2D([], [], marker='o', color='#737373',
                                 markersize=5, label='Mean from Literature Reported Distribution')
 
-    # Plot the legend
+    # # Plot the legend
     plt.legend(
         handles=[literatureDust_patch,
                  #davidDust_patch,
-                 stadanrdDust_patch, averagePoint, meanPoint, medianPoint], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+                 stadanrdDust_patch, providedDataPoints, averagePoint, meanPoint, medianPoint], bbox_to_anchor=(1.05, 0.95), loc=2, borderaxespad=0.)
 
     # eventually return what we have done
     return ax
@@ -207,7 +233,7 @@ def plot_rect(data):
 
 # this is the main script, note that we have imported pyplot as plt
 rangedata = {}
-f = open('csvData.csv', 'rb')
+f = open('csvData_withDavidTags.csv', 'rb')
 reader = csv.reader(f)
 for row in reader:
     i = row
