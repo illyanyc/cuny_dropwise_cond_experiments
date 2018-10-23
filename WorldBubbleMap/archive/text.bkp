@@ -1,0 +1,110 @@
+
+        <style>
+        .flex-container {
+            background: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding:30px;
+            margin: 70px;
+            flex: 1;
+        }
+        .flex-heading{
+            display: flex;
+            background: whitesmoke;
+        }
+        .flex-heading img{
+            max-height: 200px;
+            max-width: 400px;
+
+
+        }
+        .flex-heading > div{
+            flex-direction: column;
+            padding:5px;
+            margin: 10px;
+            flex: 1;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+    </style>
+
+
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+
+            <style> #map_86561134cddd42c4aa70bab8211a8c99 {
+                position : relative;
+                width : 100.0%;
+                height: 65.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+
+</head>
+<body>
+
+<div class="flex-heading">
+
+    <div style="flex-grow: 3">
+            <center><img src="GCLogo.png" alt="CUNY Grad Center Logo"></center>
+        </div>
+
+    <div style="flex-grow: 6"><center><h2>Dust Particle Diameter on Solar Panels Around the World</h2></center>
+            </div>
+
+    <div style="flex-grow: 1">
+            <center><img src="CSILogo.png" alt="CSI CUNY Logo"></center></div>
+    </div>
+
+<div><center><h3>Literature Search - Median dust particle diameter of soilants found on solar panels in the field conditions</h3></center></div>
+            <div><center><h4>Ph.D. Program in Chemistry, The Graduate Center of the City University of New York, New York, New York 10016</h4></center></div>
+            <div><center><h4>Department of Chemistry | College of Staten Island | City University of New York</h4></center></div>
+
+    <div class="folium-map" id="map_86561134cddd42c4aa70bab8211a8c99" ></div>
+        <div><img src="http://www.condensationexperiments.com/WorldBubbleMap/legend.png" alt="Legend"></div>
+
+
+<div class="flex-container">
+
+        <div><h2>Map Content</h2></div>
+
+        <div>The map of the median particle size has been plotted utilizing data found in literature.<br/>
+            The data on soil particle size was gathered from academic articles reporting soil particle parameters on solar photovoltaic cells and concentrators.<br/>
+            Geographical locations of dust source are plotted on the map as colored rings.<br/>
+            The color of the rings corresponds to mean or median dust particle diameter (µm).<br/>
+            Legend provides visual guide to particle sizes plotted on the map.<br/>
+            Please contact me (see below) for the list of articles used in the study<br/><br/>
+
+            <b>Clicking on the ring on the map reveals:</b><br/>
+            1) Article Number – Location of study<br/>
+            2) Mean/median diameter of dust reported  (mean and average are identical)<br/>
+            3) Method of particle size analysis as reported by the article (when available)<br/>
+
+
+            <div><h2>Methodology</h2></div>
+            <p>A literature search was performed on <a href="https://clarivate.com/products/web-of-science/"> Web of Science</a>.<br/><br/>
+                <b>Inclusion criteria:</b><br/>
+            1) Dust accumulation on solar panels<br/>
+            2) Dust particle size on solar panels<br/><br/>
+                <b>Exclusion criteria:</b><br/>
+            1) Articles describing dust as aerosols<br/><br/>
+                <b>Search Results</b><br/>
+            69 data points obtained from 60 articles<br/>
+            Standard test dust data.<br/>
+            Information on standard test dust was obtained from <a href="http://www.powdertechnologyinc.com/">PTI, Inc website</a>.</p> </div>
+        <div><h2>Updates</h2></div>
+        <div>May 16th, 2018<br/>
+            Continuous query of academic articles in order to obtain data from articles missed by initial search and from newly published articles is conducted via periodic automated query of Web of Science. Updates will be issued quarterly.<br/>
+        </div>
+        <div><h2>Contact</h2></div>
+        <div><b>Contact me:</b><br/>
+            Illya Nayshevsky<br/>
+            <a href="mailto:illya.nayshevsky@csi.cuny.edu?Subject=PV%20-%20Soil%20particle%20distribution%20map" target="_top">Email me</a>
+        </div>
+
+
+    </div>
+<div><center>Department of Chemistry | College of Staten Island, City University of New York</center></div>
+    <div><center>The Graduate Center of City University of New York</center></div>
+    <div></div>

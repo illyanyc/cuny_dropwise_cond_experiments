@@ -21,7 +21,7 @@ def plot_rect(data):
 
     print b
 
-    fig = plt.figure(dpi=120)
+    fig = plt.figure(dpi=140)
     ax = fig.add_subplot(111)
     plt.title('Soil Particle Size Distribution Around the World')
 
@@ -173,9 +173,14 @@ def plot_rect(data):
 
     # calcalate average and plot average
     median = np.median(lx)
+    mean = np.average(lx)
     stadard_median = 15.19
     average = np.average(lx)
     stdev = np.std(lx)
+    print(stdev)
+    print(mean)
+    print(lx)
+
 
     # plot median for all of the data
     plt.axvline(x=median, color = '#ff9999', ls='dotted')
@@ -212,8 +217,8 @@ def plot_rect(data):
     stadanrdDust_patch = mpatches.Patch(facecolor='#00e6ac',
                                   edgecolor='#00b386', label='Size Range: Standard Test Dust')
     literatureDust_patch = mpatches.Patch(facecolor='#d7d9db', edgecolor='#6d7378', label='Size Range: Literature Search')
-    providedDataPoints = mpatches.Patch(facecolor='#E57A63', edgecolor='#ba6223', label='Size Range: Data provided by Leo')
-    #davidDust_patch = mpatches.Patch(facecolor='#fc954b', edgecolor='#ba6223', label='Size Range: Articles Provided by David Miller')
+    # providedDataPoints = mpatches.Patch(facecolor='#E57A63', edgecolor='#ba6223', label='Size Range: Data provided by Leo')
+    # davidDust_patch = mpatches.Patch(facecolor='#fc954b', edgecolor='#ba6223', label='Size Range: Articles Provided by David Miller')
     meanPoint = mlines.Line2D([], [], marker='v', color='#737373',
                               markersize=5, label='Mean Calculated from Literature Reported Range')
     averagePoint = mlines.Line2D([], [], marker='s', color='#737373',
@@ -225,7 +230,7 @@ def plot_rect(data):
     plt.legend(
         handles=[literatureDust_patch,
                  #davidDust_patch,
-                 stadanrdDust_patch, providedDataPoints, averagePoint, meanPoint, medianPoint], bbox_to_anchor=(1.05, 0.95), loc=2, borderaxespad=0.)
+                 stadanrdDust_patch, averagePoint, meanPoint, medianPoint], bbox_to_anchor=(1.05, 0.95), loc=2, borderaxespad=0.)
 
     # eventually return what we have done
     return ax
@@ -281,11 +286,11 @@ f.close()
 # print rangedata
 
 # standard dust types:
-rangedata["PT-A1 Ultrafine"]=(22, 0.92,22,4.51,0,0,0,0,0,0,"","",'Mean from Reported Distribution')
-rangedata["PT-A2 Fine"]=(176, 0.97,176.00,8.8,0,0,0,0,0,0,"","",'Mean from Reported Distribution')
-rangedata["PT-A3 Medium"]=(176, 0.97,176,15.19306931,0,0,0,0,0,0,"","",'Mean from Reported Distribution')
-rangedata["PT-A4 Course"]=(352, 0.97,352,36,0,0,0,0,0,0,"","",'Mean from Reported Distribution')
-rangedata["ASTM C778 graded"]=(1180, 150,1180,369.444,0,0,0,0,0,0,"","",'Mean from Reported Distribution')
+rangedata["PT-A1 Ultrafine       "]=(22, 0.92,22,4.51,0,0,0,0,0,0,"","",'Mean from Reported Distribution')
+rangedata["PT-A2 Fine       "]=(176, 0.97,176.00,8.8,0,0,0,0,0,0,"","",'Mean from Reported Distribution')
+rangedata["PT-A3 Medium       "]=(176, 0.97,176,15.19306931,0,0,0,0,0,0,"","",'Mean from Reported Distribution')
+rangedata["PT-A4 Course       "]=(352, 0.97,352,36,0,0,0,0,0,0,"","",'Mean from Reported Distribution')
+rangedata["ASTM C778 graded       "]=(1180, 150,1180,369.444,0,0,0,0,0,0,"","",'Mean from Reported Distribution')
 
 
 # call the function and give its result a name
@@ -294,4 +299,4 @@ ax = plot_rect(rangedata)
 ax.set_xlabel('Log of Particle Diameter [um]')
 # finally save or show what we have
 plt.show()
-plt.savefig('Log of Particle Diameter', dpi=300)
+plt.savefig('histogram.png', dpi=300)
