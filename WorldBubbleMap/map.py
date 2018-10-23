@@ -340,7 +340,7 @@ max_lat = 56
 #m.add_child(plugins.ImageOverlay(data, opacity=0.8, bounds =[[min_lat, min_lon], [max_lat, max_lon]]))
 
 # Save it as html
-m.save('mymap.html')
+m.save('map.html')
 
 #<div><img src="http://www.condensationexperiments.com/WorldBubbleMap/legend.png" alt="Legend"></div>
 #<div><img src="http://www.condensationexperiments.com/WorldBubbleMap/Figure_1.png" alt="Chart"></div>
