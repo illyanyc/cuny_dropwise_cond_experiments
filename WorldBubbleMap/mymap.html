@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
     <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-
-                <style>
+    <!-- Styling for the page-->
+    <style>
         .flex-container {
             background: whitesmoke;
             display: flex;
@@ -43,8 +43,6 @@
             flex-wrap: nowrap;
         }
     </style>
-
-
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
 
             <style> #map_86561134cddd42c4aa70bab8211a8c99 {
@@ -58,7 +56,7 @@
 
 </head>
 <body>    
-
+<!-- Heading -->
 <div class="flex-heading">
 
     <div style="flex-grow: 3">
@@ -76,13 +74,16 @@
     <div><center><h4>Ph.D. Program in Chemistry, The Graduate Center of the City University of New York, New York, New York 10016</h4></center></div>
     <div><center><h4>Department of Chemistry | College of Staten Island | City University of New York</h4></center></div>
 
-    <div class="folium-map" id="map_86561134cddd42c4aa70bab8211a8c99" ></div>
-        <div><img src="http://www.condensationexperiments.com/WorldBubbleMap/legend.png" alt="Legend"></div>
-
+<!-- Link to references-->
 <div class="flex-container">
     A list of references is available here: <a href="http://www.condensationexperiments.com/WorldBubbleMap/citations.html"> Citations</a>.
 </div>
 
+<!-- Map -->
+    <div class="folium-map" id="map_86561134cddd42c4aa70bab8211a8c99" ></div>
+    <div><img src="http://www.condensationexperiments.com/WorldBubbleMap/legend.png" alt="Legend"></div>
+
+<!-- Description of the map -->
 <div class="flex-container">
 
         <div><h2>Map Content</h2></div>
@@ -99,7 +100,6 @@
             2) Mean/median diameter of dust reported  (mean and average are identical)<br/>
             3) Method of particle size analysis as reported by the article (when available)<br/>
 
-
             <div><h2>Methodology</h2></div>
             <p>A literature search was performed on <a href="https://clarivate.com/products/web-of-science/"> Web of Science</a>.<br/><br/>
                 <b>Inclusion criteria:</b><br/>
@@ -111,6 +111,7 @@
             69 data points obtained from 60 articles<br/>
             Standard test dust data.<br/>
             Information on standard test dust was obtained from <a href="http://www.powdertechnologyinc.com/">PTI, Inc website</a>.</p> </div>
+
         <div><h2>Updates</h2></div>
         <div>May 16th, 2018<br/>
             Continuous query of academic articles in order to obtain data from articles missed by initial search and from newly published articles is conducted via periodic automated query of Web of Science. Updates will be issued quarterly.<br/>
@@ -120,18 +121,16 @@
             Illya Nayshevsky<br/>
             <a href="mailto:illya.nayshevsky@csi.cuny.edu?Subject=PV%20-%20Soil%20particle%20distribution%20map" target="_top">Email me</a>
         </div>
-
-
     </div>
-    <div><center>Department of Chemistry | College of Staten Island, City University of New York</center></div>
-    <div><center>The Graduate Center of City University of New York</center></div>
-    <div></div>
 
+<!-- Footer-->
+<div><center>Department of Chemistry | College of Staten Island, City University of New York</center></div>
+<div><center>The Graduate Center of City University of New York</center></div>
+<div></div>
 </body>
-<script>    
-    
 
-            
+<!-- Map Script-->
+<script>
                 var bounds = null;
             
 
