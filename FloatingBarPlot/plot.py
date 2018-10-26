@@ -177,8 +177,11 @@ def plot_rect(data):
     stadard_median = 15.19
     average = np.average(lx)
     stdev = np.std(lx)
-    print(stdev)
-    print(mean)
+
+    print("Mean: "+str(mean))
+    print("StDev: "+str(stdev))
+    print("Median: "+str(median))
+
     print(lx)
 
 

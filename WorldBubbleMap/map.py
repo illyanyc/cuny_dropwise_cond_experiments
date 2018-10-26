@@ -263,6 +263,7 @@ lon = list(csvdata.Latitude)
 lat = list(csvdata.Longitude)
 value= list(csvdata.mid)
 method= list(csvdata.Method)
+ref= list(csvdata.Ref)
 value_log = ParseValueLog(value,10,1)
 name_to_plot = combineListValues(name, value, method)
 
