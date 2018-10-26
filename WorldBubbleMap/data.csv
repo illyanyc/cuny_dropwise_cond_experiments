@@ -1,78 +1,75 @@
-Name,Latitude,Longitude,low,mid,high,Number,Method,Ref
-"2 - Daggett, California, USA",34.8640316,-116.888098,1,3,5,11,SEM,"A. S. Al-Ammri, A. Ghazi and F. Mustafa, ""Dust effects on the performance of PV street light in Baghdad city,"" 2013 International Renewable and Sustainable Energy Conference (IRSEC), Ouarzazate, 18-22. 2013"
-57 - Southern Nevada,36.1709357,-115.2098505,6.5,53.25,100,45,Confocal Microscopy,"Ahmad Y. Al-hasan & Adel A. Ghoneim ""A new correlation between photovoltaic panel's efficiency and amount of sand dust accumulated on their surface"", International Journal of Sustainable Energy, 24:4, 187-197, 2005"
-"40 - Sonora, Mexico",29.2972247,-110.3308814,0,5,5,25,LPSA: Coulter Model Fraunhofer LS 100Q,"Appels, R. et al., ""Effect of soiling on photovoltaic modules"", Solar Energy, 96, 283–291, 2013"
-"22 - Sonora, Mexico",29.2972247,-112.3308814,0.51369144,0.829,100,40,PSA: Coulter Model Fraunhofer LS 100Q,"B. S. Yilbas, G. Hassan, H. Ali, and N. Al-Aqeeli, “Environmental dust effects on aluminum surfaces in humid air ambient,” Scientific Reports, vol. 7, p. 45999, May 2017."
-"4 - New Mexico, USA",34.5199402,-105.8700901,1,3,5,36,SEM,"Bergin, M.H., et al, ""Large Reductions in Solar Energy Production Due to Dust and Particulate Air Pollution"", Environmental Science Technoogy. Letters, 4, 339?344, 2017"
-"1 - New Mexico, USA",34.5199402,-107.8700901,1,10.5,20,41,SEM,"Bernd Weber et al., ""Performance Reduction of PV Systems by Dust Deposition"", Energy Procedia, 57, 99 – 108, 2014"
-"3 - New Mexico, USA",36.5199402,-105.8700901,0.7,10.35,20,42,PSA,"Biryokov SA. ""An experimental study of the dry deposition mechanism for airborne dust"", Journal of Aerosol Science, 29, 129–3, 1998"
-14 - Mexico City,19.4326077,-99.133208,0.4,20,40,6,LPSA: Beckmann Laser Diffractometer,"Biryukov SA. Degradation of optical properties of solar collectors due to the ambient dust deposition as a function of particle size. Journal of Aerosol, Science 1996;27:S37–8."
-69 - North Carolina,35.7596,-79.0193,0.01,107.505,215,16,No information given,"Boddupalli, N., et al., ""Dealing with dust – Some challenges and solutions for enabling solar energy in desert regions"", Solar Energy, 150, 166–176, 2017"
-"53 - Santiago, Chile",-35.6751,-71.543,1,250.5,500,50,No information given,"Brahim Aïssa, Rima J. Isaifan, Vinod E. Madhavan & Amir A. Abdallah, ""Structural and physical properties of the dust particles in Qatar and their influence on the PV panel performance"", Scientific Reports, Vol 6, Article number: 31467, 2016"
-43 - Chile - L1,-38.675147,-71.542969,4,47,250,37,Sieving,"Brem GF, Woyski MS, Ryan JS. ""Investigation of soiling of candidate mirrors for solar power installations"", McDonnell aeronautics company subcontract report. MDAC Rpt. G8131, 1980"
-43 - Chile - L2,-32.675147,-71.542938,4,47,125,37,Sieving,"Chen, E., et al., ""Measurement of dust sweeping force for cleaning solar panels"", Solar Energy Materials and Solar Cells, 179, 247–253, 2018
-"
-43 - Chile - L3,-28.675147,-71.542907,4,15,250,37,Sieving,"Christopher Sansom, Heather Almond, Peter King, Essam Endaya, and Sofiane Bouaichaoui, ""Airborne sand and dust soiling of solar collecting mirrors"",  AIP Conference Proceedings 1850, 130011, 2017"
-30 - Brazil,-14.235004,-51.92528,40,45,50,30,SEM,"Christopher Sansom, Heather Almond, Peter King, Essam Endaya, and Sofiane Bouaichaoui, ""Airborne sand and dust soiling of solar collecting mirrors"",  AIP Conference Proceedings 1850, 130011, 2017"
-"62 - Minas Gerais, Brazil - NE",-18.512178,-44.5550308,28.7,28.7,28.7,17,SEM (EDS used for elements),"Conceição, Ricardo., ""Organic Soiling: The Role of Pollen in PV Module Performance Degradation"", Energies 2018, 11, 294, 2018"
-"62 - Minas Gerais, Brazil - SW",-18.512178,-47.5550308,35.3,35.3,35.3,17,SEM (EDS used for elements),"Conceição, Ricardo., ""Organic Soiling: The Role of Pollen in PV Module Performance Degradation"", Energies 2018, 11, 294, 2018"
-"66 - Alentajo, Portugal - July",38.331959,-8.0018669,19.3,19.3,19.3,14,SEM (Image J),"D. Goossens and Z. Y. Offer, “Comparisons of day-time and night-time dust accumulation in a desert region,” Journal of Arid Environments, vol. 31, no. 3, pp. 253–281, 1995."
-"66 - Alentajo, Portugal - April",41.331959,-8.0018669,20.5,20.5,20.5,14,SEM (Image J),"F. H. Haynie, “Size Distribution of Particles That May Contribute to Soiling of Material Surfaces,” Journal of the Air Pollution Control Association, vol. 35, no. 5, pp. 552–554, 1985."
-"56 - Mali, West Africa",17.570692,-3.996166,0,5,70,32,Coulter Multisizer,"Fraga, M.M., et al ""Analysis of the soiling effect on the performance of photovoltaic modules on a soccer stadium in Minas Gerais"", Brazil, Solar Energy 163, 387–397, 2018"
-37 - U.K.,55.378051,-3.435973,1,153.2,403.5,19,PSA: Malvern Mastersizer 2000,"Fraga, M.M., et al ""Analysis of the soiling effect on the performance of photovoltaic modules on a soccer stadium in Minas Gerais"", Brazil, Solar Energy 163, 387–397, 2018"
-39 - Belgium,50.503887,4.469936,2,6,60,3,SEM,"Gandhi Amarnadh et al., ""Investigation of the Effects of Dust Accumulation, and Performance for Mono and Poly Crystalline Silica Modules"", International Journal of Renewable Energy Research, Vol.4, No.3, 2014"
-"50 - Leuven, Belgium",50.8798438,7.7005176,60,60,60,39,SEM,"Ghazi, S, Ip, K. ""The effect of weather conditions on the efficiency of PV panels in the southeast of UK"", Renewable Energy, 69, 50-59, 2014"
-26 - Libya - Ground Level,26.3351,17.228331,168,405.5,643,13,SEM,"Guan, Z., et al, ""Dust characterization for solar collector deposition and cleaning in a concentrating solar thermal power plant,"" Proceedings of International Conference on Heat Exchanger Fouling and Cleaning, http://heatexchanger-fouling.com/papers/papers2015/40_Guan_F.pdf"
-26 - Libya - 1 meter,26.3351,20.228331,16.6,86.3,156,13,SEM,"Guo, B., Javed, W., ""Efficiency of Electrodynamic Dust Shield at Dust  Loading Levels Relevant to Solar Energy Applications"", IEEE Journal of Photovoltaics, Vol. 8, No. 1, Jan 2018"
-18 - Libya - Winter,29.3351,17.228331,0.5,100.25,200,35,No information given,"H.A. Kazem, M.T. Chaichan, ""Experimental analysis of the effect of dust’s physical properties on photovoltaic modules in Northern Oman"", Solar Energy, 139, 68–80, 2016"
-18 - Libya - Summer,29.3351,20.228331,20,460,900,35,No information given,"H.R. Moutinho et al., ""Adhesion mechanisms on solar glass: Effects of relative humidity, surface roughness, and particle shape and size"", Solar Energy Materials and Solar Cells, 172,145–153, 2017"
-42 - Poland,51.919438,19.145136,0,10,30,29,PSA,"Hegazy, A.A., ""Effect of dust accumulation on solar transmittance through glass covers of plate-type collectors"", Renewable Energy, 22, 525–540, 2001"
-70 - Greece,39.0742,21.8243,10,80,150,26,No information given,"Jiang, Y., et al, ""Analyzing wind cleaning process on the accumulated dust on solar photovoltaic (PV) modules on flat surfaces"", Solar Energy, 159, 1031–1036, 2018"
-"34 - Kalkbult, South Africa",-30.4678242,24.0853165,47,47,47,43,SEM,"Kaldellis, J., Fragos, P., Kapsali, M., 2011. Systematic experimental study of the pollution deposition impact on the energy yield of photovoltaic installations. Renew. Energy 36, 2717–2724."
-"51 - Minia, Egypt",28.0870967,30.7618397,1,2,3,24,No information given,"Karmouch R, Hor HE ""Solar Cells Performance Reduction under the Effect of Dust in Jazan Region"", Journal of Fundamental Renewable Energy Applications, 7: 228, 2017"
-45 - Egypt,26.820553,30.802498,3.5,16.75,30,34,SEM,"Kawamotoa,H, G, Bing, ""Improvement of an electrostatic cleaning system for removal of dust from solar panels"", Journal of Electrostatics. 91, 28–33, 2018"
-"5 - Sede Boqer, Israel",30.873611,34.793098,20,20,20,7,No information given,"Kawamotoa,H, G, Bing, ""Improvement of an electrostatic cleaning system for removal of dust from solar panels"", Journal of Electrostatics. 91, 28–33, 2018"
-"68 - Sede Boqer, Israel",30.873611,37.793098,2,7,20,15,No information given,"Klugmann-Radziemska, E., ""Degradation of electrical performance of a crystalline photovoltaic module due to dust deposition in northern Poland"", Renewable Energy, 78, 418-426, 2015"
-"7 - Negev Desert, Israel",33.7140861,34.8757476,5,32.5,60,8,No information given,"L. L. Kazmerski et al., ""Fundamental studies of the adhesion of dust to PV module chemical and physical relationships at the microscale,"" 2015 IEEE 42nd Photovoltaic Specialist Conference (PVSC), New Orleans, LA, 2015, pp. 1-7. 2015"
-"17 - Jazan, Saudi Arabia",16.8893586,42.5705674,0,11,22,27,Light Microscopy: Olympus CX21I - Image J,"M. Saidan et al., ""Experimental study on the effect of dust deposition on solar photovoltaic panels in desert environmen""t, Renewable Energy, 92, 2016"
-9 - Iraq,33.223191,43.679291,80,240,400,46,No information given,"McTanish, G.H., ""Dust deposition and particle size in Mali, West Africa"" Catena, 29, 307-322, 1997"
-"23 - Baghdad, Iraq",33.3128057,44.3614875,0.356,6.218,50,1,PSA: SALD-2101,"Mehmood, U., et al. ""Characterization of dust collected from PV modules in the area of Dhahran, Kingdom of Saudi Arabia, and its impact on protective transparent covers for photovoltaic applications"", Solar Energy, 141, 203–209, 2017"
-"16 - Baghdad, Iraq",33.3128057,47.3614875,0.4,0.8,1.2,31,Laser Optical Photometer,"Menoufi, K., et al., ""Dust accumulation on photovoltaic panels: a case study at the East Bank of the Nile (Beni-Suef, Egypt)"", Energy Procedia, 128, 24–31, 2017"
-36 - Saudi Arabia,23.885942,45.079162,3,20,600,33,SEM (EDS used to determine elemental composition),"Mohamed and Hasan, ""Effect of Dust Accumulation on Performance of Photovoltaic Solar Modules in Sahara Environment"", Journal of Basic and Applied Scientific Research, 2(11)11030-11036, 2012"
-31 - Saudi Arabia,23.885942,48.079162,0.8,0.8,0.8,44,PSA: Microtrac S3500,"Mohamed and Hasan, ""Effect of Dust Accumulation on Performance of Photovoltaic Solar Modules in Sahara Environment"", Journal of Basic and Applied Scientific Research, 2(11)11030-11036, 2012"
-35 - Saudi Arabia,26.885942,45.079162,0.1,1.2,30,57,SEM (EDS used to determine elemental composition),"Morris VL. ""Cleaning agents and techniques for concentrating solar collectors"", Solar Energy Materials, 3, 35–55, 1980"
-52 - Kuwait,29.31166,47.481766,6.4,6.4,6.4,2,No information given,"Olivares, D., et al, ""Characterization of soiling on PV modules in the Atacama Desert"", Energy Procedia, 124, 547–553, 2017"
-"64 - Dammam, Saudi Arabia",26.3926665,49.9777136,15,15,15,56,SEM (EDS used for elemental composition),"Olivares, D., et al, ""Characterization of soiling on PV modules in the Atacama Desert"", Energy Procedia, 124, 547–553, 2017"
-"65 - Dharan, Saudi Arabia",23.2361248,50.0393017,0.01,1.2,30,54,SEM,"Olivares, D., et al, ""Characterization of soiling on PV modules in the Atacama Desert"", Energy Procedia, 124, 547–553, 2017"
-"49 - Dharan, Saudi Arabia",28.2361248,50.0393017,0.5,1.2,7.78,55,SEM (XRD used for elemental analysis),"Pennetta, S., et al, ""A Case Study on Parameters Influencing Dust
-Accumulation on CSP Reflectors,"" Journal of Energy and Power Engineering 10, 73-81, 2016"
-24 - Qatar,25.354826,50.183884,0.3,2,4.3,10,AFM,"R. Appels, B. Muthirayan, A. Beerten, R. Paesen, J. Driesen, and J. Poortmans, “The effect of dust deposition on photovoltaic modules,” 2012 38th IEEE Photovoltaic Specialists Conference, 2012."
-46 - Qatar,25.354826,51.183884,0,2.3,5,12,SEM,"R. E. Cabanillas, and H. Munguía, ""Dust accumulation effect on efficiency of Si photovoltaic modules"", Journal of Renewable and Sustainable Energy, 3, 043114, 2011"
-25 - Qatar,25.354826,52.183884,0.6,18,100,52,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)","Roth EP, Anaya AJ. ""Effect of natural soiling and cleaning on the size distribution of particles deposited on glass mirrors"". Journal of Solar Energy Engineering, 102, 248–56, 1980"
-"63 - Doha, Qatar",25.2854473,49.5310398,20,26,52,21,Light Microscopy,"Roth EP, Pettit RB. ""Effect of soiling on solar mirrors and techniques used to maintain high reflectivity"", Chapter 6 in Solar Materials Science. TJ810.S667, 199–227, 1980"
-"47 - Doha, Qatar",26.2854473,50.183884,6,8,10,28,PSA: Morphologi G3,"Solend, T.A., ""Cleaning Schedule based on Soiling Effects on Photovoltaics in Kalkbult, South Africa"", 2017 (Master's Thesis) https://brage.bibsys.no/xmlui/bitstream/handle/11250/2468083/Master_final.pdf?sequence=1"
-"47 - Namib, Qatar",26.2854473,51.183884,200,250,300,28,PSA: Morphologi G3,"Syed A.M. Said, Husam M. Walwil, ""Fundamental studies on dust fouling effects on PV module performance"", Solar Energy, 107, 328–337, 2014"
-"13 - Doha, Qatar -Jan",26.2854473,52.183884,4,18,39,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)","Sylva, Jason, ""Characterization of Dust on Solar Devices in Southern Nevada"" (2017). UNLV Theses, Dissertations, Professional Papers, and Capstones. 3042,
-https://digitalscholarship.unlv.edu/thesesdissertations/3042"
-"13 - Doha, Qatar - Sep",26.2854473,49.5310398,4,16,35,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)","T. Sarver, A. Al-Qaraghuli, and L. L. Kazmerski, “A comprehensive review of the impact of dust on the use of solar energy: History, investigations, results, literature, and mitigation approaches,” Renewable and Sustainable Energy Reviews, vol. 22, pp. 698–733, 2013."
-"13 - Doha, Qatar - Oct",24.2854473,50.183884,4,20,40,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)","T. Sarver, A. Al-Qaraghuli, and L. L. Kazmerski, “A comprehensive review of the impact of dust on the use of solar energy: History, investigations, results, literature, and mitigation approaches,” Renewable and Sustainable Energy Reviews, vol. 22, pp. 698–733, 2013."
-"13 - Doha, Qatar - Feb",24.2854473,51.183884,3,19,41,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)","Tanesab, J., et al, ""Seasonal effect of dust on the degradation of PV modules performance deployed in different climate areas"", Renewable Energy, 111, 105-115, 2017"
-"13 - Doha, Qatar - Mar",24.2854473,52.183884,4,17,33,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)","Tanesab, J., et al, ""The contribution of dust to performance degradation of PV modules in a temperate climate zone"", Solar Energy, 120, 147–157, 2015"
-"13 - Doha, Qatar - Apr",24.2854473,49.5310398,2,12,24,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)","Urrejola, E., ""Effect of soiling and sunlight exposure on the performance ratio of photovoltaic technologies in Santiago, Chile, E. Urrejola et al."", Energy Conversion and Management, 114, 338–347, 2016"
-"13 - Doha, Qatar - May",23.2854473,50.183884,2,12,24,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)","W. Javed et al., ""Characterization of dust accumulated on photovoltaic panels in Doha, Qatar"", Solar Energy, 142,  123–135, 2017"
-"13 - Doha, Qatar - Jun",23.2854473,51.183884,4,25,43,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)","W. Javed et al., ""Characterization of dust accumulated on photovoltaic panels in Doha, Qatar"", Solar Energy, 142,  123–135, 2017"
-"13 - Doha, Qatar - Jul",23.2854473,52.183884,4,26,42,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)","W. Javed et al., ""Characterization of dust accumulated on photovoltaic panels in Doha, Qatar"", Solar Energy, 142,  123–135, 2017"
-"13 - Doha, Qatar - Aug",23.2854473,49.5310398,4,16,36,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)","W. Javed et al., ""Characterization of dust accumulated on photovoltaic panels in Doha, Qatar"", Solar Energy, 142,  123–135, 2018"
-54 - Iran,32.4279,53.688,3,3,3,58,No information given,"W. Javed et al., ""Characterization of dust accumulated on photovoltaic panels in Doha, Qatar"", Solar Energy, 142,  123–135, 2019"
-55 - Oman,21.4735329,55.975413,2,38.5,75,22,No information given,"W. Javed et al., ""Characterization of dust accumulated on photovoltaic panels in Doha, Qatar"", Solar Energy, 142,  123–135, 2020"
-10 - Oman,21.4735329,58.975413,120,120,120,47,No information given,"W. Javed et al., ""Characterization of dust accumulated on photovoltaic panels in Doha, Qatar"", Solar Energy, 142,  123–135, 2021"
-33 - India,20.593684,78.96288,1,1.5,15,5,"LPSA: Cilas, model 1190","W. Javed et al., ""Characterization of dust accumulated on photovoltaic panels in Doha, Qatar"", Solar Energy, 142,  123–135, 2022"
-44 - India,20.593684,81.96288,20,50,80,9,SEM,"W. Javed et al., ""Characterization of dust accumulated on photovoltaic panels in Doha, Qatar"", Solar Energy, 142,  123–135, 2023"
-"19 - Vellore, India",12.9202,79.1333,1,2,3,18,Light Microscopy,"W. Javed et al., ""Characterization of dust accumulated on photovoltaic panels in Doha, Qatar"", Solar Energy, 142,  123–135, 2023"
-"15 - Xian, China",34.341574,108.93977,3,9,169,53,LPSA: Winner2000ZDE,"W. Javed, B. Guo, Y. Wubulikasimu and B. W. Figgis, ""Photovoltaic performance degradation due to soiling and characterization of the accumulated dust,"" 2016 IEEE International Conference on Power and Renewable Energy (ICPRE), Shanghai, 2016, 580-584, 2016"
-41 - Indonesia,-0.789275,113.921327,0,4,31,48,SEM,"Y. Guan et al., ""In-situ investigation of the effect of dust deposition on theperformance of polycrystalline silicon photovoltaic module"", Renewable Energy, 101, 2017"
-61 - Australia,-25.274398,133.775136,15,15,15,38,SEM using ImageJ,"Yibas, B.S., et al., ""Effect of environmental dust particles on laser textured yttria-stabilized zirconia surface in humid air ambient,"" Optics and Laser Technology, 101, 388–396, 2018"
-38 - Australia,-25.274398,136.775136,0,4,16,49,SEM,"Yilbas, B.S., et al, ""Influence of dust and mud on the optical, chemical, and mechanical properties of a pv protective glass"", Scietific Reports, 5: 15833, 2015"
-"58 - Queensland, Australia",-20.9175738,142.7027956,15,15,15,20,SEM,"Yilbas, B.S., et al., ""Water Droplet Dynamics on a Hydrophobic Surface in Relation to the Self-Cleaning of Environmental Dust"", Scientific Reports, Volume 8, Article number: 2984, 2018"
-67 - Unknown Location,-40,-9,0,1.2,4,4,SEM,"Yilbas, Bekir Sami., Haider Ali, Naseer Al-Aqeeli, Mazen M. Khaled, Syed Said, Numan Abu-Dheir, Necar Merah, Kamal Youcef-Toumi, and Kripa K. Varanasi. “Characterization of Environmental Dust in the Dammam Area and Mud After-Effects on Bisphenol-A Polycarbonate Sheets.” Scientific Reports, 6, 24308, 2016"
-"48 - Unspecified ""several locations around the world""",-40,-19,15,37.5,60,23,SEM (SEM-EDS used for composition),"Zarei, T., ""Optical and thermal modeling of a tilted photovoltaic module with sand particles settled on its front surface"", Energy, 95, 51-66, 2015"
+Name,Latitude,Longitude,low,mid,high,Number,Method
+Uknown Location -   4,-40,-6,0,1.2,4,4,SEM
+"Unspecified ""several locations around the world"" - 23",-40,-19,15,37.5,60,23,SEM (SEM-EDS used for composition)
+Chile - L1 - 37,-35.675147,-70.542969,4,47,250,37,Sieving
+Chile - L2 - 37,-35.675147,-71.542969,4,47,125,37,Sieving
+Chile - L3 - 37,-35.675147,-72.542969,4,15,250,37,Sieving
+"Santiago, Chile - 50",-35.6751,-71.543,1,250.5,500,50,No information given
+"Kalkbult, South Africa - 43",-30.4678242,24.0853165,47,47,47,43,SEM
+Australia - 38,-25.274398,133.775136,15,15,15,38,SEM using ImageJ
+Australia - 49,-25.274398,133.775136,0,4,4,49,SEM
+"Queensland, Australia - 20",-20.9175738,142.7027956,15,15,15,20,SEM
+"Minas Gerais, Brazil - NE - 17",-18.512178,-44.5550308,28.7,28.7,28.7,17,SEM (EDS used for elements)
+"Minas Gerais, Brazil - SW - 17",-18.512178,-44.5550308,35.3,35.3,35.3,17,SEM (EDS used for elements)
+Brazil - 30,-14.235004,-51.92528,40,45,50,30,SEM
+Indonesia - 48,-0.789275,113.921327,0,4,4,48,SEM
+"Vellore, India - 18",12.9202,79.1333,1,2,3,18,Light Microscopy
+"Jazan, Saudi Arabia - 27",16.8893586,42.5705674,0,11,22,27,Light Microscopy: Olympus CX21I - Image J
+"Mali, West Africa - 32",17.570692,-3.996166,0,5,5,32,Coulter Multisizer
+Mexico City -   6,19.4326077,-99.133208,0.4,20,40,6,LPSA: Beckmann Laser Diffractometer
+India -   5,20.593684,78.96288,1,1.5,2,5,"LPSA: Cilas, model 1190"
+India -   9,21.593684,79.96288,20,50,80,9,SEM
+Oman - 22,21.4735329,55.975413,2,38.5,75,22,No information given
+Oman - 47,22.4735329,56.975413,120,120,120,47,No information given
+Saudi Arabia - 33,23.885942,45.079162,3,20,40,33,SEM (EDS used to determine elemental composition)
+Saudi Arabia - 44,21.885942,44.079162,0.8,0.8,0.8,44,PSA: Microtrac S3500
+Saudi Arabia - 57,21.885942,45.079162,0.1,1.2,30,57,SEM (EDS used to determine elemental composition)
+"Doha, Qatar - 21",25.2854473,51.5310398,20,26,32,21,Light Microscopy
+"Doha, Qatar - 28",26.2854473,52.5310398,6,8,10,28,PSA: Morphologi G3
+"Namib, Qatar - 28",26.2854473,52.5310398,200,250,300,28,PSA: Morphologi G3
+"Doha, Qatar -Jan - 51",25.2854473,52.5310398,4,18,39,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)"
+"Doha, Qatar - Sep - 51",26.7854473,52.5310398,4,16,35,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)"
+"Doha, Qatar - Oct - 51",28.2854473,52.5310398,4,20,40,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)"
+"Doha, Qatar - Feb - 51",29.7854473,53.5310398,3,19,41,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)"
+"Doha, Qatar - Mar - 51",25.2854473,53.5310398,4,17,33,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)"
+"Doha, Qatar - Apr - 51",26.7854473,53.5310398,2,12,24,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)"
+"Doha, Qatar - May - 51",28.2854473,53.5310398,2,12,24,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)"
+"Doha, Qatar - Jun - 51",29.7854473,54.5310398,4,25,43,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)"
+"Doha, Qatar - Jul - 51",25.2854473,54.5310398,4,26,42,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)"
+"Doha, Qatar - Aug - 51",26.7854473,54.5310398,4,16,36,51,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)"
+Qatar - 10,28.2854473,52.183884,0.3,2,4.3,10,AFM
+Qatar - 12,29.7854473,53.183884,0,2.3,5,12,SEM
+Qatar - 52,25.354826,53.183884,0.6,18,100,52,"LPSA: LS13-321 MW (Beckman Coulter Inc., Brea, CA)"
+"Dharan, Saudi Arabia - 54",26.2361248,50.0393017,0.01,1.2,30,54,SEM
+"Dharan, Saudi Arabia - 55",27.2361248,51.0393017,0.5,1.2,7.78,55,SEM (XRD used for elemental analysis)
+Libya - Ground Level - 13,26.3351,17.228331,168,405.5,643,13,SEM
+Libya - 1 meter - 13,27.8351,17.228331,16.6,86.3,156,13,SEM
+Libya - Winter - 35,26.3351,18.828331,0.5,100.25,200,35,No information given
+Libya - Summer - 35,27.8351,18.828331,20,460,900,35,No information given
+"Dammam, Saudi Arabia - 56",26.3926665,49.9777136,15,15,15,56,SEM (EDS used for elemental composition)
+Egypt - 34,26.820553,30.802498,3.5,16.75,30,34,SEM
+"Minia, Egypt - 24",28.0870967,30.7618397,1,2,3,24,No information given
+"Sonora, Mexico - 25",29.2972247,-110.3308814,0,5,5,25,LPSA: Coulter Model Fraunhofer LS 100Q
+"Sonora, Mexico - 40",30.2972247,-111.3308814,0.51369144,0.829,6,40,PSA: Coulter Model Fraunhofer LS 100Q
+Kuwait -   2,29.31166,47.481766,6.4,6.4,6.4,2,No information given
+"Negev Desert, Israel -   8",30.7140861,34.8757476,5,32.5,60,8,No information given
+"Sede Boqer, Israel -   7",30.873611,34.793098,20,20,20,7,No information given
+"Sede Boqer, Israel - 15",31.873611,35.793098,2,7,12,15,No information given
+Iran - 58,32.4279,53.688,3,3,3,58,No information given
+Iraq - 46,33.223191,43.679291,80,240,400,46,No information given
+"Baghdad, Iraq -   1",33.3128057,44.3614875,0.356,6.218,50,1,PSA: SALD-2101
+"Baghdad, Iraq - 31",34.3128057,45.3614875,0.4,0.8,1.2,31,Laser Optical Photometer
+"Xian, China - 53",34.341574,108.93977,3,9,15,53,LPSA: Winner2000ZDE
+"New Mexico, USA - 36",34.5199402,-105.8700901,1,3,5,36,SEM
+"New Mexico, USA - 41",36.5199402,-104.8700901,1,10.5,20,41,SEM
+"New Mexico, USA - 42",36.5199402,-106.8700901,0.7,10.35,20,42,PSA
+"Daggett, California, USA - 11",34.8640316,-116.888098,1,3,5,11,SEM
+North Carolina - 16,35.7596,-79.0193,0.01,107.505,215,16,No information given
+Southern Nevada - 45,36.1709357,-115.2098505,6.5,53.25,100,45,Confocal Microscopy
+"Alentajo, Portugal - July - 14",38.331959,-8.0018669,19.3,19.3,19.3,14,SEM (Image J)
+"Alentajo, Portugal - April - 14",39.331959,-9.0018669,20.5,20.5,20.5,14,SEM (Image J)
+Greece - 26,39.0742,21.8243,10,80,150,26,No information given
+Belgium -   3,50.503887,4.469936,2,6,10,3,SEM
+"Leuven, Belgium - 39",50.8798438,4.7005176,60,60,60,39,SEM
+Poland - 29,51.919438,19.145136,0,10,20,29,PSA
+U.K. - 19,55.378051,-3.435973,1,153.2,403.5,19,PSA: Malvern Mastersizer 2000
