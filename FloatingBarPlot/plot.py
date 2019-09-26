@@ -19,7 +19,7 @@ def plot_rect(data):
     for i in b:
         ylabels.append(i[0])
 
-    print b
+    print(b)
 
     fig = plt.figure(dpi=140)
     ax = fig.add_subplot(111)

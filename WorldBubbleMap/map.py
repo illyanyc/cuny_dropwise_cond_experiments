@@ -1,6 +1,7 @@
 # import the library
 import folium
 import pandas as pd
+from folium.plugins import HeatMap
 import math
 from colour import Color
 import json
@@ -12,7 +13,7 @@ import matplotlib
 import matplotlib.image as mpimg
 import numpy as np
 import cv2
-
+import os
 
 
 # Json encoder
@@ -297,7 +298,10 @@ listOfColors_toPass = ['#0000db',
 colorgradient = prepGradientByDecate(data["valueraw"], listOfColors_toPass)
 
 # Make an empty map
+# regular map
 m = folium.Map(location=[20, 0], tiles='cartodbpositron', zoom_start=2)
+# heatmap
+h = folium.Map(location=[20, 0], tiles='cartodbpositron', zoom_start=2)
 
 # Enclose all of the Un-localized data into a circle
 #region
@@ -310,7 +314,8 @@ folium.Circle(
                  * 850000,
         color="#000000",
         fill=True,
-        fill_color="#ffffff"
+        fill_color="#ffffff",
+
     ).add_to(m)
 #endregion
 # add data points to map one by one
@@ -321,20 +326,55 @@ for i in range(0, len(data)):
         location=[data.iloc[i]['lon'], data.iloc[i]['lat']],
         popup=(data.iloc[i]['name']),
         #radius=data.iloc[i]['value'] * 100000,
-        radius= (2)*
+        radius= (3)*
                 ((-(0.0000992*(abs(data.iloc[i]['lon']**2))))-(0.0021852*(abs(data.iloc[i]['lon'])))+1)
                  * 50000,
         color=colorgradient[counter],
         fill=True,
-        fill_color=colorgradient[counter]
+        fill_color=colorgradient[counter],
+        blur=15,
+        # max_zoom=1,
+        min_opacity=0.8
+
     ).add_to(m)
     counter += 1
+
+
+data_list = list(zip(data.lon.values, data.lat.values, data.value.values))
+max_amount = float (data['value'].max())
+print(max_amount)
+hm_wide = HeatMap(data_list,
+                  min_opacity=0.2,
+                  max_val=max_amount,
+                  radius=10,
+                  blur=15,
+                  max_zoom=1,
+)
+h.add_child(hm_wide)
+h.save('heatmap.html')
+
+# for i in range(0, len(data)):
+#     colors = colorgradient
+#     folium.Circle(
+#         location=[data.iloc[i]['lon'], data.iloc[i]['lat']],
+#         popup=(data.iloc[i]['name']),
+#         #radius=data.iloc[i]['value'] * 100000,
+#         radius= (2)*
+#                 ((-(0.0000992*(abs(data.iloc[i]['lon']**2))))-(0.0021852*(abs(data.iloc[i]['lon'])))+1)
+#                  * 50000,
+#         color=colorgradient[counter],
+#         fill=True,
+#         fill_color=colorgradient[counter],
+#         blur = 15,
+#         max_zoom = 1,
+#         min_opacity = 0.2
+#     ).add_to(m)
+#     counter += 1
 
 min_lon = 120
 max_lon = 170
 min_lat = 50
 max_lat = 56
-
 
 
 # Overlay the image
@@ -348,28 +388,36 @@ m.save('map.html')
 # Change height to 90%
 
 
-
-
-
-
 # Try another type of plot BETA
-m = folium.Map(location=[20, 0], tiles='cartodbpositron', zoom_start=2)
-counter = 0
-for i in range(0, len(data)):
-    colors = colorgradient
-    folium.Circle(
-        location=[data.iloc[i]['lon'], data.iloc[i]['lat']],
-        popup=(data.iloc[i]['name']),
-        #radius=data.iloc[i]['value'] * 100000,
-        radius= (data.iloc[i]['value'])*
-                ((-(0.0000992*(abs(data.iloc[i]['lon']**2))))-(0.0021852*(abs(data.iloc[i]['lon'])))+1)
-                 * 1000,
-        color= "#1F618D",
-        fill=True,
-        fill_color=colors[counter]
-    ).add_to(m)
-    counter += 1
+# m = folium.Map(location=[20, 0], tiles='cartodbpositron', zoom_start=2)
+# counter = 0
+# for i in range(0, len(data)):
+#     colors = colorgradient
+#     folium.Circle(
+#         location=[data.iloc[i]['lon'], data.iloc[i]['lat']],
+#         popup=(data.iloc[i]['name']),
+#         #radius=data.iloc[i]['value'] * 100000,
+#         radius= (data.iloc[i]['value'])*
+#                 ((-(0.0000992*(abs(data.iloc[i]['lon']**2))))-(0.0021852*(abs(data.iloc[i]['lon'])))+1)
+#                  * 1000,
+#         color= "#1F618D",
+#         fill=True,
+#         fill_color=colors[counter]
+#     ).add_to(m)
+#     counter += 1
 # Overlay the image
 #m.add_child(plugins.ImageOverlay(data, opacity=0.8, bounds =[[min_lat, min_lon], [max_lat, max_lon]]))
 # Save it as html
-m.save('mymap2.html')
+# m.save('mymap2.html')
+
+
+
+# max_amount = float(csvdata['mid'].max())
+# hm_wide = HeatMap(list(zip(lon, lat, value)),
+#                   min_opacity=0.2,
+#                   max_val=max_amount,
+#                   radius=17, blur=15,
+#                   max_zoom=1,
+#                   )
+# h.save('heatmap.html')
+
