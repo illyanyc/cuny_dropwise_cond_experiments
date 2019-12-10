@@ -241,7 +241,7 @@ def plot_rect(data):
 
 # this is the main script, note that we have imported pyplot as plt
 rangedata = {}
-f = open('csvData_withDavidTags.csv', 'rb')
+f = csv.open('csvData_withDavidTags.csv', 'rb', encoding = 'utf-8')
 reader = csv.reader(f)
 for row in reader:
     i = row
